@@ -4,4 +4,4 @@ Text:
 ----
 Slug: drone
 ----
-Type: carousel
+Type: straight
