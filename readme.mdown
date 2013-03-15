@@ -1,3 +1,7 @@
+#EricHu.info
+
+Powered by Kirby
+
 # Kirby
 
 Kirby is a file-based CMS.   
