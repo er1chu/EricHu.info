@@ -1,0 +1,11 @@
+Title: Panoramic Landscapes
+----
+Text: Textual documentation and process work for the Panoramic Landscapes iPad application. The gesture of the application owes most of its framework to the writings of Wolfgang Schivelbusch.
+----
+Slug: panoramic
+----
+Type: carousel
+----
+Tags:
+----
+

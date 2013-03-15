@@ -1,0 +1,9 @@
+Title: Eric Hu
+----
+Author: Eric Hu
+----
+Description: Graphic Design and Art Direction
+----
+Keywords: eric, hu, graphic, design, typography, interaction, yale
+----
+Copyright: © 2009-(date: Year) (link: http://erichu.info text: Eric Hu)

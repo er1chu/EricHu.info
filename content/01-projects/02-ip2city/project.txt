@@ -1,0 +1,8 @@
+Title: IP2City
+----
+Text: Written text and design for a publication concerning the use of new geolocation tools to create a "localized web" to mirror the behavior of a neighborhood within a modern city. Includes documentation and sample source code for the flyr.cc project.
+----
+Slug: ip2city
+----
+Type: carousel
+----

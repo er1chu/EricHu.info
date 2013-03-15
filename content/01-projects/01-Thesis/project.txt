@@ -1,0 +1,7 @@
+Title: Platform — MFA Thesis Book (Ongoing)
+----
+Text: Made from assembling smaller print-on-demand books from three major vendors into a larger book, this book demonstrates variations and differences within standardized means of production. (Lulu: 6 × 9″, Blurb: 8 × 10″, Magcloud: 8.5 × 11″). The content of the book is a documentation of my visual studies during my two years at Yale which largely dealt with revealing, augmenting, translating and exagerrating the limitations of different platforms as a means of injecting a material context into a work of graphic design.
+----
+Slug: thesis
+----
+Type: carousel

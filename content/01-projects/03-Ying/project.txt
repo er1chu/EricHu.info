@@ -1,0 +1,7 @@
+Title: Ying Yue
+----
+Text:  Self-initiated Musical Instrument + Drawing App. Currently entering prototyping stage (Objective-C). Ying Yue is a drawing program where the user uses his or her thumb to create generated imagery with preset brushes while a pixel value color reader bounces around, reacting to the phone’s accelerometer to play sounds determined by the RGB value of the pixel it crosses over.
+----
+Slug: ying
+----
+Type: carousel

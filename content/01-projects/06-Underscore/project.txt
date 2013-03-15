@@ -1,0 +1,7 @@
+Title: Underscore Quarterly Issue 10
+----
+Text: Contributing newsprint poster supplement for the tenth issue of Underscore Quarterly published by Brooklyn-based imprinted Swill Children. Also featured as a publication for Brooklyn Shelf Life.
+----
+Slug: underscore
+----
+Type: carousel

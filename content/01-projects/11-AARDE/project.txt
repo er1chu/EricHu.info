@@ -1,0 +1,7 @@
+Title: AARDE
+----
+Text: Design and art direction for an upscale boutique specializing in Asian woodworking tools and cutlery. Since "Aarde" means "Earth" in Dutch, it became more appropriate for the brand to put emphasis on the canvas rather than the tools–to put the focus on wood in is raw form, rather than the woodworking process itself.
+----
+Slug: aarde
+----
+Type: carousel

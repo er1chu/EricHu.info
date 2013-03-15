@@ -1,0 +1,7 @@
+Title: A Thousand Characters
+----
+Text: One thousand unique illustrations of each character in a classical Chinese poem that consisted of 1000 non-repeating Chinese characters (千字文). These were drawn with my mouse using a dynamic drawing application I had programmed in Processing then manipulated further in Adobe Photoshop. A separate website where all 1000 illustrations will be online soon.
+----
+Slug: thousand
+----
+Type: carousel

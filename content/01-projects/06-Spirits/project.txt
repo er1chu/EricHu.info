@@ -1,0 +1,7 @@
+Title: Spirits
+----
+Text: An attempt to create the unluckiest posters in the world, drawing from the visual language of East-Asian taboo symbols. Completed as part of the Site-Place project with Sheila Levrant De Bretteville.
+----
+Slug: spirits
+----
+Type: carousel
