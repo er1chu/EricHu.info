@@ -21,7 +21,7 @@ http://getkirby.com/license
 
 */
 
-c::set('license', 'your license key');
+c::set('license', 'a068099593967ddc54658b33dfcda475');
 
 
 /* 
@@ -44,7 +44,7 @@ c::set('url', '/');
  
 */
 
-c::set('url', 'http://localhost:8888/kirby');
+c::set('url', '/');
 
 
 /* 
@@ -181,7 +181,7 @@ texts which are parsed by kirbytext()
 */
 
 // smartypants
-c::set('smartypants', false);
+c::set('smartypants', true);
 c::set('smartypants.attr', 1);
 c::set('smartypants.doublequote.open', '&#8220;');
 c::set('smartypants.doublequote.close', '&#8221;');
