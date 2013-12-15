@@ -1,24 +1,28 @@
 headlineFont = 'Union', Helvetica, san-serif
 textFont = 'Stanley', 'Times New Roman', Times, serif
-backgroundColor = #fff
-textColor = #000
-big = 48px
-med = 18px
+backgroundColor = #fbfdff
+textColor = #333
+big = 36px
+med = 20px
+small = 14px
+lineHeight = 38px
 
 html, body
 	font textFont
 	background backgroundColor
+	line-height lineHeight
 	margin 0
-	padding 10px
+	padding 20px
 	width 98%
 
 
 section
 	width 100%
 	float left
+	color textColor
 	
 	img
-		max-width 50%
+		max-width 60%
 		display inline-block
 
 .project
@@ -31,15 +35,19 @@ section
 	font-weight bold
 	display inline
 	margin 0
+	padding 0
 	border-bottom 2px solid textColor
+
+	p
+		border-bottom 2px solid textColor
+		display inline
 
 .description
 	display inline
 	font big textFont
-	margin-left 10%
+
 
 	p
-		text-indent 10%
 		margin 0
 		padding 0
 		display inline
@@ -47,6 +55,12 @@ section
 
 .med
 	font med textFont
+
+#projects
+	margin-top 20px
+
+.media
+	text-align center
 
 
 
