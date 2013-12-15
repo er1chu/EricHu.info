@@ -13,7 +13,6 @@
 			</div>
 
 		<!--End mc_embed_signup-->
-	</div>
     <!-- <div class="col_1"><?php echo kirbytext($site->copyright()) ?></div> -->
   </footer>
   <script type="text/javascript">
