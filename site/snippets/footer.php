@@ -22,15 +22,22 @@
       //toggle the componenet with class msg_body
       $(".more").click(function()
       {
-        $(this).next(".extended").slideToggle(300);
+        $(this).next(".extended").fadeIn(200);
         $(this).hide();
       });
      $(".extended").click(function()
       {
-        $(this).slideToggle(300);
+        $(this).fadeOut(200);
         $(".more").show();
       });
+
+      $(function() {
+        $('.carousel').carousel('pause');
+      });
+      
     });
+
+
     </script>
     <script>
         var _gaq=[['_setAccount','UA-15656336-1'],['_trackPageview']];

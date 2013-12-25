@@ -1,0 +1,7 @@
+Title: Satie
+----
+Text: is a book of illustrations and half-cooked ideas made between 2012–2014 and inspired by the history of thought. A record of historical sightings of Halley's Comet forms a loose chronological order that collectivize the individual works.
+----
+Slug: satie
+----
+Type: carousel

@@ -20,6 +20,28 @@
   <?php echo js('http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js') ?>
   <?php echo js('assets/js/bootstrap-carousel.min.js') ?>
 
+
+  <style type="text/css">
+    .swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+  }
+  .swipe-wrap {
+    overflow: hidden;
+    position: relative;
+  }
+  .swipe-wrap > div {
+    float:left;
+    width:100%;
+    position: relative;
+
+  }
+  .carousel .item a {
+    cursor: url(assets/images/curses.gif) auto;
+}
+</style>
+
 </head>
 
 <body>
@@ -28,5 +50,7 @@
   <![endif]-->
 
   <section id="header">
-    <span class="title">Eric Hu</span><div class="description"> <p>is a New York-based artist and designer working in interaction and typography. <span class="med">(Read More...)</span></p></div>
+    <span class="title">Eric Hu</span><div class="description"> <p>is a New York-based artist and designer working in interaction and typography. <span class="med more">( Read More... )</span>
+    <span class="extended" style="display:inline;">He received his <abbr>BFA</abbr> from Art Center College of Design in Pasadena, <abbr>CA</abbr> and his <abbr>MFA</abbr> from Yale University in New Haven, <abbr>CT</abbr>. 
+    He currently works as the design lead at <abbr>OKF</abbr>ocus working for clients such as Nike, the Wolfsonian Museum, Phillips, Tumblr and Atlantic Records as well as in-house projects such as Newmoticons. Eric has shown work in the <abbr>ADC</abbr> Gallery and the Museum of Art and Design. In 2013 he became the recipient of the Bradbury Thompson Memorial Prize.</span> </p></div>
   </section>
