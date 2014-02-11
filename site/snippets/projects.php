@@ -8,7 +8,7 @@
   <?php foreach($data->children()->visible() as $project): ?>
 
     <span class="title">
-      <?php echo kirbytext($project->title()) ?></span>
+      <?php echo kirbytext($project->title()) ?></span> 
       <div class="description"><?php echo kirbytext($project->text()) ?></div>
       <div class="media">
       <?php if ($project->type() == "embed") { // If Embed ?>

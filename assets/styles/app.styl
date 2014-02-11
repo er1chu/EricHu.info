@@ -1,19 +1,25 @@
-headlineFont = 'Union', Helvetica, san-serif
-textFont = 'Stanley', 'Times New Roman', Times, serif
-backgroundColor = #f8f8f8
+headlineFont = 'Px Grotesk', Helvetica, san-serif
+textFont = 'Big Caslon', 'Times New Roman', Times, serif
+backgroundColor = #fff
 textColor = #333
-big = 40px
+big = 52px
 med = 18px
 small = 14px
 lineHeight = 38px
 acronym = remove-unit(big) - unit(1, 'px')
 
-html, body
+html
 	font textFont
 	background backgroundColor
 	line-height lineHeight
 	margin 0
 	padding 20px
+	width 100%
+	border-top: 2px solid textColor
+	box-sizing border-box
+
+body
+	padding: 20px
 	width 98%
 	box-sizing border-box
 
@@ -37,6 +43,7 @@ section
 	font big headlineFont
 	font-weight bold
 	display inline
+	letter-spacing -1px
 	box-sizing border-box
 	margin 0
 	padding -5px
