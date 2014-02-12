@@ -8,6 +8,12 @@ html {
   border-top: 2px solid #333;
   box-sizing: border-box;
 }
+@media (max-width: 480px) and (min-width: 320px) {
+  html {
+    line-height: 24px;
+    padding: 5px;
+  }
+}
 body {
   padding: 20px;
   width: 98%;
@@ -21,6 +27,12 @@ section {
 section img {
   max-width: 65%;
   display: inline-block;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  section img {
+    max-width: 100%;
+    display: inline-block;
+  }
 }
 .project {
   width: 100%;
@@ -40,6 +52,15 @@ section img {
 .title p {
   display: inline;
 }
+@media (max-width: 480px) and (min-width: 320px) {
+  .title {
+    font: 18px 'Px Grotesk', Helvetica, san-serif;
+    font-weight: bold;
+    border-bottom: none;
+    padding: 0;
+    display: block;
+  }
+}
 .description {
   display: inline;
   font: 52px 'Big Caslon', 'Times New Roman', Times, serif;
@@ -48,6 +69,11 @@ section img {
 .description p {
   padding: 0;
   display: inline;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .description {
+    font: 18px 'Big Caslon', 'Times New Roman', Times, serif;
+  }
 }
 abbr {
   font-size: 51px;

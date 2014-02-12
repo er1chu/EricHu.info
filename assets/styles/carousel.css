@@ -20,7 +20,7 @@
   
 }
 .carousel .item a {
-    cursor: url(/kirby/assets/images/curses.gif);
+    cursor: url('/kirby/assets/images/curses.gif');
 }
 .carousel .active, .carousel .next, .carousel .prev {
   display: block;
@@ -63,7 +63,7 @@
 }
 .carousel-control.right {
   left: auto;
-  cursor: e-resize;
+  cursor: e-resize url('assets/images/curses.gif');
   right: 15px;
 }
 

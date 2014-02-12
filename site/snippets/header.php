@@ -38,7 +38,7 @@
 
   }
   .carousel .item a {
-    cursor: url(assets/images/curses.gif) auto;
+    cursor: url('assets/images/curses.gif') auto;
 }
 </style>
 
