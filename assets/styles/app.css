@@ -1,23 +1,27 @@
 html {
-  font: 'Big Caslon', 'Times New Roman', Times, serif;
   background: #fff;
-  line-height: 38px;
   margin: 0;
-  padding: 20px;
+  padding: 0px;
   width: 100%;
   border-top: 2px solid #333;
   box-sizing: border-box;
 }
-@media (max-width: 480px) and (min-width: 320px) {
-  html {
-    line-height: 24px;
-    padding: 5px;
-  }
+html a {
+  text-decoration: none;
+  color: #333;
 }
 body {
-  padding: 20px;
-  width: 98%;
+  padding: 40px;
+  width: 100%;
   box-sizing: border-box;
+  line-height: 52px;
+  font: 'Big Caslon', 'Times New Roman', Times, serif;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  body {
+    padding: 15px;
+    line-height: 26px;
+  }
 }
 section {
   width: 100%;
@@ -40,21 +44,20 @@ section img {
   padding: padding;
 }
 .title {
-  font: 52px 'Px Grotesk', Helvetica, san-serif;
+  font: 52px 'BauComp', Helvetica, san-serif;
   font-weight: bold;
-  display: inline;
   letter-spacing: -1px;
   box-sizing: border-box;
+  border-bottom: 1px solid #333;
+  padding: 0;
   margin: 0;
-  padding: -5px;
-  border-bottom: 2px solid #333;
 }
 .title p {
-  display: inline;
+  display: inline-block;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .title {
-    font: 18px 'Px Grotesk', Helvetica, san-serif;
+    font: 18px 'BauComp', Helvetica, san-serif;
     font-weight: bold;
     border-bottom: none;
     padding: 0;
@@ -64,6 +67,7 @@ section img {
 .description {
   display: inline;
   font: 52px 'Big Caslon', 'Times New Roman', Times, serif;
+  letter-spacing: 1px;
   transition: width 0.4s, height 0.4s;
 }
 .description p {
@@ -73,10 +77,20 @@ section img {
 @media (max-width: 480px) and (min-width: 320px) {
   .description {
     font: 18px 'Big Caslon', 'Times New Roman', Times, serif;
+    letter-spacing: 0px;
   }
 }
 abbr {
-  font-size: 51px;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  abbr {
+    font-size: 17px;
+  }
+}
+footer {
+  font: 18px 'BauComp', Helvetica, san-serif;
 }
 .med {
   font: 18px 'Big Caslon', 'Times New Roman', Times, serif;
@@ -90,5 +104,26 @@ abbr {
 }
 .more {
   cursor: pointer;
-  font-family: 'Px Grotesk', Helvetica, san-serif;
+  font-family: 'BauComp', Helvetica, san-serif;
+  letter-spacing: 0px;
+}
+input {
+  border: 1px solid #333;
+  width: 200px;
+  font: 14px 'BauComp', Helvetica, san-serif;
+  padding: 10px;
+}
+input:focus {
+  outline: none !important;
+}
+input[type=submit] {
+  background-color: #fff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: 100px;
+}
+input[type=submit]:hover {
+  background: #333;
+  color: #fff;
+  cursor: pointer;
 }

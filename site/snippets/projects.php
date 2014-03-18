@@ -9,7 +9,7 @@
 
     <span class="title">
       <?php echo kirbytext($project->title()) ?></span> 
-      <div class="description"><?php echo kirbytext($project->text()) ?></div>
+      <span class="description"><?php echo kirbytext($project->text()) ?></span>
       <div class="media">
       <?php if ($project->type() == "embed") { // If Embed ?>
        <?php echo ($project->embed()); ?>
