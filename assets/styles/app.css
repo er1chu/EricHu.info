@@ -3,6 +3,7 @@ html {
   margin: 0;
   padding: 0px;
   width: 100%;
+  height: 100%;
   border-top: 2px solid #333;
   box-sizing: border-box;
 }
@@ -11,17 +12,33 @@ html a {
   color: #333;
 }
 body {
-  padding: 40px;
   width: 100%;
+  height: 100%;
   box-sizing: border-box;
   line-height: 52px;
   font: 'Big Caslon', 'Times New Roman', Times, serif;
 }
+#rapper {
+  width: 80%;
+  position: absolute;
+  margin-left: 20%;
+  padding: 40px;
+  float: left;
+  box-sizing: border-box;
+}
 @media (max-width: 480px) and (min-width: 320px) {
-  body {
+  #rapper {
     padding: 15px;
     line-height: 26px;
   }
+}
+#drawer {
+  width: 20%;
+  position: fixed;
+  height: 100%;
+  float: left;
+  border-right: 1px solid #333;
+  box-sizing: border-box;
 }
 section {
   width: 100%;
@@ -37,6 +54,9 @@ section img {
     max-width: 100%;
     display: inline-block;
   }
+}
+#projects {
+  margin-top: 20px;
 }
 .project {
   width: 100%;
@@ -80,6 +100,9 @@ section img {
     letter-spacing: 0px;
   }
 }
+footer {
+  font: 18px 'BauComp', Helvetica, san-serif;
+}
 abbr {
   font-size: 50px;
   letter-spacing: 2px;
@@ -89,14 +112,8 @@ abbr {
     font-size: 17px;
   }
 }
-footer {
-  font: 18px 'BauComp', Helvetica, san-serif;
-}
 .med {
   font: 18px 'Big Caslon', 'Times New Roman', Times, serif;
-}
-#projects {
-  margin-top: 20px;
 }
 .media {
   text-align: center;
