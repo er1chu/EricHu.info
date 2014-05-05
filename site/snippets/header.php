@@ -49,7 +49,14 @@
       <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
 
-<div id="drawer" class="open">sdafsd</div>
+<div id="drawer" class="open">
+
+    <div id="contact">
+      Born in 1989 in Los Angeles, CA. Works in New York, NY.
+    </div>
+  
+
+</div>
   <div id="rapper">
     <section id="header">
       <span class="title">Eric Hu</span><div class="description"> <p>is a New York-based artist and designer working in interaction and typography. <span class="med more">( Read More... )</span>
