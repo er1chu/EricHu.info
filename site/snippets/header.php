@@ -38,7 +38,7 @@
 
   }
   .carousel .item a {
-    cursor: url('assets/images/curses.gif') auto;
+    cursor: url('../images/curses.gif') auto;
 }
 </style>
 
@@ -49,17 +49,12 @@
       <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
 
-<div id="drawer" class="open">
-
-    <div id="contact">
-      Born in 1989 in Los Angeles, CA. Works in New York, NY.
-    </div>
-  
-
-</div>
+<!-- <div id="drawer" class="open">
+</div> -->
   <div id="rapper">
     <section id="header">
-      <span class="title">Eric Hu</span><div class="description"> <p>is a New York-based artist and designer working in interaction and typography. <span class="med more">( Read More... )</span>
-      <span class="extended" style="display:inline;">He received his <abbr>BFA</abbr> from Art Center College of Design in Pasadena, <abbr>CA</abbr> and his <abbr>MFA</abbr> from Yale University in New Haven, <abbr>CT</abbr>. 
-      He previously worked as the design lead at <abbr>OKF</abbr>ocus working for clients such as Nike, the Wolfsonian Museum, Phillips, Tumblr and Atlantic Records as well as in-house projects such as Newmoticons. Eric has shown work in the <abbr>ADC</abbr> Gallery and the Museum of Art and Design. In 2013 he became the recipient of the Bradbury Thompson Memorial Prize.</span> </p></div>
+      <span class="title">Eric Hu</span><div class="description"> ( &#9993; ) <p>is a New York-based art director and  working in branding, editorial and user interface. <span class="med more">( Read More... )</span>
+      <span class="extended">
+      He previously worked as the design lead at <abbr>OKF</abbr>ocus working for clients such as Nike, the Wolfsonian Museum, Phillips, Tumblr and Atlantic Records as well as in-house projects such as Newmoticons. Eric has shown work in the <abbr>ADC</abbr> Gallery and the Museum of Art and Design. In 2010 he was honored as an ADC Young Gun and in 2013 he became the recipient of the Bradbury Thompson Memorial Prize.</span> </p></div>
+      <img src="/kirby/assets/images/swuigs.svg" id="swuigs">
     </section>
