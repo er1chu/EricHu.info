@@ -16,13 +16,13 @@
              <?php echo ($project->embed()); ?>
           </div>
         
-        <?php } if ($project->type() == "straight") { ?>
+        <?php } else { ?>
 
           <?php $n=0; foreach($project->images() as $image): $n++; //loop image ?>
-          <img src="<?php echo $image->url() ?>" alt="<?php echo $image->name() ?>" class="center"/>
+          <img data-original="<?php echo $image->url() ?>" alt="<?php echo $image->name() ?>" class="lazy center" width="<?php echo $image->width() ?>" height="<?php echo $image->height() ?>">
           <?php endforeach ?>
 
-        <?php } if ($project->type() == "carousel") { ?>
+       <!--  <?php } if ($project->type() == "carousel") { ?>
 
           <div id="<?php echo $project->slug()?>-slide" class="carousel">
             
@@ -35,7 +35,7 @@
             </div>
             
            </div>
-        <?php } //End Carousel Conditional?>
+        <?php } //End Carousel Conditional?> -->
           </div>
 
     <?php endforeach ?>

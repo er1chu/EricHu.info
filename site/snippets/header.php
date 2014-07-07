@@ -14,13 +14,13 @@
   <meta name="robots" content="index, follow" />
   <meta name="viewport" content="width=device-width">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <?php echo css('http://yui.yahooapis.com/3.8.0/build/cssreset/cssreset-min.css') ?>
   <?php echo css('assets/styles/app.css') ?>
-  <?php echo css('assets/styles/min/carousel.min.css') ?>
+<!--   <?php echo css('assets/styles/min/carousel.min.css') ?> -->
   <?php echo js('http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js') ?>
-  <?php echo js('assets/js/bootstrap-carousel.min.js') ?>
+  <?php echo js('assets/js/lazyload.js') ?>
+<!--   <?php echo js('assets/js/bootstrap-carousel.min.js') ?> -->
 
-
+<!-- 
   <style type="text/css">
     .swipe {
     overflow: hidden;
@@ -41,7 +41,7 @@
     cursor: url('../images/curses.gif') auto;
 }
 </style>
-
+ -->
 </head>
 
 <body>

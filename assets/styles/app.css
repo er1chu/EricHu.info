@@ -1,159 +1,41 @@
-html {
-  background: #fff;
-  margin: 0;
-  padding: 0px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  width: 100%;
-  height: 100%;
-  border-top: 2px solid #333;
-  box-sizing: border-box;
-}
-html a {
-  text-decoration: none;
-  color: #333;
-}
-body {
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  line-height: 56px;
-  font: 'Big Caslon', 'Times New Roman', Times, serif;
-}
-#rapper {
-  width: 100%;
-  position: absolute;
-  left: 50%;
-  margin-left: -50%;
-  padding: 40px;
-  float: left;
-  box-sizing: border-box;
-}
-@media (max-width: 480px) and (min-width: 320px) {
-  #rapper {
-    padding: 15px;
-    line-height: 26px;
-  }
-}
-#drawer {
-  width: 20%;
-  position: fixed;
-  height: 100%;
-  padding: 15px;
-  float: left;
-  border-right: 1px solid #333;
-  box-sizing: border-box;
-  font: 18px 'Big Caslon', 'Times New Roman', Times, serif;
-  line-height: 26px;
-}
-section {
-  width: 100%;
-  float: left;
-  color: #333;
-}
-section img {
-  max-width: 65%;
-  display: inline-block;
-}
-@media (max-width: 480px) and (min-width: 320px) {
-  section img {
-    max-width: 100%;
-    display: inline-block;
-  }
-}
-#swuigs {
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-}
-#projects {
-  margin-top: 20px;
-}
-.project {
-  width: 100%;
-  margin: margin;
-  padding: padding;
-}
-.title {
-  font: 52px 'BauComp', Helvetica, san-serif;
-  font-weight: bold;
-  box-sizing: border-box;
-  border-bottom: 1px solid #333;
-  padding: 0;
-  margin: 0;
-}
-.title p {
-  display: inline-block;
-}
-@media (max-width: 480px) and (min-width: 320px) {
-  .title {
-    font: 18px 'BauComp', Helvetica, san-serif;
-    font-weight: bold;
-    border-bottom: none;
-    padding: 0;
-    display: block;
-  }
-}
-.description {
-  display: inline;
-  font: 52px 'Big Caslon', 'Times New Roman', Times, serif;
-  letter-spacing: 1px;
-  transition: width 0.4s, height 0.4s;
-}
-.description p {
-  padding: 0;
-  display: inline;
-}
-@media (max-width: 480px) and (min-width: 320px) {
-  .description {
-    font: 18px 'Big Caslon', 'Times New Roman', Times, serif;
-    letter-spacing: 0px;
-  }
-}
-footer {
-  font: 18px 'BauComp', Helvetica, san-serif;
-}
-abbr {
-  font-size: 50px;
-  letter-spacing: 2px;
-}
-@media (max-width: 480px) and (min-width: 320px) {
-  abbr {
-    font-size: 17px;
-  }
-}
-.med {
-  font: 18px 'Big Caslon', 'Times New Roman', Times, serif;
-}
-.media {
-  text-align: center;
-  margin: 60px 0 40px 0;
-}
-.more {
-  cursor: pointer;
-  font-family: 'BauComp', Helvetica, san-serif;
-  letter-spacing: 0px;
-}
-.extended {
-  display: inline;
-}
-input {
-  border: 1px solid #333;
-  width: 200px;
-  font: 14px 'BauComp', Helvetica, san-serif;
-  padding: 10px;
-}
-input:focus {
-  outline: none !important;
-}
-input[type=submit] {
-  background-color: #fff;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  width: 100px;
-}
-input[type=submit]:hover {
-  background: #333;
-  color: #fff;
-  cursor: pointer;
-}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:"";content:none}
+table{border-collapse:collapse;border-spacing:0}
+html{background:#fff;max-width:100%;margin:0;padding:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;width:100%;height:100%;border-top:2px solid #333;box-sizing:border-box;}
+html a{text-decoration:none;color:#333}
+body{width:100%;height:100%;box-sizing:border-box;line-height:56px;font:'Big Caslon','Times New Roman',Times,serif}
+#rapper{width:100%;position:absolute;padding:40px;float:left;box-sizing:border-box;}
+@media (max-width: 480px) and (min-width: 320px){#rapper{padding:15px;line-height:26px}
+}@media (min-width: 2000px){#rapper{width:90%;position:absolute;left:50%;margin-left:-45%;padding:15px}
+}#drawer{width:20%;position:fixed;height:100%;padding:15px;float:left;border-right:1px solid #333;box-sizing:border-box;font:18px 'Big Caslon','Times New Roman',Times,serif;line-height:26px}
+section{width:100%;float:left;color:#333;}
+section img{display:inline-block;width:auto;max-width:100%;height:auto;}
+@media (max-width: 480px) and (min-width: 320px){section img{width:auto;max-width:100%;height:auto;display:inline-block}
+}#swuigs{display:block;text-align:center;margin:0 auto}
+#projects{margin-top:20px}
+.project{width:100%;margin:margin;padding:padding}
+.title{font:52px 'BauComp',Helvetica,san-serif;letter-spacing:-1px;box-sizing:border-box;border-bottom:1px solid #333;padding:0;margin:0;}
+.title p{display:inline-block}
+@media (max-width: 480px) and (min-width: 320px){.title{font:18px 'BauComp',Helvetica,san-serif;font-weight:bold;border-bottom:none;padding:0;display:block}
+}@media (min-width: 1600px){.title{font:72px 'BauComp',Helvetica,san-serif}
+}.description{display:inline;font:52px 'Big Caslon','Times New Roman',Times,serif;letter-spacing:1px;transition:width .4s,height .4s;}
+.description p{padding:0;display:inline}
+@media (max-width: 480px) and (min-width: 320px){.description{font:18px 'Big Caslon','Times New Roman',Times,serif;letter-spacing:0}
+}@media (min-width: 1600px){.description{font:72px 'Big Caslon','Times New Roman',Times,serif}
+}footer{font:18px 'BauComp',Helvetica,san-serif}
+abbr{font-size:50px;letter-spacing:2px;}
+@media (max-width: 480px) and (min-width: 320px){abbr{font-size:17px}
+}.med{font:18px 'Big Caslon','Times New Roman',Times,serif}
+.media{text-align:center;margin:60px 0 40px 0}
+.more{cursor:pointer;font-family:'BauComp',Helvetica,san-serif;letter-spacing:0}
+.extended{display:inline}
+input{border:1px solid #333;width:200px;font:14px 'BauComp',Helvetica,san-serif;padding:10px;}
+input:focus{outline:none !important}
+input[type=submit]{background-color:#fff;-webkit-transition:all .2s;transition:all .2s;width:100px;}
+input[type=submit]:hover{background:#333;color:#fff;cursor:pointer}
+.videoWrapper{position:relative;padding-bottom:56.25%;padding-top:25px;height:0;}
+.videoWrapper iframe{position:absolute;display:block;top:0;left:0;width:100%;height:100%}

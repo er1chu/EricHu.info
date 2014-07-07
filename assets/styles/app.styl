@@ -1,9 +1,8 @@
-
-
 headlineFont = 'BauComp', Helvetica, san-serif
 textFont = 'Big Caslon', 'Times New Roman', Times, serif
 backgroundColor = #fff
 textColor = #333
+huge = 72px
 big = 52px
 med = 18px
 smalle = 14px
@@ -12,11 +11,45 @@ mobileLineHeight = 26px
 acronym = remove-unit(big) - unit(2, 'px')
 mobileAcronym = remove-unit(med) - unit(1, 'px')
 defaultTransition = all 0.2s
+mobileWidth = "(max-width: 480px) and (min-width: 320px)"
+hugeWidth = "(min-width: 1600px)"
 
 
+//RESET
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin 0
+  padding 0
+  border 0
+  font-size 100%
+  font inherit
+  vertical-align baseline
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display block
+
+body
+  line-height 1
+
+ol, ul
+  list-style none
+
+blockquote, q
+  quotes none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content ""
+  content none
+
+table
+  border-collapse collapse
+  border-spacing 0
+
+
+//STRUCTURE
 
 html
 	background backgroundColor
+	max-width 100%
 	margin 0
 	padding 0px
 	-webkit-font-smoothing antialiased
@@ -41,21 +74,26 @@ body
 #rapper
 	width 100%
 	position absolute
-	left: 50%
-	margin-left -50%
 	padding: 40px
 	float left
 	box-sizing border-box
 
-	@media (max-width: 480px) and (min-width: 320px)
+	@media mobileWidth
 		padding 15px
 		line-height mobileLineHeight
+	
+	@media (min-width: 2000px)
+		width 90%
+		position absolute
+		left 50%
+		margin-left -45%
+		padding 15px
+
 #drawer
 	width 20%
 	position fixed
 	height 100%
 	padding 15px
-	// background url('../images/squigs.svg') no-repeat center center
 	float left
 	border-right 1px solid textColor
 	box-sizing border-box
@@ -69,11 +107,15 @@ section
 	color textColor
 	
 	img
-		max-width 65%
 		display inline-block
+		width auto
+		max-width 100%
+		height auto
 
-		@media (max-width: 480px) and (min-width: 320px)
+		@media mobileWidth
+			width auto
 			max-width 100%
+			height auto
 			display inline-block
 
 #swuigs
@@ -92,8 +134,8 @@ section
 
 .title
 	font big headlineFont
-	font-weight bold
-	// letter-spacing -1px
+	// font-weight bold
+	letter-spacing -1px
 	box-sizing border-box
 	border-bottom 1px solid textColor
 	padding 0
@@ -103,12 +145,15 @@ section
 		// border-bottom 2px solid textColor
 		display inline-block
 	
-	@media (max-width: 480px) and (min-width: 320px)
+	@media mobileWidth
 		font med headlineFont
 		font-weight bold
 		border-bottom none
 		padding 0
 		display block
+
+	@media hugeWidth
+		font huge headlineFont
 
 .description
 	display inline
@@ -120,9 +165,12 @@ section
 		padding 0
 		display inline
 
-	@media (max-width: 480px) and (min-width: 320px)
+	@media mobileWidth
 		font med textFont
 		letter-spacing 0px
+	
+	@media hugeWidth
+		font huge textFont
 
 footer
 	font med headlineFont
@@ -175,6 +223,20 @@ input[type=submit]
 		background textColor
 		color backgroundColor
 		cursor pointer
+
+.videoWrapper
+	position relative
+	padding-bottom 56.25%
+	padding-top 25px
+	height 0
+	
+	iframe
+		position absolute
+		display block
+		top 0
+		left 0
+		width 100%
+		height 100%
 
 
 

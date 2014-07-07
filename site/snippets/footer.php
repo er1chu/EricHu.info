@@ -20,6 +20,13 @@
   <script type="text/javascript">
 
     $(document).ready(function() {
+
+      $("img.lazy").lazyload({
+        threshold : 200,
+        effect: "fadeIn"
+
+      });
+
       $(".extended").hide();
       //toggle the componenet with class msg_body
       $(".more").click(function()
@@ -32,10 +39,7 @@
         $(this).fadeOut(200);
         $(".more").show();
       });
-
-      $(function() {
-        $('.carousel').carousel('pause');
-      });
+     
       
     });
 
