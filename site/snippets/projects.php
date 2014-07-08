@@ -1,9 +1,11 @@
   <section id="projects">
-      <h1><?php echo html($data->title()) ?></h1>
+    <h1><?php echo html($data->title()) ?></h1>
       <?php echo kirbytext($data->text()) ?>
 
 
     <?php foreach($data->children()->visible() as $project): ?>
+
+      <div class="project-wrapper">
 
       <span class="title">
         <?php echo kirbytext($project->title()) ?></span> 
@@ -37,7 +39,9 @@
            </div>
         <?php } //End Carousel Conditional?> -->
           </div>
+      </div>
 
     <?php endforeach ?>
+
 
   </section>

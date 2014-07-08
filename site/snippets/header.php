@@ -51,9 +51,10 @@
 
 <!-- <div id="drawer" class="open">
 </div> -->
-  <div id="rapper">
+<!--   <div id="test">Test</div> -->
+  <div id="rapper" class="shove-trans">
     <section id="header">
-      <span class="title">Eric Hu</span><div class="description"> ( &#9993; ) <p>is a New York-based art director and  working in branding, editorial and user interface. <span class="med more">( Read More... )</span>
+      <span class="title">Eric Hu</span><div class="description"> ( <a href="mailto:mail@erichu.info">&#9993;</a> ) <p>is a New York-based art director / designer and partner at <a href="http://www.nothing-in.com" target="_blank">Nothing in Common</a> working in branding and interaction. <span class="med more">( Read More... )</span>
       <span class="extended">
       He previously worked as the design lead at <abbr>OKF</abbr>ocus working for clients such as Nike, the Wolfsonian Museum, Phillips, Tumblr and Atlantic Records as well as in-house projects such as Newmoticons. Eric has shown work in the <abbr>ADC</abbr> Gallery and the Museum of Art and Design. In 2010 he was honored as an ADC Young Gun and in 2013 he became the recipient of the Bradbury Thompson Memorial Prize.</span> </p></div>
       <img src="/kirby/assets/images/swuigs.svg" id="swuigs">

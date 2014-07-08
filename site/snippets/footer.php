@@ -27,6 +27,12 @@
 
       });
 
+      $("#test").click(function(){
+
+        $("#rapper").toggleClass("shove");
+
+      });
+
       $(".extended").hide();
       //toggle the componenet with class msg_body
       $(".more").click(function()

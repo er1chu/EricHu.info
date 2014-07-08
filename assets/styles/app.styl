@@ -77,6 +77,12 @@ body
 	padding: 40px
 	float left
 	box-sizing border-box
+	
+.shove-trans
+	-webkit-transition width 2s ease-in
+    -moz-transition width 2s ease-in
+    -o-transition width 2s ease-in
+
 
 	@media mobileWidth
 		padding 15px
@@ -89,7 +95,10 @@ body
 		margin-left -45%
 		padding 15px
 
-#drawer
+.shove
+	width 90% !important
+
+.open
 	width 20%
 	position fixed
 	height 100%
@@ -99,6 +108,9 @@ body
 	box-sizing border-box
 	font med textFont
 	line-height mobileLineHeight
+
+#drawer
+	width 0
 
 
 section
@@ -130,6 +142,9 @@ section
 	width 100%
 	margin margin
 	padding padding
+
+.project-wrapper
+	margin-bottom 70px
 
 
 .title
@@ -164,6 +179,13 @@ section
 	p
 		padding 0
 		display inline
+
+		a
+			&:after
+				content "↬"
+				vertical-align super
+				font-size 20px
+
 
 	@media mobileWidth
 		font med textFont
