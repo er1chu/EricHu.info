@@ -57,7 +57,7 @@
       <span class="title">Eric Hu</span>
       <div class="description"> ( <a href="mailto:mail@erichu.info">&#9993;</a> ) <p>is a New York-based art director / designer and partner at <a href="http://www.nothing-in.com" target="_blank">Nothing in Common</a> working in branding and interaction. <span class="med more">( Read More... )</span>
       <span class="extended">
-      He previously worked as the design lead at <abbr>OKF</abbr>ocus working for clients such as Nike, the Wolfsonian Museum, Phillips, Tumblr and Atlantic Records as well as in-house projects such as Newmoticons. Eric has shown work in the <abbr>ADC</abbr> Gallery and the Museum of Art and Design. In 2010 he was honored as an ADC Young Gun and in 2013 he became the recipient of the Bradbury Thompson Memorial Prize. Eric received his <abbr>BFA</abbr> from Art Center College of Design in Pasadena, CA and his <abbr>MFA</abbr> from Yale University in New Haven, CT.
+      He previously worked as the design lead at <abbr>OKF</abbr>ocus working for clients such as Nike, the Wolfsonian Museum, Phillips, Tumblr and Atlantic Records as well as in-house projects such as Newmoticons. Eric has shown work in the <abbr>ADC</abbr> Gallery and the Museum of Art and Design. 
       </span></p>
       
       </div>
