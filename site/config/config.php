@@ -280,7 +280,7 @@ Please read more about it at: http://php.net/manual/en/function.date-default-tim
 
 */ 
 
-c::set('timezone', 'UTC');
+c::set('timezone', 'EST');
 
 
 /*
