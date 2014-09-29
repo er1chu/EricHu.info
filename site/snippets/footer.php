@@ -38,11 +38,13 @@
       $(".more").click(function()
       {
         $(this).next(".extended").fadeIn(200);
+        $('.stats').css('display','block');
         $(this).hide();
       });
      $(".extended").click(function()
       {
         $(this).fadeOut(200);
+        $('.stats').css('display','none');
         $(".more").show();
       });
      
