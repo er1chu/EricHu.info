@@ -1,16 +1,28 @@
 /* Table of Contents
 
-01. Variables
-02. Imports / Mixins
-03. Base
-04. Layout
-05. State
+01. BASE
+		Imports
+		Variables
+		Mix-ins
+		Components
+
+02. LAYOUT
+		Typography
+		Structure
+		Grid
+03. MODULES
+04. STATE
 
 */
 
-// 01. VARIABLES
+// 01. BASE
 
-headlineFont = 'BauComp', Helvetica, san-serif
+// Imports
+@import 'nib'
+global-reset()
+
+// Variables
+headlineFont = 'Bau LF', Helvetica, sans-serif
 textFont = 'Big Caslon', 'Times New Roman', Times, serif
 backgroundColor = #fff
 textColor = #333
@@ -19,27 +31,44 @@ big = 52px
 med = 18px
 smalle = 14px
 lineHeight = 56px
-mobileLineHeight = 28px
+mobileLineHeight = 14px
 acronym = remove-unit(big) - unit(2, 'px')
 mobileAcronym = remove-unit(med) - unit(1, 'px')
 defaultTransition = all 0.2s
 mobileWidth = "(max-width: 480px) and (min-width: 320px)"
 hugeWidth = "(min-width: 1600px)"
 
-// 02. IMPORTS
+// Mixins
 
-@import 'nib'
-global-reset()
+font-url(file)
+	return '../fonts/' + file
 
-// 03. BASE
+webfont(family, file, hack-chrome-windows = false, weight = 'normal')
+	@font-face
+		font-family family
+		src url(font-url(file + '.eot'))
+		src url(font-url(file + '.eot?#iefix')) format('embedded-opentype'),
+			url(font-url(file + '.woff')) format('woff'), 
+			url(font-url(file + '.ttf')) format('truetype'), 
+			url(font-url(file + '.svg#'+ family)) format('svg')
+		font-weight weight
+		font-style normal
+	if hack-chrome-windows
+		@media screen and (-webkit-min-device-pixel-ratio:0)
+			@font-face
+				font-family family
+				src url(font-url(file + '.svg#'+ family)) format('svg')
+
+
+// Components
 
 html
 	background backgroundColor
 	max-width 100%
 	margin 0
 	padding 0px
-	-webkit-font-smoothing antialiased
-	-moz-osx-font-smoothing grayscale
+	// -webkit-font-smoothing antialiased
+	// -moz-osx-font-smoothing grayscale
 	width 100%
 	height 100%
 	border-top: 2px solid textColor
@@ -59,7 +88,13 @@ body
 		@media mobileWidth
 			line-height mobileLineHeight
 
-// 04. LAYOUT
+
+// 02. LAYOUT
+
+// Typography
+
+webfont('Bau LF', 'BauComp', true, 'normal')
+webfont('Big Caslon', 'BigCaslon', true, 'normal')
 
 #rapper
 	width 100%
@@ -80,13 +115,6 @@ body
 		line-height mobileLineHeight
 		letter-spacing 1px
 	
-	// @media (min-width: 2000px)
-	// 	width 90%
-	// 	position absolute
-	// 	left 50%
-	// 	margin-left -45%
-	// 	padding 15px
-
 .shove
 	width 90% !important
 
@@ -112,7 +140,8 @@ section
 	color textColor
 	
 	img
-		display inline-block
+		display block
+		margin 10px auto
 		width auto
 		max-width 100%
 		height auto
@@ -195,7 +224,7 @@ section
 	box-sizing border-box
 	border-bottom 1px solid textColor
 	padding 0
-	margin 0 100px 0 0
+	margin 0 20px 0 0
 
 	p
 		// border-bottom 2px solid textColor
@@ -252,10 +281,6 @@ abbr
 	
 	@media hugeWidth
 		font-size
-
-
-
-
 
 .med
 	font med textFont
