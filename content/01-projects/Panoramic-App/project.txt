@@ -1,0 +1,8 @@
+Title: Panoramic Landscapes iPad App
+----
+Text: iPad application that takes advantage of the device's built-in accelerometer. In order to view a video of someone walking in first-person perspective, the user has to actually be walking. If the user stops moving, the video also stops playing. In essence, in order to experience a video of traveling through a city block, you have to actually walk the length of the city block. This was an attempt to introduce physical dimensions into a time-based medium. For a workshop with Karel Martens. Extended video coming soon.
+----
+Type: embed
+----
+Embed: <div class="videoWrapper"><iframe src="http://player.vimeo.com/video/34259590?title=0&byline=0&portrait=0" width="900" height="506" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe></div>
+----

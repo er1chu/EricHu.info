@@ -4,8 +4,8 @@
 
 		<div class="project-wrapper">
 
-			<span class="title"><?php echo kirbytext($project->title()) ?></span> 
-			<span class="description"><?php echo kirbytext($project->text()) ?></span>
+			<span class="title"><?php echo html($project->title()) ?></span> 
+			<span class="description"><?php echo html($project->text()) ?></span>
 
 			<div class="media">
 				<?php if ($project->type() == "embed") { // If Embed ?>

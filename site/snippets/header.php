@@ -24,8 +24,8 @@
 	<![endif]-->
 	<div id="rapper" class="shove-trans">
 		<section id="header">
-			<span class="title">Eric Hu</span>
-			<div class="description"> ( <a href="mailto:mail@erichu.info">&#9993;</a> ) <p>is a New York-based art director / designer and partner at <a href="http://www.nothing-in.com" target="_blank">Nothing in Common</a> working in branding and interaction. <span class="med more">( Read More... )</span>
+			<span class="title">Eric Hu <sup>✉</sup></span>
+			<div class="description"><!--  <a href="mailto:mail@erichu.info">&#9993;</a>  --><p>is a New York-based art director / designer and partner at <a href="http://www.nothing-in.com" target="_blank">Nothing in Common</a> working in branding and interaction. <span class="med more">( Read More... )</span>
 			<span class="extended">
 			He previously worked as the design lead at <abbr>OKF</abbr>ocus working for clients such as Nike, the Wolfsonian Museum, Phillips, Tumblr and Atlantic Records as well as in-house projects such as Newmoticons. Eric has shown work in the <abbr>ADC</abbr> Gallery and the Museum of Art and Design. 
 			</span></p>
