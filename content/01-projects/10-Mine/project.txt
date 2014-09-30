@@ -1,7 +1,0 @@
-Title: The Circular Language of Ownership
-----
-Text: Publication series that features an encyclopedic aggregation of the visual and syntactical signifiers of ownership. Format features multiple saddle-stitch booklets of 16 pages each, collated to form one larger book that is able to appended as content is continually added.
-----
-Slug: mine
-----
-Type: carousel
