@@ -4,26 +4,40 @@ $(function () {
 	var app = {
 		init: function () {
 
-		$("img.lazy").lazyload({
+			this._initLazyLoad();
+			this._initContentExpand();
+
+      
+
+		},
+
+		_initLazyLoad: function () {
+
+			$("img.lazy").lazyload({
 			
 			threshold : 200,
 			effect: "fadeIn"
 
-		});
-		$("#more").click(function(){
-			$(".extended").toggleClass('loaded')
-			$('.stats').toggleClass('stats-loaded')
-			$('#email').hide();
-			$('.more').hide();
-		});
-		$(".extended").click(function(){
-			$(this).removeClass('loaded')
-			$('.stats').removeClass('stats-loaded')
-			$("#more").show();
-			$('.more').show();
-		});
+			});
 
-      
+		},
+
+		_initContentExpand: function() {
+
+			$("#more").click(function(){
+				$(".extended").toggleClass('loaded')
+				$('.stats').toggleClass('stats-loaded')
+				$('#email').hide();
+				$('.more').hide();
+			});
+
+			$(".extended").click(function(){
+				$(this).removeClass('loaded')
+				$('.stats').removeClass('stats-loaded')
+				$("#more").show();
+				$('.more').show();
+			});
+
 
 		}
 	};
