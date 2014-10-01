@@ -99,7 +99,7 @@ webfont('Big Caslon', 'BigCaslon', true, 'normal')
 #rapper
 	width 100%
 	position absolute
-	padding 40px
+	padding 20px 40px 40px 40px
 	float left
 	box-sizing border-box
 
@@ -114,6 +114,16 @@ webfont('Big Caslon', 'BigCaslon', true, 'normal')
 		padding 15px
 		line-height mobileLineHeight
 		letter-spacing 1px
+.contact
+	position fixed
+	top 60px
+	right 20px
+	width 3%
+	padding 0
+	margin 0
+	box-sizing border-box
+	img
+		max-width 100%
 	
 .shove
 	width 90% !important
@@ -143,7 +153,7 @@ section
 		display block
 		margin 10px auto
 		width auto
-		max-width 70%
+		max-width 80%
 		height auto
 
 		@media mobileWidth
@@ -188,8 +198,18 @@ section
 .column-3
 	float left
 
+.email
+	width 50px
+	display inline
+	margin 0
+
 .stats
 	margin 20px 0 0 0;
+	visibility hidden
+	display none
+	&.stats-loaded
+		visibility visible !important
+		display block
 
 	abbr
 		font-size mobileAcronym
@@ -198,10 +218,6 @@ section
 	
 	@media mobileWidth
 		width 100%
-
-.hidden
-	display none
-
 
 #swuigs
 	display block
@@ -238,6 +254,7 @@ section
 		border-top 1px solid textColor
 		border-bottom none
 		margin 0 0 0px 0
+		line-height 10px
 		padding 15px 0 0 0
 		display block
 
@@ -257,7 +274,7 @@ section
 		transition .2s ease
 		box-sizing border-box
 		&:after
-			content "↬"
+			// content "↬"
 			color #ccc
 			vertical-align super
 			font-size 20px
@@ -305,10 +322,20 @@ abbr
 	cursor pointer
 	font-family headlineFont
 	letter-spacing 0px
+	vertical-align middle
+	padding 5px
+	border 1px solid textColor
 
 .extended
 	display inline
+	opacity 0
+	display none
 	cursor pointer
+	transition .3s ease
+
+	&.loaded
+		opacity 1 !important
+		display inline
 
 
 input 

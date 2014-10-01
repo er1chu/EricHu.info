@@ -9444,24 +9444,17 @@ $(function () {
 			effect: "fadeIn"
 
 		});
-
-		$("#test").click(function(){
-
-			$("#rapper").toggleClass("shove");
-
-		});
-
-		$(".extended").hide();
-		//toggle the componenet with class msg_body
-		$(".more").click(function(){
-			$(this).next(".extended").fadeIn(200);
-			$('.stats').css('display','block');
-			$(this).hide();
+		$("#more").click(function(){
+			$(".extended").toggleClass('loaded')
+			$('.stats').toggleClass('stats-loaded')
+			$('#email').hide();
+			$('.more').hide();
 		});
 		$(".extended").click(function(){
-			$(this).fadeOut(200);
-			$('.stats').css('display','none');
-			$(".more").show();
+			$(this).removeClass('loaded')
+			$('.stats').removeClass('stats-loaded')
+			$("#more").show();
+			$('.more').show();
 		});
 
       

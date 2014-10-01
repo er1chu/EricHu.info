@@ -22,16 +22,17 @@
 	<!--[if lt IE 7]>
 			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 	<![endif]-->
+
 	<div id="rapper" class="shove-trans">
 		<section id="header">
-			<span class="title">Eric Hu <sup>✉</sup></span>
-			<div class="description"><!--  <a href="mailto:mail@erichu.info">&#9993;</a>  --><p>is a New York-based art director / designer and partner at <a href="http://www.nothing-in.com" target="_blank">Nothing in Common</a> working in branding and interaction. <span class="med more">( Read More... )</span>
+			<span class="title">Eric Hu <!-- <sup>✉</sup> --></span>
+			<div class="description">( <img src="assets/img/mail.svg" width="60px" class="email"> ) <!--  <a href="mailto:mail@erichu.info">&#9993;</a>  -->is an art director, front end developer and partner at <a href="http://www.nothing-in.com" target="_blank">Nothing in Common</a> based in New York working in branding, interaction design and illustration. <span class="med more" id="more">Read More</span> 
 			<span class="extended">
 			He previously worked as the design lead at <abbr>OKF</abbr>ocus working for clients such as Nike, the Wolfsonian Museum, Phillips, Tumblr and Atlantic Records as well as in-house projects such as Newmoticons. Eric has shown work in the <abbr>ADC</abbr> Gallery and the Museum of Art and Design. 
-			</span></p>
+			</span>
 			
 			</div>
-			<div class="stats hidden">
+			<div class="stats">
 
 			 <div class="column">
 			 Elsewhere —
@@ -65,6 +66,6 @@
 						<li>ADC Young Gun 8 (2010)</li>
 					</ul>
 				</div>
-				</div>
+			</div>
 			<img src="assets/img/swuigs.svg" id="swuigs">
 		</section>

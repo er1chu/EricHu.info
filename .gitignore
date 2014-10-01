@@ -4,3 +4,4 @@ site/panel
 docs
 node_modules
 assets/components
+*.mp4
