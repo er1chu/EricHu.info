@@ -9456,7 +9456,7 @@ $(function () {
 
 		},
 
-		_initContentExpand: function() {
+		_initContentExpand: function () {
 
 			$("#more").click(function(){
 				$(".extended").toggleClass('loaded')
@@ -9465,7 +9465,7 @@ $(function () {
 				$('.more').hide();
 			});
 
-			$(".extended").click(function(){
+			$(".extended").click(function (){
 				$(this).removeClass('loaded')
 				$('.stats').removeClass('stats-loaded')
 				$("#more").show();

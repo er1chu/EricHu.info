@@ -31,7 +31,7 @@ big = 52px
 med = 18px
 smalle = 14px
 lineHeight = 50px
-mobileLineHeight = 14px
+mobileLineHeight = 24px
 acronym = remove-unit(big) - unit(2, 'px')
 mobileAcronym = remove-unit(med) - unit(1, 'px')
 defaultTransition = all 0.2s
@@ -103,6 +103,9 @@ webfont('Big Caslon', 'BigCaslon', true, 'normal')
 	float left
 	box-sizing border-box
 
+	@media mobileWidth
+		padding 10px
+
 	
 .shove-trans
 	-webkit-transition width 2s ease-in
@@ -153,7 +156,7 @@ section
 		display block
 		margin 10px auto
 		width auto
-		max-width 80%
+		max-width 75%
 		height auto
 
 		@media mobileWidth
@@ -161,6 +164,9 @@ section
 			max-width 100%
 			height auto
 			display inline-block
+
+	@media mobileWidth
+		line-height mobileLineHeight
 
 .column
 	margin 50px 0 0px 0
@@ -221,8 +227,8 @@ section
 
 #swuigs
 	display block
-	text-align center
-	margin 0 auto
+	width 90%
+	margin 80px auto
 
 #projects
 	margin-top 20px
@@ -248,13 +254,15 @@ section
 	border-bottom 1px solid textColor
 	padding 0
 	margin 0 20px 0 0
+	
 	@media mobileWidth
 		font med headlineFont
 		letter-spacing 0
 		border-top 1px solid textColor
 		border-bottom none
-		margin 0 0 0px 0
-		line-height 10px
+		margin 0
+		float none
+		line-height mobileLineHeight
 		padding 15px 0 0 0
 		display block
 
@@ -264,7 +272,6 @@ section
 .description
 	display inline
 	font big textFont
-	text-indent 20%
 	letter-spacing 1px
 	transition width 0.4s, height 0.4s
 
@@ -282,6 +289,9 @@ section
 			background textColor
 			color backgroundColor
 
+		@media mobileWidth
+			border none
+
 	p
 		padding 0
 		display inline
@@ -290,7 +300,8 @@ section
 	@media mobileWidth
 		font med textFont
 		letter-spacing 0px
-		line-height 10px
+		display block
+		line-height mobileLineHeight
 	
 	@media hugeWidth
 		font huge textFont
