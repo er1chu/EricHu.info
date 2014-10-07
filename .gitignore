@@ -5,3 +5,4 @@ docs
 node_modules
 assets/components
 *.mp4
+npm-debug.log
