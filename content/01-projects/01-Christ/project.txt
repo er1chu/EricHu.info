@@ -1,9 +1,0 @@
-Title: A website for Evian Christ
-----
-Text: to stream his Waterfall EP. <br>
-<video width="960" height="540" autoplay="autoplay" loop>
-<source src="content/01-projects/01-Christ/evian.webm" type="video/webm">
-  <source src="content/01-projects/01-Christ/evian.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-----
