@@ -59,6 +59,21 @@ webfont(family, file, hack-chrome-windows = false, weight = 'normal')
 				font-family family
 				src url(font-url(file + '.svg#'+ family)) format('svg')
 
+line-border-med()
+	border 1px solid textColor
+	padding 5px
+	font-size med
+	white-space nowrap
+	cursor pointer
+	vertical-align middle
+
+column-defaults()
+	margin 50px 0 0px 0
+	padding 0 20px 0 0px
+	font med headlineFont
+	box-sizing border-box
+	float left
+
 
 // Components
 
@@ -169,12 +184,8 @@ section
 		line-height mobileLineHeight
 
 .column
-	margin 50px 0 0px 0
-	padding 0 20px 0 0px
+	column-defaults()
 	width 25%
-	font med headlineFont
-	box-sizing border-box
-	float left
 
 	@media (max-width:800px)
 		width 50%
@@ -191,12 +202,8 @@ section
 			margin 0
 			padding 0
 .column-2
-	margin 50px 0 0 px 0
-	padding 0 20px 0 0px
-	width 50%
-	font med headlineFont
-	box-sizing border-box
-	float left
+	column-defaults()
+	width 25%
 
 	img
 		max-width 100%
@@ -280,6 +287,7 @@ section
 		padding 2px 5px 5px 5px
 		transition .2s ease
 		box-sizing border-box
+		whitespace nowrap
 		&:after
 			// content "↬"
 			color #ccc
@@ -330,16 +338,15 @@ abbr
 	margin: 60px 0 40px 0
 
 .more
-	cursor pointer
 	font-family headlineFont
 	letter-spacing 0px
-	vertical-align middle
-	padding 5px
-	border 1px solid textColor
+	line-border-med()
+	
 
 	@media mobileWidth
 		border none
 		text-decoration underline
+
 
 .extended
 	display inline
@@ -351,6 +358,10 @@ abbr
 	&.loaded
 		opacity 1 !important
 		display inline
+
+.credits
+	line-border-med()
+.
 
 
 input 

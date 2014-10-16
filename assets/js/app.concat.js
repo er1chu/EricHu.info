@@ -9440,9 +9440,6 @@ $(function () {
 
 			this._initLazyLoad();
 			this._initContentExpand();
-
-      
-
 		},
 
 		_initLazyLoad: function () {
@@ -9458,14 +9455,14 @@ $(function () {
 
 		_initContentExpand: function () {
 
-			$("#more").click(function(){
+			$("#more").click(function () {
 				$(".extended").toggleClass('loaded')
 				$('.stats').toggleClass('stats-loaded')
 				$('#email').hide();
 				$('.more').hide();
 			});
 
-			$(".extended").click(function (){
+			$(".extended").click(function () {
 				$(this).removeClass('loaded')
 				$('.stats').removeClass('stats-loaded')
 				$("#more").show();
