@@ -51,39 +51,35 @@ $(function () {
 
 				$project.each(function (index, elem) {
 
-					if ($(elem).offset().top - document.body.scrollTop <= 0) {
+					if ($(elem).offset().top - document.body.scrollTop = 0) {
 						
-						history.pushState(null, null, '#'+ $(this).data('link'));
+						history.replaceState('#'+ $(this).data('link'), null, '#'+ $(this).data('link'));
 					}
 
 					if (document.bodyscrollTop < $project.first().offset.top) {
 
-						history.pushState(null, null, '');
+						history.replaceState('#'+ $(this).data('link'), null, '');
 
 					}
 				
 				});
-			$project.each.waypoint(function() {
-				history.pushState(null, null, '#'+ $(this).data('link'));
-
-			});
 
 			}
 
-			// var didScroll = false;
+			var didScroll = false;
 
-			// $(window).scroll(function () {
-			//  	didScroll = true;
-			// });
+			$(window).scroll(function () {
+			 	didScroll = true;
+			});
 
-			// setInterval(function () {
+			setInterval(function () {
 
-			// 	if (didScroll) {
-			// 		didScroll = false;
-			// 		pushURL();
-			// 	}
+				if (didScroll) {
+					didScroll = false;
+					pushURL();
+				}
 
-			// }, 250);
+			}, 250);
 
 
 
