@@ -63,6 +63,10 @@ $(function () {
 					}
 				
 				});
+			$project.each.waypoint(function() {
+				history.pushState(null, null, '#'+ $(this).data('link'));
+
+			});
 
 			}
 
