@@ -45,22 +45,41 @@ $(function () {
 
 		_initCheckPushState: function () {
 
-			var $project = $('project-wrapper');
+			var $project = $('.project-wrapper');
 
 			function pushURL() {
 
 				$project.each(function (index, elem) {
 
 					if ($(elem).offset().top - document.body.scrollTop <= 0) {
-						history.pushState('', '', $(this).data('link'));
+						
+						history.pushState(null, null, '#'+ $(this).data('link'));
+					}
+
+					if (document.bodyscrollTop < $project.first().offset.top) {
+
+						history.pushState(null, null, '');
+
 					}
 				
 				});
 
 			}
 
-			$(window).scroll(pushURL);
-			pushURL();
+			// var didScroll = false;
+
+			// $(window).scroll(function () {
+			//  	didScroll = true;
+			// });
+
+			// setInterval(function () {
+
+			// 	if (didScroll) {
+			// 		didScroll = false;
+			// 		pushURL();
+			// 	}
+
+			// }, 250);
 
 
 
