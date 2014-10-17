@@ -9486,7 +9486,7 @@ $(function () {
 				$project.each(function (index, elem) {
 
 					if ($(elem).offset().top - document.body.scrollTop <= 0) {
-						window.history.pushState({}, '', $(this).data('link'));
+						history.pushState('', '', $(this).data('link'));
 					}
 				
 				});
