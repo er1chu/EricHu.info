@@ -58,13 +58,13 @@ abbr{font-size:50px;letter-spacing:2px;}
 @media (max-width: 480px) and (min-width: 320px){abbr{font-size:17px}
 }@media (min-width: 1600px){}.med{font:18px 'Big Caslon','Times New Roman',Times,serif}
 .media{text-align:center;margin:60px 0 40px 0}
-.more{font-family:'Bau LF',Helvetica,sans-serif;letter-spacing:0;border:1px solid #333;padding:5px;font-size:18px;white-space:nowrap;cursor:pointer;vertical-align:middle;}
+.more{font-family:'Bau LF',Helvetica,sans-serif;letter-spacing:0;border:1px solid #333;padding:5px;font-size:18px;white-space:nowrap;cursor:pointer;vertical-align:middle;display:inline;}
 @media (max-width: 480px) and (min-width: 320px){.more{border:none;text-decoration:underline}
 }.extended{display:inline;opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);display:none;cursor:pointer;-webkit-transition:0.3s ease;-moz-transition:0.3s ease;-o-transition:0.3s ease;-ms-transition:0.3s ease;transition:0.3s ease;}
 .extended.loaded{opacity:1 !important;-ms-filter:none;filter:none;display:inline}
-.credits{border:1px solid #333;padding:5px;font-size:18px;white-space:nowrap;cursor:pointer;vertical-align:middle}
-.,input{border:1px solid #333;width:200px;font:14px 'Bau LF',Helvetica,sans-serif;padding:10px;}
-.:focus,input:focus{outline:none !important}
+.postscript{border:1px solid #333;padding:5px;font-size:18px;white-space:nowrap;cursor:pointer;vertical-align:middle;display:inline;font:18px 'Bau LF',Helvetica,sans-serif}
+input{border:1px solid #333;width:200px;font:14px 'Bau LF',Helvetica,sans-serif;padding:10px;}
+input:focus{outline:none !important}
 input[type=submit]{background-color:#fff;-webkit-transition:all .2s;-webkit-transition:all;-moz-transition:all;-o-transition:all;-ms-transition:all;transition:all;width:100px;}
 input[type=submit]:hover{background:#333;color:#fff;cursor:pointer}
 .videoWrapper{position:relative;padding-bottom:56.25%;padding-top:25px;height:0;}
