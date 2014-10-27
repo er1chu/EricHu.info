@@ -1,3 +1,3 @@
 Title: The Avery Review
 ----
-Text: — Design and development for a journal of critical essays on architecture founded by Columbia University's Graduate School of Architecture, Planning and Preservation. <a href="http://averyreview.com" target="_blank">View Website</a>
+Text: — Design and development for a journal of critical essays on architecture founded by Columbia University's Graduate School of Architecture, Planning and Preservation. <a href="http://averyreview.com" target="_blank">View Website</a> <iframe src="//player.vimeo.com/video/110197440?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=1&amp;loop=1" width="900" height="557" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

@@ -68,6 +68,12 @@ line-border-med()
 	vertical-align middle
 	display inline
 
+	@media mobileWidth
+		font-size smalle
+		border 0
+		margin-top 10px
+		display block
+
 column-defaults()
 	margin 50px 0 0px 0
 	padding 0 20px 0 0px
@@ -217,6 +223,9 @@ section
 	display inline
 	margin 0
 
+	@media mobileWidth
+		width 20px
+
 .stats
 	margin 20px 0 0 0;
 	visibility hidden
@@ -363,6 +372,9 @@ abbr
 .postscript
 	line-border-med()
 	font med headlineFont
+	display inline-block
+	margin-top -20px
+	margin-left 10px
 
 
 input 
@@ -399,6 +411,9 @@ input[type=submit]
 		width 100%
 		height 100%
 
+video 
+	width 60% !important
+	height auto !important
 
 
 

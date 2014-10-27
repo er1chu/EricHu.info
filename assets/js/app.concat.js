@@ -9440,7 +9440,8 @@ $(function () {
 
 			this._initLazyLoad();
 			this._initContentExpand();
-			this._initCheckPushState();
+			this._initVideoResize();
+			// this._initCheckPushState();
 		},
 
 		_initLazyLoad: function () {
@@ -9477,48 +9478,87 @@ $(function () {
 
 		},
 
-		_initCheckPushState: function () {
+		_initVideoResize: function () {
 
-			var $project = $('.project-wrapper');
+			// Find all YouTube videos
+			var $allVideos = $("iframe[src^='//player.vimeo.com]"),
 
-			function pushURL() {
+			// The element that is fluid width
+			    $fluidEl = $("body");
 
-				$project.each(function (index, elem) {
+			// Figure out and save aspect ratio for each video
+			$allVideos.each(function() {
 
-					if ($(elem).offset().top - document.body.scrollTop = 0) {
-						
-						history.replaceState('#'+ $(this).data('link'), null, '#'+ $(this).data('link'));
-					}
+			  $(this)
+			    .data('aspectRatio', this.height / this.width)
 
-					if (document.bodyscrollTop < $project.first().offset.top) {
+			    // and remove the hard coded width/height
+			    .removeAttr('height')
+			    .removeAttr('width');
 
-						history.replaceState('#'+ $(this).data('link'), null, '');
-
-					}
-				
-				});
-
-			}
-
-			var didScroll = false;
-
-			$(window).scroll(function () {
-			 	didScroll = true;
 			});
 
-			setInterval(function () {
+			// When the window is resized
+			$(window).resize(function() {
 
-				if (didScroll) {
-					didScroll = false;
-					pushURL();
-				}
+			  var newWidth = $fluidEl.width();
 
-			}, 250);
+			  // Resize all videos according to their own aspect ratio
+			  $allVideos.each(function() {
 
+			    var $el = $(this);
+			    $el
+			      .width(newWidth)
+			      .height(newWidth * $el.data('aspectRatio'));
 
+			  });
 
-
+			// Kick off one resize to fix all videos on page load
+			}).resize();
 		}
+
+		// _initCheckPushState: function () {
+
+		// 	var $project = $('.project-wrapper');
+
+		// 	function pushURL() {
+
+		// 		$project.each(function (index, elem) {
+
+		// 			if ($(elem).offset().top - document.body.scrollTop = 0) {
+						
+		// 				history.replaceState('#'+ $(this).data('link'), null, '#'+ $(this).data('link'));
+		// 			}
+
+		// 			if (document.bodyscrollTop < $project.first().offset.top) {
+
+		// 				history.replaceState('#'+ $(this).data('link'), null, '');
+
+		// 			}
+				
+		// 		});
+
+		// 	}
+
+		// 	var didScroll = false;
+
+		// 	$(window).scroll(function () {
+		// 	 	didScroll = true;
+		// 	});
+
+		// 	setInterval(function () {
+
+		// 		if (didScroll) {
+		// 			didScroll = false;
+		// 			pushURL();
+		// 		}
+
+		// 	}, 250);
+
+
+
+
+		// }
 	};
 
 	app.init();
