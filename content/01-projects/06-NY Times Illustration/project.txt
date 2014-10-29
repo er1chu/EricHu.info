@@ -2,6 +2,4 @@ Title: New York Times Illustration
 ----
 Text: for an <a href="http://www.nytimes.com/2014/05/03/opinion/sunday/chinas-censored-world.html" target="_blank">article</a> titled "China's Censored World" by Evan Osnos.
 ----
-Slug: censor
-----
-Type: straight
+Credits: AD: Aviva Michaelov

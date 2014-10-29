@@ -9432,6 +9432,79 @@ return jQuery;
 
 })(jQuery, window, document);
 
+(function (root, factory) {
+  if (typeof define === 'function' && define.amd) {
+    define(factory);
+  } else if (typeof exports === 'object') {
+    module.exports = factory;
+  } else {
+    root.fluidvids = factory();
+  }
+})(this, function () {
+
+  'use strict';
+
+  var fluidvids = {
+    selector: ['iframe'],
+    players: ['www.youtube.com', 'player.vimeo.com']
+  };
+
+  var css = [
+    '.fluidvids {',
+      'width: 100%; max-width: 100%; position: relative;',
+    '}',
+    '.fluidvids-item {',
+      'position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;',
+    '}'
+  ].join('');
+
+  var head = document.head || document.getElementsByTagName('head')[0];
+
+  var matches = function (src) {
+    return new RegExp('^(https?:)?\/\/(?:' + fluidvids.players.join('|') + ').*$', 'i').test(src);
+  };
+
+  var getRatio = function (height, width) {
+    return ((parseInt(height, 10) / parseInt(width, 10)) * 100) + '%';
+  };
+
+  var fluid = function (elem) {
+    if (!matches(elem.src) || !!elem.getAttribute('data-fluidvids')) return;
+    var wrap = document.createElement('div');
+    elem.parentNode.insertBefore(wrap, elem);
+    elem.className += (elem.className ? ' ' : '') + 'fluidvids-item';
+    elem.setAttribute('data-fluidvids', 'loaded');
+    wrap.className += 'fluidvids';
+    wrap.style.paddingTop = getRatio(elem.height, elem.width);
+    wrap.appendChild(elem);
+  };
+
+  var addStyles = function () {
+    var div = document.createElement('div');
+    div.innerHTML = '<p>x</p><style>' + css + '</style>';
+    head.appendChild(div.childNodes[1]);
+  };
+
+  fluidvids.render = function () {
+    var nodes = document.querySelectorAll(fluidvids.selector.join());
+    var i = nodes.length;
+    while (i--) {
+      fluid(nodes[i]);
+    }
+  };
+
+  fluidvids.init = function (obj) {
+    for (var key in obj) {
+      fluidvids[key] = obj[key];
+    }
+    fluidvids.render();
+    addStyles();
+  };
+
+  return fluidvids;
+
+});
+
 /* globals $:false */
 
 $(function () {
@@ -9440,7 +9513,7 @@ $(function () {
 
 			this._initLazyLoad();
 			this._initContentExpand();
-			this._initVideoResize();
+			this._initFluidVid();
 			// this._initCheckPushState();
 		},
 
@@ -9478,43 +9551,11 @@ $(function () {
 
 		},
 
-		_initVideoResize: function () {
-
-			// Find all YouTube videos
-			var $allVideos = $("iframe[src^='//player.vimeo.com]"),
-
-			// The element that is fluid width
-			    $fluidEl = $("body");
-
-			// Figure out and save aspect ratio for each video
-			$allVideos.each(function() {
-
-			  $(this)
-			    .data('aspectRatio', this.height / this.width)
-
-			    // and remove the hard coded width/height
-			    .removeAttr('height')
-			    .removeAttr('width');
-
+		_initFluidVid: function () {
+			fluidvids.init({
+				selector: ['iframe', 'object'],
+				players: ['player.vimeo.com']
 			});
-
-			// When the window is resized
-			$(window).resize(function() {
-
-			  var newWidth = $fluidEl.width();
-
-			  // Resize all videos according to their own aspect ratio
-			  $allVideos.each(function() {
-
-			    var $el = $(this);
-			    $el
-			      .width(newWidth)
-			      .height(newWidth * $el.data('aspectRatio'));
-
-			  });
-
-			// Kick off one resize to fix all videos on page load
-			}).resize();
 		}
 
 		// _initCheckPushState: function () {

@@ -5,7 +5,7 @@ module.exports = function(grunt) {
                 src: [
                     'assets/components/jquery/dist/jquery.js',
                     'assets/components/jquery.lazyload/jquery.lazyload.js',
-                    'assets/components/jquery-waypoints/waypoints.js',
+                    'assets/components/fluidvids/src/fluidvids.js',
                     'assets/js/app.js'
                 ],
                 dest: 'assets/js/app.concat.js'

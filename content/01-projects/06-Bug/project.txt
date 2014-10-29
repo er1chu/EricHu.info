@@ -1,0 +1,7 @@
+Title: The Bug: At War With Time
+----
+Text: is an interactive widget that mimics a typical SoundCloud embedded audio player.
+----
+Embed: <iframe src="//player.vimeo.com/video/110332585?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=1&amp;loop=1" width="900" height="628" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><iframe src="https://atwarwithtime.com/embed/index.html" width="85%" height="160px" scrolling="no" frameborder="no" id="bug"></iframe>
+----
+Credits: w/ Paul Bouchon

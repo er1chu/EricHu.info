@@ -93,7 +93,6 @@ html
 	-moz-osx-font-smoothing grayscale
 	width 100%
 	height 100%
-	border-top: 2px solid textColor
 	box-sizing border-box
 	a
 		text-decoration none
@@ -121,7 +120,7 @@ webfont('Big Caslon', 'BigCaslon', true, 'normal')
 #rapper
 	width 100%
 	position absolute
-	padding 30px 40px 40px 40px
+	padding 20px 40px 40px 40px
 	float left
 	box-sizing border-box
 
@@ -176,7 +175,7 @@ section
 	
 	img
 		display block
-		margin 10px auto
+		margin 30px auto
 		width auto
 		max-width 75%
 		height auto
@@ -260,17 +259,13 @@ section
 
 
 .title
-	font big headlineFont
+	font 51px headlineFont
 	// font-weight bold
-	display inline
 	letter-spacing -1px
-	box-sizing border-box
 	display inline
-	line-height 68px
-	float left
-	border-bottom 1px solid textColor
 	padding 0
 	margin 0 20px 0 0
+	line-height lineHeight
 	
 	@media mobileWidth
 		font med headlineFont
@@ -285,16 +280,16 @@ section
 
 	@media hugeWidth
 		font huge headlineFont
+		line-height 92px
 
 .description
-	display inline
 	font big textFont
 	letter-spacing 1px
 	transition width 0.4s, height 0.4s
 
 	a
 		border 1px solid textColor
-		padding 2px 5px 5px 5px
+		padding 1px 5px 5px 5px
 		transition .2s ease
 		box-sizing border-box
 		whitespace nowrap
@@ -323,6 +318,7 @@ section
 	
 	@media hugeWidth
 		font huge textFont
+		line-height 92px
 
 footer
 	font med headlineFont
@@ -376,6 +372,9 @@ abbr
 	margin-top -20px
 	margin-left 10px
 
+figcaption
+	font med headlineFont
+
 
 input 
 	border 1px solid textColor
@@ -397,25 +396,10 @@ input[type=submit]
 		color backgroundColor
 		cursor pointer
 
-.videoWrapper
-	position relative
-	padding-bottom 56.25%
-	padding-top 25px
-	height 0
-	
-	iframe
-		position absolute
-		display block
-		top 0
-		left 0
-		width 100%
-		height 100%
-
-video 
-	width 60% !important
-	height auto !important
-
-
+.embed
+	max-width 75%
+	display block
+	margin 10px auto
 
 
 

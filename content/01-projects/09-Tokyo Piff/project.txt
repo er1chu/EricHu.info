@@ -1,7 +1,5 @@
 Title: Identity for Tokyo Piff
 ----
-Text:, an image-sharing app. The design takes cues from vernacular Japanese treatments of roman letterforms.
+Text:is an image-sharing app designed and developed by <abbr>OKF</abbr>ocus. The design for the identity takes cues from found Japanese treatments of roman letterforms.
 ----
-Slug: piff
-----
-Type: carousel
+Credits: CD: Ryder Ripps
