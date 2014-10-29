@@ -12,7 +12,6 @@
                                                 
 | Eric Hu | Nothing in Common | T-A-L-K | SGV × └A –> BK | 
 | God Loves The Homies |
-
 -->
 
 
@@ -48,7 +47,7 @@
 	<div id="rapper" class="shove-trans">
 		<section id="header">
 			<span class="title">Eric Hu<!-- <sup>✉</sup> --></span>
-			<span class="description">( <img src="assets/img/mail.svg" width="60px" class="email"> ) <!--  <a href="mailto:mail@erichu.info">&#9993;</a>  -->is an art director, front-end developer and a partner at <a href="http://www.nothing-in.com" target="_blank">Nothing in Common</a> based in New York working in branding, interaction design and illustration. <span class="med more" id="more">Read More</span> 
+			<span class="description">( <a href="mailto:mail@erichu.info" id="mail"><img src="assets/img/mail.svg" width="60px" class="email"></a> ) <!--  <a href="mailto:mail@erichu.info">&#9993;</a>  -->is an art director, front-end developer and a partner at <a href="http://www.nothing-in.com" target="_blank">Nothing in Common</a> based in New York working in branding, interaction design and illustration. <span class="med more" id="more">Read More</span> 
 			<span class="extended">
 			He previously worked as the design lead at <abbr>OKF</abbr>ocus working for clients such as Nike, the Wolfsonian Museum, Phillips, Tumblr and Atlantic Records as well as in-house projects such as Newmoticons. Eric is an adjunct faculty member at Parsons The New School for Design whose work has been exhibited in the <abbr>ADC</abbr> Gallery and the Museum of Art and Design. 
 			</span>

@@ -76,3 +76,4 @@ input[type=email]{width:200px}
 .embed{max-width:75%;display:block;margin:10px auto;}
 @media (max-width: 480px) and (min-width: 320px){.embed{max-width:100%}
 }#bugplayer{border:1px solid #ccc;margin-top:50px}
+#mail{border:none !important}
