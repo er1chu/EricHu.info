@@ -1,9 +1,9 @@
-Title: Eric Hu
+Title: Eric Hu — Graphic Design & Art Direction
 ----
 Author: Eric Hu
 ----
-Description: Graphic Design and Art Direction
+Description: Eric Hu is an art director, front-end developer and a partner at Nothing in Common based in New York working in branding, interaction design and illustration.
 ----
-Keywords: eric, hu, graphic, design, typography, interaction, yale
+Keywords: eric, hu, graphic, design, typography, interaction, yale, nothing in common, sgv, 626, nyc, bk, Evian Christ,  
 ----
 Copyright: © 2009-(date: Year) (link: http://erichu.info text: Eric Hu)

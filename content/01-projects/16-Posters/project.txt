@@ -1,0 +1,7 @@
+Title: Miscellaneous Posters
+----
+Text: — A variety of posters completed between 2011–2013 for lecture announcements for the Yale School of Art.
+----
+Slug: posters
+----
+Type: carousel

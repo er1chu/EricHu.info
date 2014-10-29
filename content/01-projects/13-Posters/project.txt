@@ -1,7 +1,0 @@
-Title: Miscellaneous Posters
-----
-Text: A variety of posters completed for one-off events—mostly lecture announcements for the Yale School of Art.
-----
-Slug: posters
-----
-Type: carousel

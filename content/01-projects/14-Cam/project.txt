@@ -1,7 +1,0 @@
-Title: Chinese American Museum
-----
-Text: Cover design for a bi-monthly magazine by the Chinese American Museum.
-----
-Slug: cam
-----
-Type: straight

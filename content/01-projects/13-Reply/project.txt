@@ -1,0 +1,5 @@
+Title: REPLY Splash Page
+----
+Text: — Design and development for a placeholder page for design collective, REPLY.
+----
+Embed: <iframe src="//player.vimeo.com/video/61939693?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=1&amp;loop=1" width="900" height="581" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

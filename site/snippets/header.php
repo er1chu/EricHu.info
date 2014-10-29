@@ -1,3 +1,20 @@
+<!--
+  
+▓█████  ██▀███   ██▓ ▄████▄      ██░ ██  █    ██ 
+▓█   ▀ ▓██ ▒ ██▒▓██▒▒██▀ ▀█     ▓██░ ██▒ ██  ▓██▒
+▒███   ▓██ ░▄█ ▒▒██▒▒▓█    ▄    ▒██▀▀██░▓██  ▒██░
+▒▓█  ▄ ▒██▀▀█▄  ░██░▒▓▓▄ ▄██▒   ░▓█ ░██ ▓▓█  ░██░
+░▒████▒░██▓ ▒██▒░██░▒ ▓███▀ ░   ░▓█▒░██▓▒▒█████▓ 
+░░ ▒░ ░░ ▒▓ ░▒▓░░▓  ░ ░▒ ▒  ░    ▒ ░░▒░▒░▒▓▒ ▒ ▒ 
+ ░ ░  ░  ░▒ ░ ▒░ ▒ ░  ░  ▒       ▒ ░▒░ ░░░▒░ ░ ░ 
+   ░     ░░   ░  ▒ ░░            ░  ░░ ░ ░░░ ░ ░ 
+   ░  ░   ░      ░  ░ ░          ░  ░  ░   ░     
+                                                
+| Eric Hu | Nothing in Common | T-A-L-K | SGV × └A –> BK | 
+| God Loves The Homies |
+
+-->
+
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -6,14 +23,18 @@
 <html lang="en" class="no-js">
 <head>
 	
-	<title><?php echo html($site->title()) ?> - <?php echo html($page->title()) ?></title>
+	<title><?php echo html($site->title()) ?></title>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="description" content="<?php echo html($site->description()) ?>" />
 	<meta name="keywords" content="<?php echo html($site->keywords()) ?>" />
 	<meta name="robots" content="index, follow" />
-	<meta name="viewport" content="width=device-width">
-	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta property="og:title" content="Eric Hu — Graphic Design and Art Direction">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://erichu.info">
+	<meta property="og:description" content="Eric Hu is an art director, front-end developer and a partner at Nothing in Common based in New York working in branding, interaction design and illustration.">
+	<link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
 	<?php echo css('assets/css/app.min.css') ?>
 
 </head>
@@ -25,7 +46,7 @@
 
 	<div id="rapper" class="shove-trans">
 		<section id="header">
-			<span class="title">Eric Hu <!-- <sup>✉</sup> --></span>
+			<span class="title">Eric Hu<!-- <sup>✉</sup> --></span>
 			<span class="description">( <img src="assets/img/mail.svg" width="60px" class="email"> ) <!--  <a href="mailto:mail@erichu.info">&#9993;</a>  -->is an art director, front-end developer and a partner at <a href="http://www.nothing-in.com" target="_blank">Nothing in Common</a> based in New York working in branding, interaction design and illustration. <span class="med more" id="more">Read More</span> 
 			<span class="extended">
 			He previously worked as the design lead at <abbr>OKF</abbr>ocus working for clients such as Nike, the Wolfsonian Museum, Phillips, Tumblr and Atlantic Records as well as in-house projects such as Newmoticons. Eric is an adjunct faculty member at Parsons The New School for Design whose work has been exhibited in the <abbr>ADC</abbr> Gallery and the Museum of Art and Design. 
@@ -37,36 +58,35 @@
 				<div class="column">
 				Elsewhere —
 					<ul>
-						<li>Github: er1chu</li>
-						<li>Email: mail@erichu.info</li>
-						<li>Twitter: @_EricHu</li>
-						<li>Instagram: @_EricHu</li>
-						<li>Blog: E-R-H</li>
+						<li>Email: <a href="mailto:mail@erichu.info">mail@erichu.info</a></li>
+						<li>Twitter: <a href="http://twitter.com/_erichu" target="_blank">@_EricHu</a></li>
+						<li>Instagram: <a href="http://instagram/_erichu" target="_blank">@_EricHu</a></li>
+						<li>Blog: <a href="http://e-r-h.tumblr.com" target="_blank">E-R-H</a></li>
 					</ul>
 				</div>
-					<div class="column">
-						Education —
-						<ul>
-							<li>MFA Yale University</li>
-							<li>BFA Art Center College of Design</li>
-						</ul>
-					</div>
-					<div class="column">
-						Recent Press —
-						<ul>
-							<li>The Fader: Evian Christ</li>
-							<li>The Fader: OKFocus</li>
-							<li>It's Nice That</li>
-							<li>i-D: Future Fashion</li>
-						</ul>
-					</div>
-					<div class="column">
-						Recent Awards —
-						<ul>
-							<li>Bradbury Thompson Memorial Prize</li>
-							<li>ADC Young Gun 8 (2010)</li>
-						</ul>
-					</div>
+				<div class="column">
+					Education —
+					<ul>
+						<li>MFA Yale University (2013)</li>
+						<li>BFA Art Center College of Design (2011)</li>
+					</ul>
+				</div>
+				<div class="column">
+					Select Press —
+					<ul>
+						<li><a href="http://www.thefader.com/2014/03/11/evian-christs-interactive-waterfalls-ep-preview-site" target="_blank">The Fader: Evian Christ</a></li>
+						<li><a href="http://yourdreamsmynightmares.com/post/74143532384/your-dreams-my-nightmares-episode-074-an" target="_blank">Interview: YDMN</a></li>
+						<li><a href="http://www.itsnicethat.com/articles/introducing-eric-hu" target="_blank">Interview: It's Nice That</a></li>
+						<li><a href="http://i-d.vice.com/en_gb/watch/episode/548/think-aloud-future-fashion" target="_blank">i-D: Future Fashion (OKFocus)</a></li>
+					</ul>
+				</div>
+				<div class="column">
+					Select Awards —
+					<ul>
+						<li>Bradbury Thompson Memorial Prize</li>
+						<li>ADC Young Guns 8</li>
+					</ul>
+				</div>
 			</div>
 			<img src="assets/img/swuigs.svg" id="swuigs">
 		</section>

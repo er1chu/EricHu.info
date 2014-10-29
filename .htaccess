@@ -16,7 +16,7 @@ RewriteEngine on
 # 
 # RewriteBase /mysite
 # 
-RewriteBase /kirby
+# RewriteBase /kirby
 
 # block text files in the content folder from being accessed directly
 RewriteRule ^content/(.*)\.(txt|md|mdown)$ error [R=301,L]

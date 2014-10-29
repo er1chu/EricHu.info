@@ -1,6 +1,6 @@
 Title: The Avery Review
 ----
-Text: — Design and development for a journal of critical essays on architecture founded by Columbia University's Graduate School of Architecture, Planning and Preservation. The site features new color scheme is generated with each new issue, interactive footnotes, and a reading progress indicator. <a href="http://averyreview.com" target="_blank">View Website</a>
+Text: — Design and development for a journal of critical essays on architecture founded by Columbia University's Graduate School of Architecture, Planning and Preservation. The site features a unique color scheme generated with each new issue, interactive footnotes, and a reading progress indicator. <a href="http://averyreview.com" target="_blank">View Website</a>
 ----
 Credits: w/ Paul Bouchon, Scott Langer
 ----

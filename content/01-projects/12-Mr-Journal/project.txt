@@ -1,7 +1,0 @@
-Title: Mr. Journal
-----
-Text: Brand and interaction design for an online menswear journal with hopes of expanding into a printed newspaper. In trying to evoke the newspaper reading experience without resorting to skeumorphic qualities, the website features a large masthead with grayscale images. When the user scrolls down to read content, the masthead immediately shrinks and the pictures become full color to add the act of unveiling to the reading experience without inhibiting it.
-----
-Slug: mister
-----
-Type: carousel

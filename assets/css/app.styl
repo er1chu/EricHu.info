@@ -185,6 +185,8 @@ section
 			max-width 100%
 			height auto
 			display inline-block
+		@media hugeWidth
+			margin 60px auto
 
 	@media mobileWidth
 		line-height mobileLineHeight
@@ -207,6 +209,7 @@ section
 			list-style none
 			margin 0
 			padding 0
+
 .column-2
 	column-defaults()
 	width 25%
@@ -232,7 +235,7 @@ section
 	&.stats-loaded
 		visibility visible !important
 		display block
-		clear both
+		clear both !important
 
 	abbr
 		font-size mobileAcronym
@@ -396,11 +399,20 @@ input[type=submit]
 		background textColor
 		color backgroundColor
 		cursor pointer
+input[type=email]
+	width 200px
 
 .embed
 	max-width 75%
 	display block
 	margin 10px auto
+
+	@media mobileWidth
+		max-width 100%
+
+#bugplayer
+	border 1px solid #ccc
+	margin-top 50px
 
 
 
