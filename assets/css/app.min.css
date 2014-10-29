@@ -36,14 +36,14 @@ section img{display:block;margin:30px auto;width:auto;max-width:75%;height:auto;
 .email{width:50px;display:inline;margin:0;}
 @media (max-width: 480px) and (min-width: 320px){.email{width:20px}
 }.stats{margin:20px 0 0 0;visibility:hidden;display:none;}
-.stats.stats-loaded{visibility:visible !important;display:block}
+.stats.stats-loaded{visibility:visible !important;display:block;clear:both}
 .stats abbr{font-size:17px;letter-spacing:0}
 @media (max-width: 480px) and (min-width: 320px){.stats{width:100%}
 }#swuigs{display:block;width:90%;margin:80px auto}
 #projects{margin-top:20px}
 .project{width:100%;margin:margin;padding:padding}
 .project-wrapper{margin-bottom:70px}
-.title{font:51px 'Bau LF',Helvetica,sans-serif;letter-spacing:-1px;display:inline;padding:0;margin:0 20px 0 0;line-height:50px;}
+.title{font:51px 'Bau LF',Helvetica,sans-serif;letter-spacing:-1px;display:inline;padding:0;margin:0 15px 0 0;line-height:50px;}
 @media (max-width: 480px) and (min-width: 320px){.title{font:18px 'Bau LF',Helvetica,sans-serif;letter-spacing:0;border-top:1px solid #333;border-bottom:none;margin:0;float:none;line-height:24px;padding:15px 0 0 0;display:block}
 }@media (min-width: 1600px){.title{font:72px 'Bau LF',Helvetica,sans-serif;line-height:92px}
 }.description{font:52px 'Big Caslon','Times New Roman',Times,serif;letter-spacing:1px;-webkit-transition:width 0.4s, height 0.4s;-moz-transition:width 0.4s, height 0.4s;-o-transition:width 0.4s, height 0.4s;-ms-transition:width 0.4s, height 0.4s;transition:width 0.4s, height 0.4s;}

@@ -26,46 +26,47 @@
 	<div id="rapper" class="shove-trans">
 		<section id="header">
 			<span class="title">Eric Hu <!-- <sup>✉</sup> --></span>
-			<span class="description">( <img src="assets/img/mail.svg" width="60px" class="email"> ) <!--  <a href="mailto:mail@erichu.info">&#9993;</a>  -->is an art director, front end developer and a partner at <a href="http://www.nothing-in.com" target="_blank">Nothing in Common</a> based in New York working in branding, interaction design and illustration. <span class="med more" id="more">Read More</span> 
+			<span class="description">( <img src="assets/img/mail.svg" width="60px" class="email"> ) <!--  <a href="mailto:mail@erichu.info">&#9993;</a>  -->is an art director, front-end developer and a partner at <a href="http://www.nothing-in.com" target="_blank">Nothing in Common</a> based in New York working in branding, interaction design and illustration. <span class="med more" id="more">Read More</span> 
 			<span class="extended">
-			He previously worked as the design lead at <abbr>OKF</abbr>ocus working for clients such as Nike, the Wolfsonian Museum, Phillips, Tumblr and Atlantic Records as well as in-house projects such as Newmoticons. Eric has shown work in the <abbr>ADC</abbr> Gallery and the Museum of Art and Design. 
+			He previously worked as the design lead at <abbr>OKF</abbr>ocus working for clients such as Nike, the Wolfsonian Museum, Phillips, Tumblr and Atlantic Records as well as in-house projects such as Newmoticons. Eric is an adjunct faculty member at Parsons The New School for Design whose work has been exhibited in the <abbr>ADC</abbr> Gallery and the Museum of Art and Design. 
 			</span>
 			
 			</span>
 			<div class="stats">
 
-			 <div class="column">
-			 Elsewhere —
-				<ul>
-					<li>Email: mail@erichu.info</li>
-					<li>Twitter: @_EricHu</li>
-					<li>Instagram: @_EricHu</li>
-					<li>Blog: E-R-H</li>
-				</ul>
-				</div>
 				<div class="column">
-					Education —
+				Elsewhere —
 					<ul>
-						<li>MFA Yale University</li>
-						<li>BFA Art Center College of Design</li>
+						<li>Github: er1chu</li>
+						<li>Email: mail@erichu.info</li>
+						<li>Twitter: @_EricHu</li>
+						<li>Instagram: @_EricHu</li>
+						<li>Blog: E-R-H</li>
 					</ul>
 				</div>
-								<div class="column">
-					Recent Press —
-					<ul>
-						<li>The Fader: Evian Christ</li>
-						<li>The Fader: OKFocus</li>
-						<li>It's Nice That</li>
-						<li>i-D: Future Fashion</li>
-					</ul>
-				</div>
-								<div class="column">
-					Recent Awards —
-					<ul>
-						<li>Bradbury Thompson Memorial Prize</li>
-						<li>ADC Young Gun 8 (2010)</li>
-					</ul>
-				</div>
+					<div class="column">
+						Education —
+						<ul>
+							<li>MFA Yale University</li>
+							<li>BFA Art Center College of Design</li>
+						</ul>
+					</div>
+					<div class="column">
+						Recent Press —
+						<ul>
+							<li>The Fader: Evian Christ</li>
+							<li>The Fader: OKFocus</li>
+							<li>It's Nice That</li>
+							<li>i-D: Future Fashion</li>
+						</ul>
+					</div>
+					<div class="column">
+						Recent Awards —
+						<ul>
+							<li>Bradbury Thompson Memorial Prize</li>
+							<li>ADC Young Gun 8 (2010)</li>
+						</ul>
+					</div>
 			</div>
 			<img src="assets/img/swuigs.svg" id="swuigs">
 		</section>
