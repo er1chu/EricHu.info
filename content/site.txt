@@ -4,6 +4,6 @@ Author: Eric Hu
 ----
 Description: Eric Hu is an art director, front-end developer and a partner at Nothing in Common based in New York working in branding, interaction design and illustration.
 ----
-Keywords: eric, hu, graphic, design, typography, interaction, yale, nothing in common, sgv, 626, nyc, bk, Evian Christ,  
+Keywords: eric, hu, graphic, design, typography, interaction, yale, nothing in common, sgv, 626, nyc, bk, Evian Christ, The Bug, Ninja Tune, CF. Goldman, Avery Review
 ----
 Copyright: © 2009-(date: Year) (link: http://erichu.info text: Eric Hu)

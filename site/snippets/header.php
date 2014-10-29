@@ -34,6 +34,7 @@
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="http://erichu.info">
 	<meta property="og:description" content="Eric Hu is an art director, front-end developer and a partner at Nothing in Common based in New York working in branding, interaction design and illustration.">
+	<meta property="og:image" content="http://erichu.info/assets/img/ogimg.jpg">
 	<link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
 	<?php echo css('assets/css/app.min.css') ?>
 
