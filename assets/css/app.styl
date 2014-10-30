@@ -38,6 +38,9 @@ defaultTransition = all 0.2s
 mobileWidth = "(max-width: 480px) and (min-width: 320px)"
 hugeWidth = "(min-width: 1600px)"
 
+webfont('Bau LF', 'BauComp', true, 'normal')
+webfont('Big Caslon', 'BigCaslon', true, 'normal')
+
 // Mixins
 
 font-url(file)
@@ -112,10 +115,6 @@ body
 
 // 02. LAYOUT
 
-// Typography
-
-webfont('Bau LF', 'BauComp', true, 'normal')
-webfont('Big Caslon', 'BigCaslon', true, 'normal')
 
 #rapper
 	width 100%
@@ -128,16 +127,6 @@ webfont('Big Caslon', 'BigCaslon', true, 'normal')
 		padding 10px
 
 	
-.shove-trans
-	-webkit-transition width 2s ease-in
-    -moz-transition width 2s ease-in
-    -o-transition width 2s ease-in
-
-
-	@media mobileWidth
-		padding 15px
-		line-height mobileLineHeight
-		letter-spacing 1px
 .contact
 	position fixed
 	top 60px
@@ -356,6 +345,17 @@ abbr
 	@media mobileWidth
 		border none
 		text-decoration underline
+
+.shove-trans
+	-webkit-transition width 2s ease-in
+    -moz-transition width 2s ease-in
+    -o-transition width 2s ease-in
+
+
+	@media mobileWidth
+		padding 15px
+		line-height mobileLineHeight
+		letter-spacing 1px
 
 
 .extended

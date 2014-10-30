@@ -8,14 +8,8 @@ html{background:#fff;max-width:100%;margin:0;padding:0;-webkit-font-smoothing:an
 html a{text-decoration:none;color:#333}
 body{width:100%;height:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;line-height:50px;}
 @media (max-width: 480px) and (min-width: 320px){body font textFont{line-height:24px}
-}@font-face{font-family:'Bau LF';src:url("../fonts/BauComp.eot");src:url("../fonts/BauComp.eot?#iefix") format('embedded-opentype'),url("../fonts/BauComp.woff") format('woff'),url("../fonts/BauComp.ttf") format('truetype'),url("../fonts/BauComp.svg#Bau LF") format('svg');font-weight:'normal';font-style:normal}
-@media screen and (-webkit-min-device-pixel-ratio:0){@font-face{font-family:'Bau LF';src:url("../fonts/BauComp.svg#Bau LF") format('svg')}
-}@font-face{font-family:'Big Caslon';src:url("../fonts/BigCaslon.eot");src:url("../fonts/BigCaslon.eot?#iefix") format('embedded-opentype'),url("../fonts/BigCaslon.woff") format('woff'),url("../fonts/BigCaslon.ttf") format('truetype'),url("../fonts/BigCaslon.svg#Big Caslon") format('svg');font-weight:'normal';font-style:normal}
-@media screen and (-webkit-min-device-pixel-ratio:0){@font-face{font-family:'Big Caslon';src:url("../fonts/BigCaslon.svg#Big Caslon") format('svg')}
 }#rapper{width:100%;position:absolute;padding:20px 40px 40px 40px;float:left;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 @media (max-width: 480px) and (min-width: 320px){#rapper{padding:10px}
-}.shove-trans{-webkit-transition:width 2s ease-in}
-@media (max-width: 480px) and (min-width: 320px){-moz-transition width 2sease-in,-o-transition width 2sease-in{padding:15px;line-height:24px;letter-spacing:1px}
 }.contact{position:fixed;top:60px;right:20px;width:3%;padding:0;margin:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 .contact img{max-width:100%}
 .shove{width:90% !important}
@@ -63,6 +57,8 @@ abbr{font-size:50px;letter-spacing:2px;}
 .more{font-family:'Bau LF',Helvetica,sans-serif;letter-spacing:0;border:1px solid #333;padding:5px;font-size:18px;white-space:nowrap;cursor:pointer;vertical-align:middle;display:inline;}
 @media (max-width: 480px) and (min-width: 320px){.more{font-size:14px;border:0;margin-top:10px;display:block}
 }@media (max-width: 480px) and (min-width: 320px){.more{border:none;text-decoration:underline}
+}.shove-trans{-webkit-transition:width 2s ease-in}
+@media (max-width: 480px) and (min-width: 320px){-moz-transition width 2sease-in,-o-transition width 2sease-in{padding:15px;line-height:24px;letter-spacing:1px}
 }.extended{display:inline;opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);display:none;cursor:pointer;-webkit-transition:0.3s ease;-moz-transition:0.3s ease;-o-transition:0.3s ease;-ms-transition:0.3s ease;transition:0.3s ease;}
 .extended.loaded{opacity:1 !important;-ms-filter:none;filter:none;display:inline}
 .postscript{border:1px solid #333;padding:5px;font-size:18px;white-space:nowrap;cursor:pointer;vertical-align:middle;display:inline;font:18px 'Bau LF',Helvetica,sans-serif;display:inline-block;margin-top:-20px;margin-left:10px}
