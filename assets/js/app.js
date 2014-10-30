@@ -4,22 +4,22 @@ $(function () {
 	var app = {
 		init: function () {
 
-			this._initLazyLoad();
+			// this._initLazyLoad();
 			this._initContentExpand();
 			this._initFluidVid();
 			// this._initCheckPushState();
 		},
 
-		_initLazyLoad: function () {
+		// _initLazyLoad: function () {
 
-			$("img.lazy").lazyload({
+		// 	$("img.lazy").lazyload({
 			
-				threshold : 300,
-				effect: "fadeIn"
+		// 		threshold : 300,
+		// 		effect: "fadeIn"
 
-			});
+		// 	});
 
-		},
+		// },
 
 		_initContentExpand: function () {
 

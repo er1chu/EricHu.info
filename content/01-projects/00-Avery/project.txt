@@ -9,6 +9,6 @@ Freeform: true
 Order:
 <img data-original="content/01-projects/00-Avery/01.svg" class="lazy center" width="1500px" height="870px" src="content/01-projects/00-Avery/01.svg" style="display: block;">
 <img data-original="content/01-projects/00-Avery/02.jpg" class="lazy center" width="1500px" height="870px" src="content/01-projects/00-Avery/02.jpg" style="display: block;">
-<div class="embed"><iframe src="//player.vimeo.com/video/110197440?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=1&amp;loop=1" width="900" height="557" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></embed>
+<div class="embed"><iframe src="//player.vimeo.com/" data-src="//player.vimeo.com/video/110197440?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=1&amp;loop=1" width="900" height="557" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></embed>
 <figure><img data-original="content/01-projects/00-Avery/avery2.gif" class="lazy center" width="1500px" height="870px" src="content/01-projects/00-Avery/avery2.gif" style="display: block;"></figure><figcaption>Interactive Footnotes</figcaption>
 (image: avery3.gif caption: Reading Progress Indicator)

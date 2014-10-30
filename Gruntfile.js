@@ -4,7 +4,7 @@ module.exports = function(grunt) {
             js: {
                 src: [
                     'assets/components/jquery/dist/jquery.js',
-                    'assets/components/jquery.lazyload/jquery.lazyload.js',
+                    'assets/components/lazyloadxt/dist/jquery.lazyloadxt.extra.js',
                     'assets/components/fluidvids/src/fluidvids.js',
                     'assets/js/app.js'
                 ],

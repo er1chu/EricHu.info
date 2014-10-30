@@ -23,7 +23,7 @@
 				<?php if ($project->freeform() != 'true') { // If Embed ?>
 
 					<?php $n=0; foreach($project->images() as $image): $n++; //loop image ?>
-						<img data-original="<?php echo $image->url() ?>" alt="<?php echo $image->name() ?>" class="lazy center" width="<?php echo $image->width() ?>px" height="<?php echo $image->height() ?>px">		
+						<img data-src="<?php echo $image->url() ?>" alt="<?php echo $image->name() ?>" class="lazy center" width="<?php echo $image->width() ?>px" height="<?php echo $image->height() ?>px">		
 					<?php endforeach ?>
 				
 				<?php } else { ?>
