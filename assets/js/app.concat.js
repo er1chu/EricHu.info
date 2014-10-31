@@ -9607,23 +9607,11 @@ $(function () {
 	var app = {
 		init: function () {
 
-			// this._initLazyLoad();
 			this._initContentExpand();
 			this._initFluidVid();
 			// this._initCheckPushState();
 		},
-
-		// _initLazyLoad: function () {
-
-		// 	$("img.lazy").lazyload({
-			
-		// 		threshold : 300,
-		// 		effect: "fadeIn"
-
-		// 	});
-
-		// },
-
+		
 		_initContentExpand: function () {
 
 			var $stats = $('.stats'),
