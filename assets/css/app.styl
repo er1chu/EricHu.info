@@ -38,9 +38,6 @@ defaultTransition = all 0.2s
 mobileWidth = "(max-width: 480px) and (min-width: 320px)"
 hugeWidth = "(min-width: 1600px)"
 
-webfont('Bau LF', 'BauComp', true, 'normal')
-webfont('Big Caslon', 'BigCaslon', true, 'normal')
-
 // Mixins
 
 font-url(file)
@@ -115,6 +112,10 @@ body
 
 // 02. LAYOUT
 
+// Typography
+
+webfont('Bau LF', 'BauComp', true, 'normal')
+webfont('Big Caslon', 'BigCaslon', true, 'normal')
 
 #rapper
 	width 100%
@@ -279,6 +280,7 @@ section
 	font big textFont
 	letter-spacing 1px
 	transition width 0.4s, height 0.4s
+	margin-right 10px
 
 	a
 		border 1px solid textColor
@@ -374,33 +376,49 @@ abbr
 	font med headlineFont
 	display inline-block
 	margin-top -20px
-	margin-left 10px
 
 figcaption
 	font med headlineFont
 
+#mc_embed_signup
+	display inline
 
+form
+	display inline-block
+	vertical-align top
 input 
 	border 1px solid textColor
 	width 200px
+	height 40px
 	font smalle headlineFont
 	padding 10px
 
 	&:focus
 		outline none !important
+	@media hugeWidth
+		height 60px
+		width 300px
 
 input[type=submit]
 	background-color #fff
 	-webkit-transition defaultTransition
 	transition defaultTransition
 	width 100px
+	height 60px
 	
 	&:hover
 		background textColor
 		color backgroundColor
 		cursor pointer
+	
+	@media hugeWidth
+		height 82px
+
 input[type=email]
 	width 200px
+
+	@media hugeWidth
+		width 300px
 
 .embed
 	max-width 75%
@@ -416,5 +434,17 @@ input[type=email]
 
 #mail
 	border none !important
+
+// Lazy-load Animation
+
+.lazy-hidden 
+	opacity 0
+
+.lazy-loaded 
+	transition opacity 0.3s
+	opacity 1
+
+
+
 
 
