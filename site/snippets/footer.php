@@ -1,6 +1,5 @@
 <footer>
-<span class="description colophon-footer">
-	Elsewhere: <a href="http://twitter.com/_erichu" target="_blank">Twitter</a> <a href="http://facebook.com/seiyohu" target="_blank">Facebook</a> <a href="http://instagram.com/_erichu" target="_blank">Instagram</a> <a href="http://github.com/er1chu" target="_blank">Github</a> <a href="http://e-r-h.tumblr.com">Blog</a>. This website is powered by Kirby and set in Bau and Big Caslon. For updates please subscribe.
+<span class="title colophon-title">Elsewhere</span><span class="description colophon-footer"> —<a href="http://twitter.com/_erichu" target="_blank">Twitter</a> <a href="http://facebook.com/seiyohu" target="_blank">Facebook</a> <a href="http://instagram.com/_erichu" target="_blank">Instagram</a> <a href="http://github.com/er1chu" target="_blank">Github</a> <a href="http://e-r-h.tumblr.com">Blog</a>. This website is powered by Kirby and set in Bau and Big Caslon. For updates please subscribe.
 </span><span id="mc_embed_signup">
 		<form action="http://erichu.us6.list-manage.com/subscribe/post?u=37e160c2a6118e7447e9e766e&amp;id=8f3de8e83f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 			<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address" required>
