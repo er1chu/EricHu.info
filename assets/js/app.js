@@ -6,9 +6,10 @@ $(function () {
 
 			this._initContentExpand();
 			this._initFluidVid();
+			this._initScrollMenu();
 			// this._initCheckPushState();
 		},
-		
+
 		_initContentExpand: function () {
 
 			var $stats = $('.stats'),
@@ -37,6 +38,29 @@ $(function () {
 				selector: ['iframe', 'object'],
 				players: ['player.vimeo.com']
 			});
+		},
+
+		_initScrollMenu: function () {
+
+			var headerOffset = $(window).height(),
+				previousScroll = 0;
+
+			$(window).scroll(function () {
+				var currentScroll = $(this).scrollTop();
+
+				if (currentScroll > headerOffset) {
+					if (currentScroll < previousScroll ) {
+						$('.scrollmenu').css('margin-top', '0');
+					} else {
+
+						$('.scrollmenu').css('margin-top', '-45px');
+
+					}
+				}
+
+				previousScroll = currentScroll;
+			});
+
 		}
 
 		// _initCheckPushState: function () {
