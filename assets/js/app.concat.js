@@ -9648,8 +9648,8 @@ $(function () {
 
 			var headerOffset = $(window).height(),
 				previousScroll = 0,
-				$scrollMenu = $('.scroll-menu');
-				$menuHeight = $scrollMenu.height()
+				$scrollMenu = $('.scroll-menu'),
+				$menuHeight = $scrollMenu.height() + 20;
 
 
 			$(window).scroll(function () {
@@ -9662,21 +9662,24 @@ $(function () {
 					if (currentScroll < previousScroll ) {
 						$scrollMenu.css('margin-top', '0');
 					} else {
-						$scrollMenu.css('margin-top', $menuHeight);
+						$scrollMenu.css('margin-top', -$menuHeight + 'px');
 					}
+				
 				// If user scrolls to top of page hide menu
 				} else if (currentScroll === 0) {
-					$scrollMenu.css('margin-top', -$menuHeight);
+					$scrollMenu.css('margin-top', -$menuHeight + 'px');
 				}
 
 				// Record scroll position
 				previousScroll = currentScroll;
 
 				// Clear when scrolling stops, hide menu
+				// 3 seconds so user can have time to click on links
+				// Will need to test for potential performance degredations
 				clearTimeout( $.data( this, 'scrollCheck' ) );
     			$.data( this, "scrollCheck", setTimeout(function() {
-    				$scrollMenu.css('margin-top', -$menuHeight);
-    			}, 250) );
+    				$scrollMenu.css('margin-top', -$menuHeight + 'px');
+    			}, 3000) );
 
 			});
 
