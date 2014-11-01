@@ -19,7 +19,7 @@ body{width:100%;height:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border
 .shove{width:90% !important}
 .open{width:20%;position:fixed;height:100%;padding:15px;float:left;border-right:1px solid #333;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font:18px 'Big Caslon','Times New Roman',Times,serif;line-height:24px}
 #drawer{width:0}
-.scrollmenu{width:100%;height:100%;background:#fff;border-bottom:1px solid testColor;position:fixed;top:0;left:0}
+.scrollmenu{width:100%;height:45px;background:rgba(255,255,255,0.9);border-bottom:1px solid #ccc;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font:18px 'Bau LF',Helvetica,sans-serif;position:fixed;padding:10px 40px 10px 40px;top:0;left:0}
 section{width:100%;float:left;color:#333;}
 section img{display:block;margin:30px auto;width:auto;max-width:75%;height:auto;}
 @media (max-width: 480px) and (min-width: 320px){section img{width:auto;max-width:100%;height:auto;display:inline-block}
