@@ -56,6 +56,8 @@ $(function () {
 						$('.scrollmenu').css('margin-top', '-45px');
 
 					}
+				} else if (currentScroll === 0) {
+					$('.scrollmenu').css('margin-top', '-45px');
 				}
 
 				previousScroll = currentScroll;
