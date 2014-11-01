@@ -45,7 +45,7 @@
 	<![endif]-->
 
 	<div id="rapper" class="shove-trans">
-		<div class="scrollmenu">
+		<div class="scroll-menu">
 			Eric Hu — <a href="mailto:mail@erichu.info">Email</a> | 
 			<a href="http://twitter.com/_erichu" target="_blank">Twitter</a>
 			</div>

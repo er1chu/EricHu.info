@@ -9645,19 +9645,20 @@ $(function () {
 		_initScrollMenu: function () {
 
 			var headerOffset = $(window).height(),
-				previousScroll = 0;
+				previousScroll = 0,
+				$scrollMenu = $('.scroll-menu');
 
 			$(window).scroll(function () {
 				var currentScroll = $(this).scrollTop();
 
 				if (currentScroll > headerOffset) {
 					if (currentScroll < previousScroll ) {
-						$('.scrollmenu').css('margin-top', '0');
+						$scrollMenu.css('margin-top', '0');
 					} else {
-						$('.scrollmenu').css('margin-top', '-45px');
+						$scrollMenu.css('margin-top', '-45px');
 					}
 				} else if (currentScroll === 0) {
-					$('.scrollmenu').css('margin-top', '-45px');
+					$scrollMenu.css('margin-top', '-45px');
 				}
 
 				previousScroll = currentScroll;
