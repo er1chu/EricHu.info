@@ -4,9 +4,9 @@ $(function () {
 	var app = {
 		init: function () {
 
-			this._initContentExpand();
-			this._initFluidVid();
-			this._initScrollMenu();
+			this._initContentExpand(); // Header content display
+			this._initFluidVid(); // Responsive Vimeo iFrames
+			this._initScrollMenu(); // When user scrolls up, menu appears
 		},
 
 		_initContentExpand: function () {
@@ -14,7 +14,8 @@ $(function () {
 			var $stats = $('.stats'),
 				$extended = $('.extended'),
 				$more = $('.more');
-
+			
+			// Show extended content on click
 			$("#more").click(function () {
 				$extended.toggleClass('loaded')
 				$stats.toggleClass('stats-loaded')
@@ -22,6 +23,7 @@ $(function () {
 				$more.hide();
 			});
 
+			// Hide content on click again
 			$extended.click(function () {
 				$(this).removeClass('loaded')
 				$stats.removeClass('stats-loaded')
@@ -44,21 +46,35 @@ $(function () {
 			var headerOffset = $(window).height(),
 				previousScroll = 0,
 				$scrollMenu = $('.scroll-menu');
+				$menuHeight = $scrollMenu.height()
+
 
 			$(window).scroll(function () {
 				var currentScroll = $(this).scrollTop();
-
+				
+				// If user scrolls past the fold
 				if (currentScroll > headerOffset) {
+
+					// If user is scrolling up from previous position
 					if (currentScroll < previousScroll ) {
 						$scrollMenu.css('margin-top', '0');
 					} else {
-						$scrollMenu.css('margin-top', '-45px');
+						$scrollMenu.css('margin-top', $menuHeight);
 					}
+				// If user scrolls to top of page hide menu
 				} else if (currentScroll === 0) {
-					$scrollMenu.css('margin-top', '-45px');
+					$scrollMenu.css('margin-top', -$menuHeight);
 				}
 
+				// Record scroll position
 				previousScroll = currentScroll;
+
+				// Clear when scrolling stops, hide menu
+				clearTimeout( $.data( this, 'scrollCheck' ) );
+    			$.data( this, "scrollCheck", setTimeout(function() {
+    				$scrollMenu.css('margin-top', -$menuHeight);
+    			}, 250) );
+
 			});
 
 		}
@@ -100,9 +116,6 @@ $(function () {
 		// 		}
 
 		// 	}, 250);
-
-
-
 
 		// }
 	};
