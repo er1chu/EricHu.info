@@ -45,7 +45,7 @@
 	<![endif]-->
 
 	<div id="rapper" class="shove-trans">
-		<div class="scrollmenu">Contact:</div>
+		<div class="scrollmenu">Eric Hu — mail@erichu.info</div>
 		<section id="header">
 			<span class="title">Eric Hu<!-- <sup>✉</sup> --></span>
 			<span class="description">( <a href="mailto:mail@erichu.info" id="mail"><img src="assets/img/mail.svg" width="60px" class="email"></a> ) <!--  <a href="mailto:mail@erichu.info">&#9993;</a>  -->is an art director, front-end developer and a partner at <a href="http://www.nothing-in.com" target="_blank">Nothing in Common</a> based in New York working in branding, interaction design and illustration. <span class="med more" id="more">Read More</span> 
