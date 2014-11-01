@@ -9610,7 +9610,6 @@ $(function () {
 			this._initContentExpand();
 			this._initFluidVid();
 			this._initScrollMenu();
-			// this._initCheckPushState();
 		},
 
 		_initContentExpand: function () {
@@ -9655,9 +9654,7 @@ $(function () {
 					if (currentScroll < previousScroll ) {
 						$('.scrollmenu').css('margin-top', '0');
 					} else {
-
 						$('.scrollmenu').css('margin-top', '-45px');
-
 					}
 				} else if (currentScroll === 0) {
 					$('.scrollmenu').css('margin-top', '-45px');
