@@ -22,15 +22,15 @@
 global-reset()
 
 // Variables
-headlineFont = 'Bau LF', Helvetica, sans-serif
-textFont = 'Big Caslon', 'Times New Roman', Times, serif
+headlineFont = 'CenturyNova', Helvetica, sans-serif
+textFont = 'Helvetica Neue', 'Times New Roman', Times, serif
 backgroundColor = #fff
 textColor = #333
 huge = 72px
-big = 52px
+big = 28px
 med = 18px
 smalle = 14px
-lineHeight = 50px
+lineHeight = 30px
 mobileLineHeight = 24px
 acronym = remove-unit(big) - unit(2, 'px')
 mobileAcronym = remove-unit(med) - unit(1, 'px')
@@ -120,8 +120,7 @@ webfont('Big Caslon', 'BigCaslon', true, 'normal')
 #rapper
 	width 100%
 	position absolute
-	padding 20px 40px 40px 40px
-	float left
+	padding 20px 10% 40px 10%
 	box-sizing border-box
 
 	@media mobileWidth
@@ -270,9 +269,10 @@ section
 
 
 .title
-	font 51px headlineFont
+	font big headlineFont
 	// font-weight bold
 	letter-spacing -1px
+	text-transform: uppercase
 	display inline
 	padding 0
 	margin 0 15px 0 0
@@ -292,10 +292,14 @@ section
 	@media hugeWidth
 		font huge headlineFont
 		line-height 92px
-
+.about-text
+	font big textFont
+	
+	
 .description
 	font big textFont
-	letter-spacing 1px
+	color: #ccc
+	letter-spacing -1px
 	transition width 0.4s, height 0.4s
 	margin-right 10px
 
