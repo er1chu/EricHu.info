@@ -6,8 +6,6 @@
 			<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
 		</form>
 		</span>
-<!-- <div class="column-3"><a href="http://twitter.com/_erichu" target="_blank">Twitter</a> / <a href="http://facebook.com/seiyohu" target="_blank">Facebook</a> / <a href="http://e-r-h.tumblr.com" target="_blank">Blog</a> /
-			<a href="https://github.com/er1chu" target="_blank">Github</a><br>Design and Development: Eric Hu<br />Typeface: Bau and Big Caslon<br />Content Management: <a href="http://getkirby.com/" target="_blank">Kirby</a><br /><br /> -->
 	
 </footer>
 
