@@ -1,11 +1,3 @@
-.DS_Store
-panel/
-site/panel
-docs
-node_modules
-assets/components
-*.mp4
-*.ogg
-*.ogv
-*.webm
-npm-debug.log
+_site
+.sass-cache
+.jekyll-metadata

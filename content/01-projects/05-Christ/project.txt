@@ -1,7 +1,0 @@
-Title: Waterfall
-----
-Text: A website to stream the music of Evian Christ's Waterfall EP. The album artwork comes to life through dynamically generated water droplets.
-----
-Credits: w/ David Rudnick, Paul Bouchon
-----
-Embed: <iframe src="//player.vimeo.com/" data-src="//player.vimeo.com/video/110197835?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=1&amp;loop=1" width="900" height="505" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

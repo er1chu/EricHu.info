@@ -1,7 +1,0 @@
-Title: Undergraduate Comprehensive 2012
-----
-Text: Environmental graphics and identity design for an exhibition held by the undergraduate art department at Yale University. Sean Kuhnke, Sean Yendrys and I felt the humble packet of instant ramen noodles was a familiar college staple that was "comprehensively undergraduate" which inspired the concept.
-----
-Slug: undergrad
-----
-Type: carousel

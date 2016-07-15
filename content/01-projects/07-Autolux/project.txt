@@ -1,7 +1,0 @@
-Title: Autolux Logo
-----
-Text: Logotype for the band, Autolux. The bottom insignia is abstracted from the characters "Light" and "Self"
-----
-Slug: autolux
-----
-Type: straight

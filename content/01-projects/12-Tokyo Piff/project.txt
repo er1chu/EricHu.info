@@ -1,5 +1,0 @@
-Title: Tokyo Piff
-----
-Text:is an image-sharing app designed and developed by <abbr>OKF</abbr>ocus. The design for the identity takes cues from found Japanese treatments of roman letterforms.
-----
-Credits: CD: Ryder Ripps

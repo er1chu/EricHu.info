@@ -1,7 +1,0 @@
-Title: Drone
-----
-Text:
-----
-Slug: drone
-----
-Type: straight

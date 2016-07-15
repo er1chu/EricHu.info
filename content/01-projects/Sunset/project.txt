@@ -1,7 +1,0 @@
-Title: Sun Up Sun Down
-----
-Text: Website that displays webcam feeds of two cities at a time. On the left side is a webcam feed of a city where the sun is rising. On the right side is a webcam feed of a city where the sun is setting. As a continuing investigation in time and space, I was interested in the idea of being able to simulatenously visualize where the day is currently beginning and where it is currently ending at any given point of time. This website uses PHP to loop through an array of XML feeds from Yahoo! Weather.  The website, in its current incarnation is encounters two main issues— there is not enough web cam feeds in the array to be viewable for all twenty four hours. There is a 2-3 hour period where the sun is setting/rising in the middle of the Pacific Ocean (not much can be done).
-----
-Slug: sunset
-----
-Type: carousel

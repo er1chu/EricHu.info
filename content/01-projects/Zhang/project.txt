@@ -1,7 +1,0 @@
-Title: Distance Provides Clarity
-----
-Text: Design and concept for an exhibition catalog for Shanghai-based artist Zhang Huan. The book stands alone as a printed object, but also utilizes augmented reality technology to provide additional dynamic content. For the exhibition logo, customized Chinese characters were designed depicting Zhang Huan's name. The geometric form of the characters imply a contemporary aesthetic without compromising the sense of mysticism attached to the artist.
-----
-Slug: zhang
-----
-Type: carousel

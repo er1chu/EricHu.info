@@ -1,7 +1,0 @@
-Title: Soundbug
-----
-Text: is an interactive widget disguised as an embedded audio player from Soundcloud to promote the release of "At War With Time" by The Bug. Various blogs were sent the embed code without context. Upon pressing play, the viewer is greeted with both a visual and auditory experience.
-----
-Embed: <iframe src="//player.vimeo.com/" data-src="//player.vimeo.com/video/110332585?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=1&amp;loop=1" width="900" height="628" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><iframe id="bugplayer" data-src="https://atwarwithtime.com/embed/index.html" width="85%" height="160px" scrolling="no" frameborder="no" id="bug"></iframe>
-----
-Credits: w/ Paul Bouchon
