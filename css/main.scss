@@ -6,7 +6,8 @@
 
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "Neue Haas Grotesk","Helvetica Neue", Helvetica, Arial, sans-serif;
+$secondary-font-family: "Bodoni", "Times New Roman", Times, serif;
 $base-font-size:   4vw;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -43,12 +44,10 @@ $on-laptop:        100%;
     }
 }
 
-
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 		"bourbon/bourbon",
-		"reset",
+		"mixins",
         "base",
         "layout"
 ;

@@ -1,0 +1,23 @@
+.site-title {
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+.sub-title {
+    font-family: $secondary-font-family;
+    text-transform: uppercase;
+}
+.page-link {
+    font-family: $secondary-font-family;
+    border-bottom: 1px solid $text-color;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.stat-title {
+    font-size: $small-font-size;
+
+}
+
