@@ -8,16 +8,16 @@
 // Our variables
 $base-font-family: "Neue Haas Grotesk","Helvetica Neue", Helvetica, Arial, sans-serif;
 $secondary-font-family: "Bodoni", "Times New Roman", Times, serif;
-$base-font-size:   4.5vw;
+$base-font-size:   4.35vw;
 $base-font-weight: 200;
 $small-font-size:  $base-font-size * 0.275;
 $base-line-height: 1;
 
-$spacing-unit:     20px;
+$spacing-unit:     2.25%;
 
-$text-color:       lighten(#000,5%);
+$text-color:       lighten(#000,15%);
 $background-color: #fff;
-$brand-color:      lighten(#000,5%);
+$brand-color:      $text-color;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -28,6 +28,33 @@ $content-width:    100%;
 
 $on-palm:          100%;
 $on-laptop:        100%;
+
+// Character Styles
+
+.base-font-size-caps {
+	font-size: $base-font-size;
+	text-transform: uppercase;
+}
+.small-font-size-caps {
+	font-size: $secondary-font-family;
+	text-transform: uppercase;
+}
+
+
+.base-font-caps {
+	font-family: $base-font-family;
+	@extends .base-font-size-caps;
+}
+
+.secondary-font-caps {
+	font-family: $secondary-font-family;
+	@extends .base-font-size-caps;
+}
+
+.base-font-caps-small {
+	font-family: $base-font-family;
+
+}
 
 
 
