@@ -5,10 +5,13 @@
         <span class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></span>
         {% for my_page in site.pages %}
           {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          <span class="page-link"><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></span>
           {% endif %}
         {% endfor %}
+        <span class="stat-title">Updated: </span>15.07.06<span class="stat-title">MTL: </span>02:18PM<span class="stat-title">NYC: </span>02:18PM
     </nav>
+    <div class="sub-title">Art Direction / Typography</div>
+
 
 
   </div>

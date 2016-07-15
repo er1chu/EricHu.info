@@ -1,3 +1,4 @@
+
 .site-title {
     a {
         text-decoration: none;
@@ -11,13 +12,30 @@
 }
 .page-link {
     font-family: $secondary-font-family;
-    border-bottom: 1px solid $text-color;
+    display: inline-block;
     text-transform: uppercase;
-    margin-left: 20px;
+    margin-left: $spacing-unit;
+    a {
+         vertical-align: top;
+         text-decoration: none;
+         position: relative;
+         &:after {
+           content: "";
+           border-bottom: 0.20vw solid $text-color;
+           position: absolute;
+           left: 0;
+           right: 0;
+           bottom: 5px;
+         }
+    }
 }
 
 .stat-title {
     font-size: $small-font-size;
+    font-family: $secondary-font-family;
+    text-transform: uppercase;
+    margin-left: $spacing-unit;
+
 
 }
 

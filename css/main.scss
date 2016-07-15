@@ -8,16 +8,16 @@
 // Our variables
 $base-font-family: "Neue Haas Grotesk","Helvetica Neue", Helvetica, Arial, sans-serif;
 $secondary-font-family: "Bodoni", "Times New Roman", Times, serif;
-$base-font-size:   4vw;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.4;
+$base-font-size:   4.5vw;
+$base-font-weight: 200;
+$small-font-size:  $base-font-size * 0.275;
+$base-line-height: 1;
 
-$spacing-unit:     5px;
+$spacing-unit:     20px;
 
-$text-color:       #000;
+$text-color:       lighten(#000,5%);
 $background-color: #fff;
-$brand-color:      #000;
+$brand-color:      lighten(#000,5%);
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
