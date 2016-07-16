@@ -35,8 +35,30 @@
     margin-left: $spacing-unit;
 }
 
+.caption {
+    @extend .stat-title;
+    text-align: center;
+    clear: both;
+
+}
+
 .current-activity {
     @include character($secondary-font-family,$small-font-size,true);
     text-align: center;
-    margin-top: $spacing-unit *1.5;
+    margin-top: $spacing-unit;
+}
+
+.project {
+    clear: both;
+    img {
+        text-align: center;
+    }
+}
+
+
+.half-size img {
+    max-width: 50% - ($spacing-unit * 2);
+    margin: $spacing-unit;
+    float: left;
+    box-sizing: border-box;
 }
