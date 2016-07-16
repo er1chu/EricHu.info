@@ -38,6 +38,9 @@
 .caption {
     @extend .stat-title;
     text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 1.5;
     clear: both;
 
 }
@@ -51,14 +54,42 @@
 .project {
     clear: both;
     img {
-        text-align: center;
+        margin-top: $spacing-unit;
+        margin-bottom: $spacing-unit;
+    }
+
+}
+
+.full-size {
+    img {
+        position: relative;
+        left: (50%);
+        width: 100% - ($spacing-unit * 2);
+        box-sizing: border-box;
+        @include transform(translateX(-50%));
     }
 }
 
 
 .half-size img {
     max-width: 50% - ($spacing-unit * 2);
-    margin: $spacing-unit;
+    margin-left: $spacing-unit;
+    margin-right: $spacing-unit;
     float: left;
     box-sizing: border-box;
+}
+
+.portrait {
+    img {
+        max-width: 50%;
+        position: relative;
+        left: (50%);
+        @include transform(translateX(-50%));
+    }
+}
+
+.shadow {
+    box-shadow: 0px 32px 122px -14px rgba(0,0,0,0.47);
+-moz-box-shadow: 0px 32px 122px -14px rgba(0,0,0,0.47);
+box-shadow: 0px 32px 122px -14px rgba(0,0,0,0.47);
 }
