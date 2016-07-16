@@ -31,11 +31,12 @@
 }
 
 .stat-title {
-    font-size: $small-font-size;
-    font-family: $secondary-font-family;
-    text-transform: uppercase;
+    @include character($secondary-font-family,$small-font-size,true);
     margin-left: $spacing-unit;
-
-
 }
 
+.current-activity {
+    @include character($secondary-font-family,$small-font-size,true);
+    text-align: center;
+    margin-top: $spacing-unit *1.5;
+}

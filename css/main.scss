@@ -31,32 +31,13 @@ $on-laptop:        100%;
 
 // Character Styles
 
-.base-font-size-caps {
-	font-size: $base-font-size;
-	text-transform: uppercase;
+@mixin character($font-family,$font-size, $caps: true) {
+	font-size: $font-size;
+	font-family: $font-family;
+	@if $caps == true {
+		text-transform: uppercase;
+	}
 }
-.small-font-size-caps {
-	font-size: $secondary-font-family;
-	text-transform: uppercase;
-}
-
-
-.base-font-caps {
-	font-family: $base-font-family;
-	@extends .base-font-size-caps;
-}
-
-.secondary-font-caps {
-	font-family: $secondary-font-family;
-	@extends .base-font-size-caps;
-}
-
-.base-font-caps-small {
-	font-family: $base-font-family;
-
-}
-
-
 
 // Use media queries like this:
 // @include media-query($on-palm) {
