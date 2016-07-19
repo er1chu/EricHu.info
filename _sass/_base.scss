@@ -21,7 +21,6 @@ body {
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
     -o-font-feature-settings: "kern" 1;
-    box-sizing: border-box;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
     -webkit-font-smoothing: antialiased;
@@ -69,9 +68,12 @@ figcaption {
  */
 ul, ol {
     margin-left: $spacing-unit;
+    margin-bottom: $spacing-unit*2.5;
 }
 
 li {
+    padding-left: $spacing-unit*4;
+    text-indent: $spacing-unit*-4;
     > ul,
     > ol {
          margin-bottom: 0;
