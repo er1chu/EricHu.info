@@ -119,6 +119,11 @@
     box-sizing: border-box;
     padding: $spacing-unit;
     float: left;
+
+    h3 {
+        text-transform: uppercase;
+        font-size: $base-font-size / 2.65;
+    }
 }
 
 .shadow {
