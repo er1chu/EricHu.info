@@ -21,6 +21,7 @@ body {
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
     -o-font-feature-settings: "kern" 1;
+    box-sizing: border-box;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
     -webkit-font-smoothing: antialiased;
