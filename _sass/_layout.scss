@@ -6,6 +6,10 @@
     }
 }
 
+.site-navigation {
+    padding-top: $spacing-unit / 3;
+}
+
 .sub-title {
     font-family: $secondary-font-family;
     text-transform: uppercase;
@@ -86,6 +90,26 @@
         left: (50%);
         @include transform(translateX(-50%));
     }
+}
+
+.about-intro {
+    font-size: $base-font-size / 2.5;
+    font-family: $secondary-font-family;
+    float: left;
+    padding-top: $spacing-unit;
+    width: 50%;
+    img {
+        max-width: 80%;
+        margin: $spacing-unit * 2;
+        clear: both;
+        display: block;
+    }
+}
+
+.about-right {
+    font-size: $base-font-size / 2.5;
+    padding: $spacing-unit;
+    float: left;
 }
 
 .shadow {
