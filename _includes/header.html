@@ -1,17 +1,31 @@
 <header class="site-header">
 
   <div class="wrapper">
-    <nav class="site-navigation">    
-        <div class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></div>
+    <div class="site-navigation">
+      <div class="column">
+        <div class="site-title">
+          <a href="{{ site.baseurl }}/">
+          {% if page.url == "/" %}
+            {{ site.title }}
+          {% else %}
+            <span class="back-link">RETURN HOME</span>
+          {% endif %}
+          </a>
+        </div>
         <div class="sub-title">Design Direction</div>
+      </div>
+      <div class="column">
         {% for my_page in site.pages %}
           {% if my_page.title %}
-          <span class="page-link">( <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a> )</span>
+          <div class="page-link">( <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a> )</div>
           {% endif %}
         {% endfor %}
-    </nav>
-    <div class="site-title">MAIL@ERICHU.INFO</div>
-    <div class="sub-title">Montreal / New York</div>
+      </div>
+    <div class="column">
+      <div class="site-title">MAIL@ERICHU.INFO</div>
+      <div class="sub-title">Montreal / New York</div>
+    </div>
+    </div>
 
 
 
