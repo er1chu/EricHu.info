@@ -2,15 +2,16 @@
 
   <div class="wrapper">
     <nav class="site-navigation">    
-        <span class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></span>
+        <div class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></div>
+        <div class="sub-title">Design Direction</div>
         {% for my_page in site.pages %}
           {% if my_page.title %}
-          <span class="page-link"><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></span>
+          <span class="page-link">( <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a> )</span>
           {% endif %}
         {% endfor %}
-        <span class="stat-title">Updated: </span>15.07.06<span class="stat-title">MTL: </span>02:18PM<span class="stat-title">NYC: </span>02:18PM
     </nav>
-    <div class="sub-title">Art Director / Directeur Artistique</div>
+    <div class="site-title">MAIL@ERICHU.INFO</div>
+    <div class="sub-title">Montreal / New York</div>
 
 
 

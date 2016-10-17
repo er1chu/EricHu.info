@@ -18,19 +18,19 @@
     font-family: $secondary-font-family;
     display: inline-block;
     text-transform: uppercase;
-    margin-left: $spacing-unit;
+    // margin-left: $spacing-unit;
     a {
          vertical-align: top;
-         text-decoration: none;
+         text-decoration: underline;
          position: relative;
-         &:after {
-           content: "";
-           border-bottom: 0.20vw solid $text-color;
-           position: absolute;
-           left: 0;
-           right: 0;
-           bottom: 5px;
-         }
+         // &:after {
+         //   content: "";
+         //   border-bottom: 0.20vw solid $text-color;
+         //   position: absolute;
+         //   left: 0;
+         //   right: 0;
+         //   bottom: 5px;
+         // }
     }
 }
 
