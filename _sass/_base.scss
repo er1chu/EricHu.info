@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    // margin-bottom: $spacing-unit / 2;
 }
 
 
@@ -67,8 +67,8 @@ figcaption {
  * Lists
  */
 ul, ol {
-    margin-left: $spacing-unit;
-    margin-bottom: $spacing-unit*2.5;
+    margin-left: $spacing-unit * 2;
+    margin-bottom: $spacing-unit*3;
 }
 
 li {

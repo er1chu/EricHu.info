@@ -1,4 +1,13 @@
 
+
+// .home {
+//     img {
+//         transition: all 0.2s ease;
+//      &:hover {
+//         transform: rotate(7deg);
+//         }
+//     }
+// }
 .site-title {
     a {
         text-decoration: none;
@@ -36,6 +45,21 @@
     }
 }
 
+.dad {
+    position: fixed;
+    top: $spacing-unit;
+    z-index: 99;
+
+}
+
+.dad-left {
+    left: $spacing-unit*2;
+}
+
+.dad-right {
+    right: $spacing-unit*2;
+}
+
 .column {
     float: left;
     width: 33.33%;
@@ -52,7 +76,7 @@
     text-align: center;
     width: 50%;
     margin: 0 auto;
-    line-height: 1.5;
+    line-height: 22px;
     clear: both;
 
 }
@@ -75,6 +99,7 @@
 .full-size {
     img {
         position: relative;
+        transform-origin: 50% 50%;
         left: (50%);
         width: 100% - ($spacing-unit * 2);
         box-sizing: border-box;
@@ -101,10 +126,11 @@
 }
 
 .about-intro {
-    font-size: $base-font-size;
+    font-size: $base-font-size + 1;
     font-family: $secondary-font-family;
     float: left;
     padding-top: $spacing-unit;
+    line-height: 22px;
     width: 50%;
     img {
         max-width: 80%;
@@ -122,15 +148,20 @@
 }
 
 .about-columns{
-    font-size: $base-font-size;
+    font-size: $base-font-size + 1;
     width: 25%;
     box-sizing: border-box;
+    font-family: $secondary-font-family;
+    line-height: 22px;
     padding: $spacing-unit;
     float: left;
 
     h3 {
         text-transform: uppercase;
         font-size: $base-font-size;
+        line-height: 22px;
+        font-family: $base-font-family;
+
     }
 }
 
