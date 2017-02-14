@@ -20,7 +20,22 @@ body {
     a {
         text-decoration: none;
         text-transform: uppercase;
+        letter-spacing: 0.2px;
     }
+}
+
+.navigation-wrapper {
+    background: #fff;
+    z-index: 10;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    padding-bottom: $spacing-unit / 2;
+
+}
+
+.page-content {
+    margin-top: $spacing-unit*1.5;
 }
 
 .site-navigation {
@@ -32,6 +47,7 @@ body {
 .sub-title {
     font-family: $secondary-font-family;
     text-transform: uppercase;
+    letter-spacing: 0.2px;
 }
 .page-link {
     font-family: $secondary-font-family;
@@ -77,6 +93,7 @@ body {
 .stat-title {
     @include character($secondary-font-family,$small-font-size,true);
     margin-left: $spacing-unit;
+    letter-spacing: 0.35px;
 }
 
 .caption {
@@ -99,7 +116,7 @@ body {
     clear: both;
     img {
         margin-top: $spacing-unit * 2;
-        margin-bottom: $spacing-unit * 2;
+        margin-bottom: $spacing-unit;
     }
 
 }
@@ -136,6 +153,7 @@ body {
 .about-intro {
     font-size: $base-font-size + 1;
     font-family: $secondary-font-family;
+    letter-spacing: 0.5px;
     float: left;
     padding-top: $spacing-unit;
     line-height: 22px;
@@ -166,6 +184,7 @@ body {
 
     h3 {
         text-transform: uppercase;
+        letter-spacing: 0.2px;
         font-size: $base-font-size;
         line-height: 22px;
         font-family: $base-font-family;
