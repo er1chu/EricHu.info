@@ -64,7 +64,7 @@
 					<ul>
 						<li>Email: <a href="mailto:mail@erichu.info">mail@erichu.info</a></li>
 						<li>Twitter: <a href="http://twitter.com/_erichu" target="_blank">@_EricHu</a></li>
-						<li>Instagram: <a href="http://instagram/_erichu" target="_blank">@_EricHu</a></li>
+						<li>Instagram: <a href="https://instagram.com/_erichu" target="_blank">@_EricHu</a></li>
 						<li>Blog: <a href="http://e-r-h.tumblr.com" target="_blank">E-R-H</a></li>
 					</ul>
 				</div>
