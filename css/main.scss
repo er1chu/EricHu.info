@@ -7,15 +7,16 @@
 
 // Our variables
 $base-font-family: "Neue Haas Grotesk","Helvetica Neue", Helvetica, Arial, sans-serif;
-$secondary-font-family: "Bodoni", "Times New Roman", Times, serif;
+$secondary-font-family: "Bodoni", "Times New Roman", Times, SimSun, "华文黑体", STXihei, "华文细黑", serif;
 $base-font-size:   18px;
-$base-font-weight: 200;
+$large-font-size: 5.15vw;
+$base-font-weight: 400;
 $small-font-size:  $base-font-size;
 $base-line-height: 1;
 
 $spacing-unit:     2.25%;
 
-$text-color:       lighten(#000,15%);
+$text-color:       #091d3d;
 $background-color: #fff;
 $brand-color:      $text-color;
 

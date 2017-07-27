@@ -16,18 +16,24 @@ body {
         opacity: 1;
     }
 }
+
+header {
+    font-size: $large-font-size;
+    letter-spacing: -0.2vw;
+    margin: 0 auto;
+
+}
 .site-title {
     a {
         text-decoration: none;
         text-transform: uppercase;
-        letter-spacing: 0.2px;
+        letter-spacing: 0.1px;
     }
 }
 
 .sub-title {
     font-family: $secondary-font-family;
     text-transform: uppercase;
-    color: #bbb;
 }
 
 .navigation-wrapper {
@@ -35,14 +41,9 @@ body {
     z-index: 10;
     width: 100%;
     height: auto;
-    position: fixed;
-    padding-bottom: $spacing-unit / 2;
 
 }
 
-.page-content {
-    margin-top: $spacing-unit*1.5;
-}
 
 .site-navigation {
     padding-top: $spacing-unit / 3;
@@ -52,19 +53,18 @@ body {
     font-family: $secondary-font-family;
     display: inline-block;
     text-transform: uppercase;
-    // margin-left: $spacing-unit;
+     margin-left: $spacing-unit;
     a {
          vertical-align: top;
-         text-decoration: underline;
          position: relative;
-         // &:after {
-         //   content: "";
-         //   border-bottom: 0.20vw solid $text-color;
-         //   position: absolute;
-         //   left: 0;
-         //   right: 0;
-         //   bottom: 5px;
-         // }
+          &:after {
+            content: "";
+            border-bottom: 0.15vw solid $text-color;
+            position: absolute;
+            left: 0;
+            right: 0;
+           bottom: 0.6vw;
+          }
     }
 }
 
