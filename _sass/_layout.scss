@@ -24,6 +24,12 @@ body {
     }
 }
 
+.sub-title {
+    font-family: $secondary-font-family;
+    text-transform: uppercase;
+    color: #bbb;
+}
+
 .navigation-wrapper {
     background: #fff;
     z-index: 10;
@@ -39,16 +45,8 @@ body {
 }
 
 .site-navigation {
-    padding-top: $spacing-unit / 2;
-    width: 600px;
-    margin: 0 auto;
+    padding-top: $spacing-unit / 3;
     transition: 0.2s ease-in;
-}
-
-.sub-title {
-    font-family: $secondary-font-family;
-    text-transform: uppercase;
-    letter-spacing: 0.2px;
 }
 .page-link {
     font-family: $secondary-font-family;

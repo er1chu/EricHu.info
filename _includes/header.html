@@ -1,39 +1,16 @@
 <header class="site-header">
 
   <div class="wrapper">
-    <div class="dad dad-left">
-      <img src="/img/dad.svg">
-    </div>
-        <div class="dad dad-right">
-      <img src="/img/dad.svg">
-    </div>
-    <div class="navigation-wrapper">  
-      <div class="site-navigation">
-        <div class="column">
-          <div class="site-title">
-            <a href="{{ site.baseurl }}/">
-            {% if page.url == "/" %}
-              {{ site.title }}
-            {% else %}
-              <span class="back-link">RETURN HOME</span>
-            {% endif %}
-            </a>
-          </div>
-          <div class="sub-title">Creative Direction</div>
-        </div>
-        <div class="column">
-          {% for my_page in site.pages %}
-            {% if my_page.title %}
-            <div class="page-link">( <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a> )</div>
-            {% endif %}
-          {% endfor %}
-        </div>
-    <div class="column">
-      <div class="site-title">MAIL@ERICHU.INFO</div>
-      <div class="sub-title">Montreal / New York</div>
-    </div>
-    </div>
-     </div>
+    <nav class="site-navigation">    
+        <span class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></span>
+        {% for my_page in site.pages %}
+          {% if my_page.title %}
+          <span class="page-link"><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></span>
+          {% endif %}
+        {% endfor %}
+        <span class="stat-title">Updated: </span>17.07.17<span class="stat-title">NYC: </span>02:18PM<span class="stat-title">MTL: </span>14h18
+    </nav>
+    <div class="sub-title">Creative Direction / Direction créative</div>
 
 
 
