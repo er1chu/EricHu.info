@@ -1,38 +1,32 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
   <body>
-
     {% include header.html %}
     <div class="page-content">
       <div class="wrapper">
         {{ content }}
       </div>
     </div>
-
     {% include footer.html %}
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="/js/jquery.lazyload.min.js"></script>
-  <script type="text/javascript">
-          $( window ).scroll(function() {
-            $('.navigation-wrapper').css('opacity','0');
-            clearTimeout( $.data( this, "scrollCheck" ) );
-            $.data( this, "scrollCheck", setTimeout(function() {
-             $('.navigation-wrapper').css('opacity','1');
-            }, 250) );
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/js/jquery.lazyload.min.js"></script>
+    <script type="text/javascript">
+            $( window ).scroll(function() {
+              $('.navigation-wrapper').css('opacity','0');
+              clearTimeout( $.data( this, "scrollCheck" ) );
+              $.data( this, "scrollCheck", setTimeout(function() {
+               $('.navigation-wrapper').css('opacity','1');
+              }, 250) );
 
-          });      $(window).on('load',function(){
-        $('body').addClass('loaded');
-          var myLazyLoad = new LazyLoad({
-            threshhold: 500,
-            throttle: 30,
+            });
+        $(window).on('load',function(){
+          $('body').addClass('loaded');
+          $('img').lazyload({
+            effect : "fadeIn"
           });
-      });
+        });
 
-  </script>
-
+    </script>
   </body>
-
 </html>

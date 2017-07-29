@@ -17,6 +17,10 @@ body {
     }
 }
 
+img {
+    transform-style: preserve-3d;
+}
+
 header {
     font-size: $large-font-size;
     letter-spacing: -0.2vw;
