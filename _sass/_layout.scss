@@ -6,14 +6,16 @@ body {
     }
 }
 
-img {
-    transform-style: preserve-3d;
-}
-
 header {
     font-size: $large-font-size;
     letter-spacing: -0.2vw;
     margin: 0 auto;
+
+    @include mobile {
+        font-size: $base-font-size * 1.5;
+        letter-spacing: -0.1px;
+
+    }
 
 }
 .site-title {
@@ -72,6 +74,13 @@ header {
     @include character($secondary-font-family,$small-font-size,true);
     margin-left: $spacing-unit;
     letter-spacing: 0.35px;
+
+}
+
+.updated {
+     @include mobile {
+        display: none;
+    }
 }
 
 .caption {
@@ -142,8 +151,7 @@ header {
 }
 
 .about-intro {
-    font-size: $base-font-size + 1;
-    font-family: $secondary-font-family;
+    @include character($secondary-font-family,$base-font-size,false);
     letter-spacing: 0.5px;
     float: left;
     padding-top: $spacing-unit;
@@ -160,29 +168,18 @@ header {
         width: 100%;
     }
 }
-
-.about-nav {
-    color: black;
-    // -webkit-text-fill-color: white;
-    // -webkit-text-stroke-width: 0.5px;
-    // -webkit-text-stroke-color: black;
-}
-
 .about-columns{
-    font-size: $base-font-size + 1;
+    @include character($secondary-font-family,$base-font-size + 1,false);
     width: 25%;
     box-sizing: border-box;
-    font-family: $secondary-font-family;
     line-height: 22px;
     padding: $spacing-unit;
     float: left;
 
     h3 {
-        text-transform: uppercase;
+        @include character($base-font-family,$base-font-size,true);
         letter-spacing: 0.2px;
-        font-size: $base-font-size;
         line-height: 22px;
-        font-family: $base-font-family;
 
     }
 
