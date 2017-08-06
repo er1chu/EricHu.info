@@ -30,28 +30,11 @@ $content-width:    100%;
 $on-palm:          100%;
 $on-laptop:        100%;
 
-// Character Styles
+$tablet-width: 768px;
+$mobile-width: 320px;
+$desktop-width: 1024px;
 
-@mixin character($font-family,$font-size, $caps: true) {
-	font-size: $font-size;
-	font-family: $font-family;
-	@if $caps == true {
-		text-transform: uppercase;
-	}
-}
 
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
