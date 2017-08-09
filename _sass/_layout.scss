@@ -6,6 +6,15 @@ body {
     }
 }
 
+.lazyload,
+.lazyloading {
+    opacity: 0;
+}
+.lazyloaded {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
 header {
     font-size: $large-font-size;
     letter-spacing: -0.2vw;

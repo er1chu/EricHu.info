@@ -9,21 +9,5 @@
       </div>
     </div>
     {% include footer.html %}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="js/jquery.lazyload.min.js"></script>
-    <script type="text/javascript">
-            $( window ).scroll(function() {
-              $('.navigation-wrapper').css('opacity','0');
-              clearTimeout( $.data( this, "scrollCheck" ) );
-              $.data( this, "scrollCheck", setTimeout(function() {
-               $('.navigation-wrapper').css('opacity','1');
-              }, 250) );
-
-            });
-        $(window).on('load',function(){
-          $('body').addClass('loaded');
-        });
-
-    </script>
   </body>
 </html>

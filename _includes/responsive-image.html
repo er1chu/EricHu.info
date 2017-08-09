@@ -4,4 +4,4 @@
     {% endfor %}
 {% endcapture %}
 
-<img data-src="/{{ path }}" alt="{{ alt }}" data-srcset="{{ srcset | strip_newlines }}" class="lazyload">
+<img data-sizes="auto" data-src="{{ path }}" alt="{{ alt }}" data-srcset="{{ srcset | strip_newlines }}" class="lazyload">
