@@ -4,4 +4,5 @@ gem 'jekyll'
 
 group :jekyll_plugins do
   gem 'jekyll-assets'
+  gem 'jekyll-responsive-image'
 end
