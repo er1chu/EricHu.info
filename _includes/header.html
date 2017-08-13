@@ -1,7 +1,13 @@
 <header class="site-header">
   <div class="wrapper">
-    <nav class="site-navigation">    
-        <span class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></span>
+    <nav class="site-navigation">   
+        <span class="site-title">
+         {% if page.url == "/" %}
+              <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+            {% else %}
+              <a href="{{ site.baseurl }}/">← Back</a>
+            {% endif %}
+        </span>
         {% for my_page in site.pages %}
           {% if my_page.title %}
           <span class="page-link"><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></span>
