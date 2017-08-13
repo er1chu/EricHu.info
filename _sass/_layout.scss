@@ -1,5 +1,5 @@
 body {
-    opacity: 0;
+    opacity: 1;
     transition: all 0.5s ease;
     &.loaded{
         opacity: 1;
@@ -12,6 +12,14 @@ body {
     -webkit-filter: blur(5px);
     filter: blur(5px);
     transition: filter 400ms, -webkit-filter 400ms;
+}
+
+.portrait .lazyload, .portrait .lazyloading {
+    height: 98vh;
+}
+
+.half-size .lazyload, .half-size .lazyloading {
+    width: 50% - ($spacing-unit * 2);
 }
 .lazyloaded {
     opacity: 1;
@@ -154,6 +162,7 @@ header {
 
 .portrait {
     img {
+        max-height: 98vh;
         max-width: 50%;
         position: relative;
         left: (50%);
