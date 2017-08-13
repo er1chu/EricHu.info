@@ -4,4 +4,4 @@
     {% endfor %}
 {% endcapture %}
 {% assign smallest = resized | sort: 'width' | first %}
-<img src="/{{ smallest.path }}" data-src="/{{ path }}" alt="{{ alt }}" data-srcset="{{ srcset | strip_newlines }} {{ original.path }} {{ original.width }}w" class="lazyload">
+<img src="/{{ smallest.path }}" data-src="/{{ path }}" data-srcset="{{ srcset | strip_newlines }} {{ original.path }} {{ original.width }}w" class="lazyload">
