@@ -24,10 +24,10 @@
 <script src="/js/jquery.lazyload.min.js"></script>
 <script type="text/javascript">
         $( window ).scroll(function() {
-          $('.navigation-wrapper').css('opacity','0');
+          $('.scroll-badge').css('opacity','0');
           clearTimeout( $.data( this, "scrollCheck" ) );
           $.data( this, "scrollCheck", setTimeout(function() {
-           $('.navigation-wrapper').css('opacity','1');
+           $('.scroll-badge').css('opacity','1');
           }, 250) );
 
         });
