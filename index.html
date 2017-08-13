@@ -4,8 +4,8 @@ layout: default
 
 <!-- Mold Magazine Toto -->
 <div class="project half-size" id="toto">
-	{% responsive_image path: img/toto1.jpg %}
-	{% responsive_image path: img/toto2.jpg %}
+	{% responsive_image path: img/toto1.jpg template: _includes/responsive-image-not-lazy.html %}
+	{% responsive_image path: img/toto2.jpg template: _includes/responsive-image-not-lazy.html %}
 	<div class="caption">Mold Magazine Issue 1, Photography by Thomas McCarty. With Matthew Tsang.</div>
 </div>
 
@@ -17,7 +17,7 @@ layout: default
 
 <!-- JW Anderson for SSENSE -->
 <div class="project full-size" id="jw-ssense">
-	{% responsive_image path: img/jw1.jpg %}
+	{% responsive_image path: img/jw1.jpg template: _includes/responsive-image-not-lazy.html %}
 	<div class="caption">JW Anderson for SSENSE. Photography Matthew Tammaro. With Matthew Tsang.</div>
 </div>
 
