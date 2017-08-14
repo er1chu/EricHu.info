@@ -16,7 +16,7 @@ url: "http://erichu.info/" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 exclude: [vendor]
-plugins:
+plugins_dir:
   - jekyll-assets
 include:
   - static
