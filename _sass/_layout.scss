@@ -187,6 +187,10 @@ header {
     float: left;
     box-sizing: border-box;
 
+    @include mobile {
+    max-width: 100% - ($spacing-unit * 2);
+    }
+
 }
 
 .portrait {
@@ -196,7 +200,9 @@ header {
         position: relative;
         left: (50%);
         @include transform(translateX(-50%));
-        @extend .mobile-images;
+        @include mobile {
+        max-width: 100% - ($spacing-unit * 2);
+        }
     }
 }
 
@@ -205,7 +211,9 @@ header {
     position: relative;
     left: (50%);
     @include transform(translateX(-50%));
-    @extend .mobile-images;
+    @include mobile {
+    max-width: 100% - ($spacing-unit * 2);
+    }
 
 }
 
