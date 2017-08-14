@@ -23,16 +23,39 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="/js/jquery.lazyload.min.js"></script>
 <script type="text/javascript">
-        $( window ).scroll(function() {
-          $('.scroll-badge').css('opacity','0');
-          clearTimeout( $.data( this, "scrollCheck" ) );
-          $.data( this, "scrollCheck", setTimeout(function() {
-           $('.scroll-badge').css('opacity','1');
-          }, 250) );
+  
+  var headerOffset = $(window).height(),
+  previousScroll = 0,
+  $scrollMenu = $('.scroll-badge'),
+  $menuHeight = $scrollMenu.height() + 20;
+  
+  $( window ).scroll(function() {
+    var currentScroll = $(this).scrollTop();
+    if (currentScroll > headerOffset) {
 
-        });
-    $(window).on('load',function(){
-      $('body').addClass('loaded');
+          // If user is scrolling up from previous position
+          if (currentScroll < previousScroll ) {
+            $scrollMenu.css({'opacity':'1', 'transform':'translateY(0)'});
+          } else {
+            $scrollMenu.css({'opacity':'0', 'transform':'translateY(-100%)'});
+          }
+         // If user scrolls to top of page hide menu
+          } else if (currentScroll === 0) {
+            $scrollMenu.css({'opacity':'0', 'transform':'translateY(-100%)'});
+          }     
+          
+          // Record scroll position
+          previousScroll = currentScroll;
+          // Clear when scrolling stops, hide menu
+          // 3 seconds so user can have time to click on links
+          // Will need to test for potential performance degredations
+        clearTimeout( $.data( this, 'scrollCheck' ) );
+          $.data( this, "scrollCheck", setTimeout(function() {
+            $scrollMenu.css({'opacity':'0', 'transform':'translateY(-100%)'});
+          }, 4000) );
     });
+  $(window).on('load',function(){
+    $('body').addClass('loaded');
+  });
 
 </script>
