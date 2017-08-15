@@ -21,7 +21,7 @@ body {
 }
 
 .half-size .lazyload, .half-size .lazyloading {
-    width: 50% - ($spacing-unit * 2);
+    width: 50% - ($spacing-unit * 0.5);
 }
 
 .three4 .lazyload, .three4 .lazyloading {
@@ -61,6 +61,7 @@ header {
     }
 }
 
+
 .sub-title {
     font-family: $secondary-font-family;
     text-transform: uppercase;
@@ -86,8 +87,7 @@ header {
     transform: translateY(-100%);
     box-shadow:0px 7px 40px -17px rgba(0,0,0,0.2);
     text-transform: uppercase;
-    padding-left: $spacing-unit * 2;
-    padding-right: $spacing-unit * 2;
+    padding-left: $spacing-unit ;
     padding-top: $spacing-unit / 2;
     padding-bottom: $spacing-unit / 2;
     font-family: $secondary-font-family;
@@ -102,7 +102,8 @@ header {
     font-family: $secondary-font-family;
     display: inline-block;
     text-transform: uppercase;
-     margin-left: $spacing-unit;
+    margin-left: $spacing-unit;
+    margin-right: $spacing-unit;
     a {
          vertical-align: top;
          position: relative;
@@ -126,9 +127,12 @@ header {
 
 .stat-title {
     @include character($secondary-font-family,$small-font-size,true);
-    margin-left: $spacing-unit;
     letter-spacing: 0.35px;
+    
+}
 
+.stat-content {
+    margin-right: $spacing-unit;
 }
 
 .updated {
@@ -141,7 +145,7 @@ header {
     @extend .stat-title;
     text-align: center;
     width: 50%;
-    margin: 0 auto;
+    margin: 0 auto $spacing-unit auto;
     line-height: 22px;
     clear: both;
 
@@ -162,7 +166,7 @@ header {
 .project {
     clear: both;
     img {
-        margin-top: $spacing-unit * 2;
+        margin-top: $spacing-unit ;
         margin-bottom: $spacing-unit;
     }
 
@@ -181,17 +185,28 @@ header {
 
 
 .half-size img {
-    max-width: 50% - ($spacing-unit * 2);
-    margin-left: $spacing-unit;
-    margin-right: $spacing-unit;
+    max-width: 50% - ($spacing-unit*0.5);
     float: left;
     box-sizing: border-box;
+
+    &:first-of-type {
+    margin-right: $spacing-unit*0.5;
+    }
+
+    &:last-of-type {
+    margin-left: $spacing-unit*0.5;
+    }
 
     @include mobile {
     max-width: 100% - ($spacing-unit * 2);
     }
 
 }
+
+// .wrapper {
+//     margin-left: $spacing-unit;
+//     margin-right: $spacing-unit;
+// }
 
 .portrait {
     img {
