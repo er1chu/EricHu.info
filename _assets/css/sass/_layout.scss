@@ -219,12 +219,6 @@ header {
     }
 
 }
-
-// .wrapper {
-//     margin-left: $spacing-unit;
-//     margin-right: $spacing-unit;
-// }
-
 .portrait {
     img {
         max-height: 98vh;
@@ -269,7 +263,7 @@ header {
         width: 100%;
     }
 
-    p + p {
+    p + p, figure + p {
         text-indent: $spacing-unit * 2;
     }
 }

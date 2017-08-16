@@ -55,10 +55,19 @@ img {
  */
 figure > img {
     display: block;
+    padding: 0;
+    margin: 0;
+}
+
+figure {
+    margin-bottom: $spacing-unit;
 }
 
 figcaption {
-    font-size: $small-font-size;
+    font-size: $small-font-size * .75;
+    font-family: $base-font-family;
+    margin-left: $spacing-unit*2;
+    margin-top: $spacing-unit * -1;
 }
 
 

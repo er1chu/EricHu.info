@@ -16,30 +16,14 @@
 // Font Face
 // =============================================================================
 
-@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
-    $src: null;
-
-    $extmods: (
-        eot: "?",
-        svg: "#" + str-replace($name, " ", "_")
-    );
-
-    $formats: (
-        otf: "opentype",
-        ttf: "truetype"
-    );
-
-    @each $ext in $exts {
-        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
-        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
-        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
-    }
-
-    @font-face {
-        font-family: quote($name);
-        font-style: $style;
-        font-weight: $weight;
-        src: $src;
+@mixin embed-font($font-name, $font-filepath-and-name){
+  @font-face {
+    font-family: $font-name;
+    src: url(asset_path($font-filepath-and-name+".eot")); /* IE9 Compat Modes */
+    src: url(asset_path($font-filepath-and-name+".eot?#iefix")) format('embedded-opentype'), /* IE6-IE8 */
+         url(asset_path($font-filepath-and-name+".woff")) format('woff'),
+         url(asset_path($font-filepath-and-name+".woff")) format('woff2'),  /* Modern Browsers */
+         url(asset_path($font-filepath-and-name+".ttf"))  format('truetype'), /* Safari, Android, iOS */
     }
 }
 

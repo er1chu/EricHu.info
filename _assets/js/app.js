@@ -23,6 +23,7 @@ $(function () {
 			$menuHeight = $scrollMenu.height() + 20;
 			var menuOn = {'opacity':'1', 'transform':'translateY(0)'};
 			var menuOff = {'opacity':'0', 'transform':'translateY(-100%)'}
+			$siteHeaderHeight = $('.site-header').height();
 			
 			$( window ).scroll(function() {
 			  var currentScroll = $(this).scrollTop();
@@ -35,7 +36,7 @@ $(function () {
 			        $scrollMenu.css(menuOff);
 			      }
 			     // If user scrolls to top of page hide menu
-			      } else if (currentScroll === 0) {
+			      } else if (currentScroll < $siteHeaderHeight) {
 			        $scrollMenu.css(menuOff);
 			      }     
 			      
