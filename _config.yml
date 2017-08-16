@@ -20,8 +20,15 @@ plugins_dir:
   - jekyll-assets
 include:
   - static
-sass:
-  style: compressed
+assets:
+  compress:
+    css: true
+    js: true
+  assets:
+    - '*.png'
+  sources:
+    - _assets/js
+    - _assets/css
 keep_files: [js/jquery.lazyload.min.js.map]
 responsive_image:
   # [Required]

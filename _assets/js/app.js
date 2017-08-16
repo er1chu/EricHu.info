@@ -1,19 +1,19 @@
-/* globals $:false */
+//= require vendor/lazyload.js
 
 $(function () {
 	var app = {
 		init: function () {
 
-			// this._initloadFade();
+			this._initloadFade();
 			this._initScrollMenu(); 
 
 		},
 
-		// _initloadFade: function () {
-		// 	$(window).on('load',function(){
-		// 	  $('body').addClass('loaded');
-		// 	});
-		// },
+		_initloadFade: function () {
+			$(window).on('load',function(){
+			  $('body').addClass('loaded');
+			});
+		},
 
 		_initScrollMenu: function () {
 
