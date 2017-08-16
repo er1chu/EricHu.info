@@ -95,6 +95,14 @@ header {
 }
 
 
+.scroll-badge-name {
+    font-family: $base-font-family !important;
+}
+
+.scroll-badge-link {
+    border-bottom: 1px solid $text-color;
+}
+
 .site-navigation {
     padding-top: $spacing-unit / 3;
 }
