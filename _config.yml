@@ -30,6 +30,8 @@ assets:
     - _assets/js
     - _assets/css
 keep_files: [js/jquery.lazyload.min.js.map]
+compress_html:
+  comments: ["<!-- ", " -->"]
 responsive_image:
   # [Required]
   # Path to the image template.
