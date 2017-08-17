@@ -35,25 +35,25 @@ $(function () {
 				if (currentScroll > headerOffset) {
 
 				     // If user is scrolling up from previous position
-				     if (currentScroll < previousScroll ) {
+				    if (currentScroll < previousScroll ) {
 				       $scrollMenu.css(menuOn);
-				     } else {
-				       $scrollMenu.css(menuOff);
-				     }
+				    } else {
+				      $scrollMenu.css(menuOff);
+				    }
 				    // If user scrolls to top of page hide menu
-				     } else if (currentScroll < $siteHeaderHeight) {
-				       $scrollMenu.css(menuOff);
-				     }     
+				    } else if (currentScroll < $siteHeaderHeight) {
+				      $scrollMenu.css(menuOff);
+				    }     
 				     
 				     // Record scroll position
-				     previousScroll = currentScroll;
-				     // Clear when scrolling stops, hide menu
-				     // 3 seconds so user can have time to click on links
-				     // Will need to test for potential performance degredations
-				   clearTimeout( $.data( this, 'scrollCheck' ) );
-				     $.data( this, "scrollCheck", setTimeout(function() {
-				       $scrollMenu.css(menuOff);
-				     }, 4000) );
+				    previousScroll = currentScroll;
+				    // Clear when scrolling stops, hide menu
+				    // 3 seconds so user can have time to click on links
+				    // Will need to test for potential performance degredations
+					clearTimeout( $.data( this, 'scrollCheck' ) );
+				    	$.data( this, "scrollCheck", setTimeout(function() {
+				    	$scrollMenu.css(menuOff);
+				    }, 4000) );
 				}
 			
 				$( window ).scroll(function () {
