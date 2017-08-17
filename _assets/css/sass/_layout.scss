@@ -1,45 +1,3 @@
-body {
-    opacity: 0;
-    transition: all 0.5s ease;
-    &.loaded{
-        opacity: 1;
-    }
-}
-
-.lazyload {
-    opacity: 0;
-}
-.lazyloading {
-    opacity: 1;
-    -webkit-filter: blur(5px);
-    filter: blur(5px);
-    transition: filter 400ms, -webkit-filter 400ms;
-}
-
-.portrait .lazyload, .portrait .lazyloading {
-    height: 98vh;
-}
-
-.half-size .lazyload, .half-size .lazyloading {
-    width: 50% - ($spacing-unit * 0.5);
-}
-
-.three4 .lazyload, .three4 .lazyloading {
-    width: 75%;
-}
-
-.lazyloaded {
-    opacity: 1;
-    transition: opacity 300ms;
-    -webkit-filter: blur(0);
-    filter: blur(0);
-}
-
-.mobile-images {
-    @include mobile {
-    max-width: 100% - ($spacing-unit * 2);
-    }
-}
 
 header {
     font-size: $large-font-size;
@@ -73,34 +31,6 @@ header {
     width: 100%;
     height: auto;
 
-}
-
-.scroll-badge {
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    background: rgba(255,255,255,0.9);
-    opacity: 0;
-    width: 100%;
-    box-sizing: border-box;
-    transition: 0.2s ease;
-    transform: translateY(-100%);
-    box-shadow:0px 7px 40px -17px rgba(0,0,0,0.2);
-    text-transform: uppercase;
-    padding-left: $spacing-unit ;
-    padding-top: $spacing-unit / 2;
-    padding-bottom: $spacing-unit / 2;
-    font-family: $secondary-font-family;
-    font-size: $small-font-size * 2;
-}
-
-
-.scroll-badge-name {
-    font-family: $base-font-family !important;
-}
-
-.scroll-badge-link {
-    border-bottom: 1px solid $text-color;
 }
 
 .site-navigation {
@@ -293,10 +223,4 @@ header {
     &:before {
         content: '← ';
     }
-}
-
-.shadow {
-    box-shadow: 0px 32px 122px -14px rgba(0,0,0,0.47);
--moz-box-shadow: 0px 32px 122px -14px rgba(0,0,0,0.47);
-box-shadow: 0px 32px 122px -14px rgba(0,0,0,0.47);
 }

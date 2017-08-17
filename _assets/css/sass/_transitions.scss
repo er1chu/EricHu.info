@@ -1,0 +1,112 @@
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19)
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+  }
+  100% {
+    transform: rotate(1800deg)
+  }
+}
+
+@-webkit-keyframes lds-hourglass {
+  0% {
+    -webkit-transform: rotate(0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19)
+  }
+  50% {
+    -webkit-transform: rotate(900deg);
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+  }
+  100% {
+    -webkit-transform: rotate(1800deg)
+  }
+}
+
+.load-spinner:after {
+  content: " ";
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: inline-block;
+  background: center center no-repeat;
+  background-size: cover;
+  width: 0;
+  height: 0;
+  background: none;
+  border-radius: 50%;
+  border: 70px solid;
+  border-color: $text-color transparent $text-color transparent;
+  animation: lds-hourglass 2s linear infinite;
+  -webkit-animation: lds-hourglass 2s linear infinite;
+}
+
+.lazyload {
+    opacity: 0;
+}
+.lazyloading {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    opacity: 1;
+    transition: filter 400ms, -webkit-filter 400ms;
+}
+
+.portrait .lazyload, .portrait .lazyloading {
+    height: 98vh;
+}
+
+.half-size .lazyload, .half-size .lazyloading {
+    width: 50% - ($spacing-unit * 0.5);
+}
+
+.three4 .lazyload, .three4 .lazyloading {
+    width: 75%;
+}
+
+.lazyloaded {
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.scroll-badge {
+    background: rgba(255,255,255,0.9);
+    box-shadow:0px 7px 40px -17px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    font-family: $secondary-font-family;
+    font-size: $small-font-size * 2;
+    opacity: 0;
+    padding-left: $spacing-unit ;
+    padding-top: $spacing-unit / 2;
+    padding-bottom: $spacing-unit / 2;
+    position: fixed;
+    text-transform: uppercase;
+    transform: translateY(-100%);
+    transition: 0.2s ease;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+
+.scroll-badge-name {
+    font-family: $base-font-family !important;
+}
+
+.scroll-badge-link {
+    border-bottom: 1px solid $text-color;
+}
+
+.shadow {
+    box-shadow: 0px 32px 122px -14px rgba(0,0,0,0.47);
+    -moz-box-shadow: 0px 32px 122px -14px rgba(0,0,0,0.47);
+	box-shadow: 0px 32px 122px -14px rgba(0,0,0,0.47);
+}
+
