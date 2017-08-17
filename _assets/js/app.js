@@ -6,6 +6,7 @@ $(function () {
 
 			this._initloadFade();
 			this._initScrollMenu(); 
+			this._initClickCarousel();
 
 		},
 
@@ -49,8 +50,18 @@ $(function () {
 			      $.data( this, "scrollCheck", setTimeout(function() {
 			        $scrollMenu.css(menuOff);
 			      }, 4000) );
-			  });
+			 });
 
+		},
+
+		_initClickCarousel: function () {
+			$('.project').on('click', function(){
+				var ele = $(this).next('.project');
+				$('html, body').animate({
+					scrollTop: $(ele).offset().top
+				}, 300);
+				return false;
+			});
 		}
 	};
 
