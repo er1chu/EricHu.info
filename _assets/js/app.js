@@ -60,7 +60,9 @@ $(function () {
 				    	$.data( this, "scrollCheck", setTimeout(function() {
 				    	$scrollMenu.css(menuOff);
 				    }, 4000) );
+
 				}
+
 			
 				$( window ).scroll($.debounce(250, function () {
 					checkProjects();}));

@@ -6,7 +6,7 @@
   }
   50% {
     transform: rotate(900deg);
-    opacity: .5;
+    opacity: .3;
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
   }
   100% {
@@ -42,16 +42,18 @@
   background-size: cover;
   width: 0;
   height: 0;
+  opacity: 1;
   background: none;
   border-radius: 50%;
   border: 70px solid;
   border-color: $text-color transparent $text-color transparent;
+  transition: opacity 2s ease;
   animation: lds-hourglass 2s linear infinite;
   -webkit-animation: lds-hourglass 2s linear infinite;
 }
 
 .gone {
-	display: none;
+	opacity: 0;
 }
 
 .lazyload {
@@ -100,6 +102,10 @@
     top: 0;
     width: 100%;
     z-index: 100;
+
+    @include mobile {
+    	font-size: $small-font-size * 1.5;
+    }
 }
 
 
@@ -126,4 +132,8 @@
     margin-right: $spacing-unit;
     font-size: $small-font-size * 1.7;
     cursor: pointer;
+
+    @include mobile {
+    	font-size: $small-font-size * 1.3;
+    }
 }
