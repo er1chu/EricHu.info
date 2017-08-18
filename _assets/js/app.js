@@ -8,6 +8,7 @@ $(function () {
 			this._initScroll(); 
 			this._initClickCarousel();
 			this._initTop();
+			this._initBack();
 
 		},
 
@@ -47,6 +48,7 @@ $(function () {
 				    // If user scrolls to top of page hide menu
 				    } else if (currentScroll < $siteHeaderHeight) {
 				      $scrollMenu.css(menuOff);
+				      window.history.pushState('', "", "/");
 				    }     
 				     
 				     // Record scroll position
@@ -93,6 +95,10 @@ $(function () {
 				$('html, body').animate({
 					scrollTop: 0},500);
 			});
+		},
+
+		_initBack: function () {
+			$('#back-link').attr('href','/#'+localStorage.getItem('position'));
 		}
 	};
 
