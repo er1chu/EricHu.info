@@ -1,4 +1,5 @@
 //= require vendor/lazyload.js
+// = require vendor/debounce.js
 
 $(function () {
 	var app = {
@@ -6,6 +7,7 @@ $(function () {
 
 			this._initScroll(); 
 			this._initClickCarousel();
+			this._initTop();
 
 		},
 
@@ -24,8 +26,10 @@ $(function () {
 			function checkProjects () {
 				$project.each(function (index, elem) {
 					if ($(elem).offset().top - document.body.scrollTop <= 100 ) {
+						window.history.pushState('', "", "/#"+$(elem).attr('id'));
 						localStorage.setItem('position', $(elem).attr('id'));
-						console.log(localStorage.getItem('position'));
+						$('#back-link').attr('href','/#'+$(elem).attr('id'));
+
 					}
 				});
 			}
@@ -56,9 +60,11 @@ $(function () {
 				    }, 4000) );
 				}
 			
-				$( window ).scroll(function () {
+				$( window ).scroll($.debounce(250, function () {
+					checkProjects();}));
+
+				$(window).scroll(function(){
 					scrollBadge();
-					checkProjects();
 				});
 
 				$(window).resize(function () {
@@ -73,10 +79,19 @@ $(function () {
 				// Identify next project
 				var ele = $(this).next('.project');
 				// Animate scroll to next project
+
 				$('html, body').animate({
 					scrollTop: $(ele).offset().top
 				}, 300);
 				return false;
+				
+			});
+		},
+
+		_initTop: function () {
+			$('.top-of-page').click(function(){
+				$('html, body').animate({
+					scrollTop: 0},500);
 			});
 		}
 	};

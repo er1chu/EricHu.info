@@ -1,14 +1,17 @@
 @keyframes lds-hourglass {
   0% {
     transform: rotate(0);
+    opacity: 0;
     animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19)
   }
   50% {
     transform: rotate(900deg);
+    opacity: .5;
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
   }
   100% {
-    transform: rotate(1800deg)
+    transform: rotate(1800deg);
+    opacity: 1;
   }
 }
 
@@ -47,6 +50,10 @@
   -webkit-animation: lds-hourglass 2s linear infinite;
 }
 
+.gone {
+	display: none;
+}
+
 .lazyload {
     opacity: 0;
 }
@@ -58,15 +65,15 @@
 }
 
 .portrait .lazyload, .portrait .lazyloading {
-    height: 98vh;
+    height: $portrait-height;
 }
 
 .half-size .lazyload, .half-size .lazyloading {
-    width: 50% - ($spacing-unit * 0.5);
+    width: $half-size-width;
 }
 
 .three4 .lazyload, .three4 .lazyloading {
-    width: 75%;
+    width: $three4-width;
 }
 
 .lazyloaded {
@@ -77,7 +84,7 @@
 }
 
 .scroll-badge {
-    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,1);
     box-shadow:0px 7px 40px -17px rgba(0,0,0,0.2);
     box-sizing: border-box;
     font-family: $secondary-font-family;
@@ -110,3 +117,13 @@
 	box-shadow: 0px 32px 122px -14px rgba(0,0,0,0.47);
 }
 
+.scroll-badge-links {
+    float: left;
+}
+
+.top-of-page {
+    float: right;
+    margin-right: $spacing-unit;
+    font-size: $small-font-size * 1.7;
+    cursor: pointer;
+}

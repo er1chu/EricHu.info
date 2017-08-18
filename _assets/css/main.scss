@@ -10,8 +10,11 @@ $large-font-size: 4.5vw;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size;
 $base-line-height: 1;
+$portrait-height: 98vh;
+$three4-width: 75%;
 
 $spacing-unit:     2.25%;
+$half-size-width: 50% - ($spacing-unit * 0.5);
 
 $text-color:       #1a1f54;
 $background-color: #fff;
