@@ -27,7 +27,7 @@ $(function () {
 			function checkProjects () {
 				$project.each(function (index, elem) {
 					if ($(elem).offset().top - document.body.scrollTop <= 100 ) {
-						window.history.pushState('', "", "/#"+$(elem).attr('id'));
+						// window.history.pushState('', "", "/#"+$(elem).attr('id'));
 						localStorage.setItem('position', $(elem).attr('id'));
 						$('#back-link').attr('href','/#'+$(elem).attr('id'));
 
