@@ -21,13 +21,14 @@ $(function () {
 				menuOn = {'opacity':'1', 'transform':'translateY(0)'},
 				menuOff = {'opacity':'0', 'transform':'translateY(-100%)'},
 				$siteHeaderHeight = $('.site-header').height(),
-				$project = $('.project');
+				$project = $('.project'),
+				scrollExecuted = false;
 
 
 			function checkProjects () {
 				$project.each(function (index, elem) {
 					if ($(elem).offset().top - document.body.scrollTop <= 100 && $(elem).offset().top - document.body.scrollTop > 0) {
-						window.history.replaceState('', "", "/#"+$(elem).attr('id'));
+						window.history.replaceState('', '', '/#'+$(elem).attr('id'));
 						console.log($(elem).attr('id'));
 						localStorage.setItem('position', $(elem).attr('id'));
 						$('#back-link').attr('href','/#'+$(elem).attr('id'));
@@ -43,11 +44,11 @@ $(function () {
 				     // If user is scrolling up from previous position
 				    if (currentScroll < previousScroll ) {
 				       $scrollMenu.css(menuOn);
-				    } else {
+				    } else if (currentScroll > previousScroll) {
 				      $scrollMenu.css(menuOff);
 				    }
 				    // If user scrolls to top of page hide menu
-				    } else if (currentScroll < $siteHeaderHeight) {
+				    } if (currentScroll < $siteHeaderHeight) {
 				      $scrollMenu.css(menuOff);
 				      window.history.pushState('', "", "/");
 				      localStorage.clear();
@@ -65,17 +66,25 @@ $(function () {
 
 				}
 
-				$(document).one('ready', function(){
-					if (window.location.hash) {
-						$scrollMenu.css(menuOn);
+				function menuContext () {
+					// check if executed previously
+					if (!scrollExecuted) {
+						if (window.location.hash) {
+							 $('.scroll-badge').css({'opacity':'1', 'transform':'translateY(0)'});
+						}
+						scrollExecuted = true;
 					}
+				}
+
+				$(window).on('load',function () {
+					menuContext();
 				});
 
 			
-				$( window ).scroll($.throttle(250, function () {
+				$(window).scroll($.throttle(250, function () {
 					checkProjects();}));
 
-				$(window).scroll(function(){
+				$(window).scroll(function () {
 					scrollBadge();
 				});
 
