@@ -26,8 +26,9 @@ $(function () {
 
 			function checkProjects () {
 				$project.each(function (index, elem) {
-					if ($(elem).offset().top - document.body.scrollTop <= 100 ) {
-						// window.history.pushState('', "", "/#"+$(elem).attr('id'));
+					if ($(elem).offset().top - document.body.scrollTop <= 100 && $(elem).offset().top - document.body.scrollTop > 0) {
+						window.history.replaceState('', "", "/#"+$(elem).attr('id'));
+						console.log($(elem).attr('id'));
 						localStorage.setItem('position', $(elem).attr('id'));
 						$('#back-link').attr('href','/#'+$(elem).attr('id'));
 
@@ -49,6 +50,7 @@ $(function () {
 				    } else if (currentScroll < $siteHeaderHeight) {
 				      $scrollMenu.css(menuOff);
 				      window.history.pushState('', "", "/");
+				      localStorage.clear();
 				    }     
 				     
 				     // Record scroll position
@@ -63,8 +65,14 @@ $(function () {
 
 				}
 
+				$(document).one('ready', function(){
+					if (window.location.hash) {
+						$scrollMenu.css(menuOn);
+					}
+				});
+
 			
-				$( window ).scroll($.debounce(250, function () {
+				$( window ).scroll($.throttle(250, function () {
 					checkProjects();}));
 
 				$(window).scroll(function(){
@@ -100,7 +108,9 @@ $(function () {
 		},
 
 		_initBack: function () {
-			$('#back-link').attr('href','/#'+localStorage.getItem('position'));
+			if (localStorage.getItem('position') != null) {
+				$('#back-link').attr('href','/#'+localStorage.getItem('position'));
+			}
 		}
 	};
 
