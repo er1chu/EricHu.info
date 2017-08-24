@@ -1,11 +1,13 @@
 //= require vendor/lazyload.js
 // = require vendor/debounce.js
+// = require vendor/widow.js
 
 $(function () {
 	var app = {
 		init: function () {
 
-			this._initScroll(); 
+			this._initScroll();
+			this._initTameWidows();
 			this._initClickCarousel();
 			this._initTop();
 			this._initBack();
@@ -92,6 +94,19 @@ $(function () {
 					checkProjects();
 				});
 
+		},
+
+		_initTameWidows: function () {
+			wt.fix({
+				elements: '.caption',
+				method: 'nbsp',
+				event: 'resize'
+			});
+			wt.fix({
+				elements: '.about-intro p',
+				method: 'nbsp',
+				event: 'resize'
+			});
 		},
 
 		_initClickCarousel: function () {
