@@ -50,7 +50,7 @@ $(function () {
 				    // If user scrolls to top of page hide menu
 				    } if (currentScroll < $siteHeaderHeight) {
 				      $scrollMenu.css(menuOff);
-				      window.history.pushState('', "", "/");
+				      window.history.replaceState('', "", "/");
 				      localStorage.clear();
 				    }     
 				     
@@ -66,15 +66,15 @@ $(function () {
 
 				}
 
-				function menuContext () {
-					// check if executed previously
-					if (!scrollExecuted) {
-						if (window.location.hash) {
-							 $('.scroll-badge').css({'opacity':'1', 'transform':'translateY(0)'});
-						}
-						scrollExecuted = true;
-					}
-				}
+				// function menuContext () {
+				// 	// check if executed previously
+				// 	if (!scrollExecuted) {
+				// 		if (window.location.hash) {
+				// 			 $('.scroll-badge').css({'opacity':'1', 'transform':'translateY(0)'});
+				// 		}
+				// 		scrollExecuted = true;
+				// 	}
+				// }
 
 				$(window).on('load',function () {
 					menuContext();
