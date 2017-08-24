@@ -107,6 +107,11 @@ $(function () {
 				method: 'nbsp',
 				event: 'resize'
 			});
+			wt.fix({
+				elements: '.about-columns li',
+				method: 'nbsp',
+				event: 'resize'
+			});
 		},
 
 		_initClickCarousel: function () {
