@@ -18,6 +18,7 @@ markdown: kramdown
 exclude: [vendor]
 plugins_dir:
   - jekyll-assets
+  - jekyll-analytics
 include:
   - static
 assets:
@@ -98,3 +99,8 @@ responsive_image:
   #   - assets/foo/bar.png
   #   - assets/bgs/*.png
   #   - assets/avatars/*.{jpeg,jpg}
+
+  jekyll_analytics: 
+  GoogleAnalytics:          # Add, if you want to track with Google Analytics
+    id: UA-15656336-1       # Required - replace with your tracking id
+    anonymizeIp: false      # Optional - Default: false - set to true for anonymized tracking
