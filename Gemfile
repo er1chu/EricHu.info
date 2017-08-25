@@ -7,5 +7,6 @@ group :jekyll_plugins do
   gem 'jekyll-responsive-image'
   gem 'hawkins'
   gem 'jekyll-seo-tag'
+  gem 'jekyll-analytics'
   gem 'uglifier','~> 2.7'
 end
