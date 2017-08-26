@@ -87,8 +87,8 @@ header {
     line-height: 22px;
     text-align: center;
     margin: 0 auto $spacing-unit * 3 auto;
-    width: 50%;
     max-width: 800px;
+    width: 50%;
 
     @include mobile {
         width: 100% - ($spacing-unit * 2 );
@@ -119,6 +119,7 @@ header {
 
 }
 
+
 .full-size {
     img {
         position: relative;
@@ -131,6 +132,11 @@ header {
     }
 }
 
+.img-center {
+    position: relative;
+    left: 50%;
+    @include transform(translateX(-50%));
+}
 
 .half-size img {
     max-width: $half-size-width;
@@ -146,15 +152,20 @@ header {
     }
 
     &:last-of-type {
-    margin-left: $spacing-unit*0.5;
-    @include mobile {
-        margin-left: 0;
-    }
+        margin-left: $spacing-unit*0.5;
+        @include mobile {
+            margin-left: 0;
+        }
 
     }
 
     @include mobile {
-    max-width: 100% - ($spacing-unit*0.5);
+        clear: both;
+        max-width: $mobile-img-width;
+        left: 50%;
+        position: relative;
+        @include transform(translateX(-50%));
+
     }
 
 }
@@ -162,22 +173,18 @@ header {
     img {
         max-height: $portrait-height;
         max-width: 50%;
-        position: relative;
-        left: (50%);
-        @include transform(translateX(-50%));
+        @extend .img-center;
         @include mobile {
-        max-width: 100% - ($spacing-unit * 2);
+        max-width: $mobile-img-width;
         }
     }
 }
 
 .three4 img{
     max-width: $three4-width;
-    position: relative;
-    left: (50%);
-    @include transform(translateX(-50%));
+    @extend .img-center;
     @include mobile {
-    max-width: 100% - ($spacing-unit * 2);
+    max-width: $mobile-img-width;
     }
 
 }

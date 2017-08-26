@@ -3,17 +3,18 @@
 
 
 // Our variables
+$spacing-unit: 2.25%;
 $base-font-family: "Neue Haas Grotesk","Helvetica Neue", Helvetica, Arial, sans-serif;
 $secondary-font-family: "Bodoni", "Times New Roman", Times, SimSun, "华文黑体", STXihei, "华文细黑", serif;
-$base-font-size:   18px;
+$base-font-size: 18px;
 $large-font-size: 4.5vw;
 $base-font-weight: 400;
-$small-font-size:  $base-font-size;
+$small-font-size: $base-font-size;
 $base-line-height: 1;
 $portrait-height: 98vh;
 $three4-width: 75%;
+$mobile-img-width: 100% - ($spacing-unit * 2);
 
-$spacing-unit:     2.25%;
 $half-size-width: 50% - ($spacing-unit * 0.5);
 
 $text-color:       #1a1f54;

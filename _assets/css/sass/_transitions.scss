@@ -1,55 +1,55 @@
 @keyframes lds-hourglass {
   0% {
-    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
     opacity: 0;
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19)
+    transform: rotate(0);
   }
   50% {
-    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     opacity: .3;
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+    transform: rotate(900deg);
   }
   100% {
-    transform: rotate(1800deg);
     opacity: 1;
+    transform: rotate(1800deg);
   }
 }
 
 @-webkit-keyframes lds-hourglass {
   0% {
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
     -webkit-transform: rotate(0);
-    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19)
   }
   50% {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     -webkit-transform: rotate(900deg);
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
   }
   100% {
-    -webkit-transform: rotate(1800deg)
+    -webkit-transform: rotate(1800deg);
   }
 }
 
 .load-spinner:after {
-  content: " ";
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: inline-block;
-  background: center center no-repeat;
-  background-size: cover;
-  width: 0;
-  height: 0;
-  opacity: 1;
-  background: none;
-  border-radius: 50%;
-  border: 70px solid;
-  border-color: $text-color transparent $text-color transparent;
-  transition: opacity 2s ease;
-  animation: lds-hourglass 2s linear infinite;
-  -webkit-animation: lds-hourglass 2s linear infinite;
+    animation: lds-hourglass 2s linear infinite;
+    -webkit-animation: lds-hourglass 2s linear infinite;
+    background: none;
+    background: center center no-repeat;
+    background-size: cover;
+    border: 70px solid;
+    border-color: $text-color transparent $text-color transparent;
+    border-radius: 50%;
+    bottom: 0;
+    content: " ";
+    display: inline-block;
+    height: 0;
+    left: 0;
+    margin: auto;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity 2s ease;
+    width: 0;
 }
 
 .gone {
@@ -68,14 +68,25 @@
 
 .portrait .lazyload, .portrait .lazyloading {
     height: $portrait-height;
+    @include mobile {
+        height: auto;
+        width: $mobile-img-width;
+    }
 }
 
 .half-size .lazyload, .half-size .lazyloading {
     width: $half-size-width;
+    @include mobile {
+      width: $mobile-img-width;
+      clear: both;
+    }
 }
 
 .three4 .lazyload, .three4 .lazyloading {
     width: $three4-width;
+    @include mobile {
+        width: $mobile-img-width;
+    }
 }
 
 .lazyloaded {
@@ -104,7 +115,9 @@
     z-index: 100;
 
     @include mobile {
-    	font-size: $small-font-size * 1.5;
+    	font-size: $small-font-size * 1.25;
+      padding-bottom: $spacing-unit;
+
     }
 }
 
@@ -120,7 +133,6 @@
 .shadow {
     box-shadow: 0px 32px 122px -14px rgba(0,0,0,0.47);
     -moz-box-shadow: 0px 32px 122px -14px rgba(0,0,0,0.47);
-	box-shadow: 0px 32px 122px -14px rgba(0,0,0,0.47);
 }
 
 .scroll-badge-links {
@@ -128,10 +140,10 @@
 }
 
 .top-of-page {
-    float: right;
-    margin-right: $spacing-unit;
-    font-size: $small-font-size * 1.7;
     cursor: pointer;
+    float: right;
+    font-size: $small-font-size * 1.7;
+    margin-right: $spacing-unit;
 
     @include mobile {
     	font-size: $small-font-size * 1.3;
