@@ -3,45 +3,45 @@
 
 
 // Our variables
-$spacing-unit: 2.25%;
-$base-font-family: "Neue Haas Grotesk","Helvetica Neue", Helvetica, Arial, sans-serif;
-$secondary-font-family: "Bodoni", "Times New Roman", Times, SimSun, "华文黑体", STXihei, "华文细黑", serif;
-$base-font-size: 18px;
-$large-font-size: 4.5vw;
-$base-font-weight: 400;
-$small-font-size: $base-font-size;
-$base-line-height: 1;
-$portrait-height: 98vh;
-$three4-width: 75%;
-$mobile-img-width: 100% - ($spacing-unit * 2);
+$spacing-unit:           2.25%;
+$base-font-family:       'Neue Haas Grotesk','Helvetica Neue', Helvetica, Arial, sans-serif;
+$secondary-font-family:  'Bodoni', 'Times New Roman', Times, SimSun, '华文黑体', STXihei, '华文细黑', serif;
+$base-font-size:         18px;
+$large-font-size:        4.5vw;
+$base-font-weight:       400;
+$small-font-size:        $base-font-size;
+$base-line-height:       1;
+$portrait-height:        98vh;
+$three4-width:           75%;
+$mobile-img-width:       100% - ($spacing-unit * 2);
 
-$half-size-width: 50% - ($spacing-unit * 0.5);
+$half-size-width:        50% - ($spacing-unit * 0.5);
 
-$text-color:       #1a1f54;
-$background-color: #fff;
-$brand-color:      $text-color;
+$text-color:             #1a1f54;
+$background-color:       #fff;
+$brand-color:            $text-color;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color:             #828282;
+$grey-color-light:       lighten($grey-color, 40%);
+$grey-color-dark:        darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    100%;
+$content-width:          100%;
 
-$on-palm:          100%;
-$on-laptop:        100%;
+$on-palm:                100%;
+$on-laptop:              100%;
 
-$tablet-width: 768px;
-$mobile-width: 320px;
-$desktop-width: 1024px;
+$tablet-width:           768px;
+$mobile-width:           320px;
+$desktop-width:          1024px;
 
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-		"sass/bourbon/bourbon",
-		"sass/mixins",
-        "sass/base",
-        "sass/layout",
-        "sass/transitions"
+						"sass/bourbon/bourbon",
+						"sass/mixins",
+						"sass/base",
+						"sass/layout",
+						"sass/transitions"
 ;
