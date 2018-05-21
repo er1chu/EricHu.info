@@ -83,16 +83,16 @@ $(function () {
 				});
 
 			
-				$(window).scroll($.throttle(250, function () {
-					checkProjects();}));
+				// $(window).scroll($.throttle(250, function () {
+				// 	checkProjects();}));
 
 				$(window).scroll(function () {
 					scrollBadge();
 				});
 
-				$(window).resize(function () {
-					checkProjects();
-				});
+				// $(window).resize(function () {
+				// 	checkProjects();
+				// });
 
 		},
 

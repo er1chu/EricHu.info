@@ -1,7 +1,7 @@
 
 header {
     font-size: $large-font-size;
-    letter-spacing: -0.2vw;
+    letter-spacing: -2px;
     margin: 0 auto;
 
     @include mobile {
@@ -13,16 +13,15 @@ header {
 }
 .site-title {
     a {
-        letter-spacing: 0.1px;
         text-decoration: none;
-        text-transform: uppercase;
+        // text-transform: uppercase;
     }
 }
 
 
 .sub-title {
     font-family: $secondary-font-family;
-    text-transform: uppercase;
+    // text-transform: uppercase;
 }
 
 .navigation-wrapper {
@@ -41,20 +40,11 @@ header {
     font-family: $secondary-font-family;
     margin-left: $spacing-unit;
     margin-right: $spacing-unit;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     
     a {
-         position: relative;
-         vertical-align: top;
-          
-          &:after {
-            border-bottom: 0.15vw solid $text-color;
-            bottom: 0.6vw;
-            content: "";
-            left: 0;
-            right: 0;
-            position: absolute;
-          }
+         text-transform: underline;
+        
     }
 }
 
@@ -66,8 +56,8 @@ header {
 }
 
 .stat-title {
-    @include character($secondary-font-family,$small-font-size,true);
-    letter-spacing: 0.35px;
+    // @include character($secondary-font-family,$small-font-size,true);
+    // letter-spacing: 0.35px;
     
 }
 
@@ -82,12 +72,14 @@ header {
 }
 
 .caption {
-    @extend .stat-title;
+    // @extend .stat-title;
     clear: both;
     line-height: 22px;
     text-align: center;
+    font-family:$secondary-font-family;
     margin: 0 auto $spacing-unit * 3 auto;
     max-width: 800px;
+    text-transform: none;
     width: 50%;
 
     @include mobile {
@@ -193,7 +185,7 @@ header {
 
 .about-intro {
     @include character($secondary-font-family,$base-font-size,false);
-    letter-spacing: 0.5px;
+    letter-spacing: -0.25px;
     float: left;
     padding-top: $spacing-unit;
     line-height: 22px;

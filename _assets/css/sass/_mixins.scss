@@ -19,16 +19,14 @@
 @mixin embed-font($font-name, $font-filepath-and-name){
     @font-face {
         font-family: $font-name;
-        src: url(asset_path($font-filepath-and-name+".eot")); /* IE9 Compat Modes */
-        src: url(asset_path($font-filepath-and-name+".eot?#iefix")) format('embedded-opentype'), /* IE6-IE8 */
+        src:
              url(asset_path($font-filepath-and-name+".woff")) format('woff'),
-             url(asset_path($font-filepath-and-name+".woff")) format('woff2'),  /* Modern Browsers */
-             url(asset_path($font-filepath-and-name+".ttf"))  format('truetype'), /* Safari, Android, iOS */
+             url(asset_path($font-filepath-and-name+".woff2")) format('woff2'),  /* Modern Browsers */
     }
 }
 
-@include font-face(Bodoni, /fonts/bodoni72-book);
-@include font-face('Neue Haas Grotesk', /fonts/neuehaasgrotdisp-55);
+@include font-face('ITC Galliard', /fonts/galliard);
+@include font-face('Unica', /fonts/unica);
 
 
 
