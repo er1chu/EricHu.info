@@ -1,5 +1,5 @@
 ---
 layout: about
-title: Info
+title: Profile
 permalink: /info/
 ---

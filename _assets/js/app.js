@@ -1,6 +1,7 @@
-//= require vendor/lazyload.js
+
 // = require vendor/debounce.js
 // = require vendor/widow.js
+// = require vendor/lazyload.js
 
 $(function () {
 	var app = {
@@ -8,7 +9,7 @@ $(function () {
 
 			this._initScroll();
 			this._initTameWidows();
-			this._initClickCarousel();
+			this._initClickCarousel2();
 			this._initTop();
 			this._initBack();
 
@@ -78,9 +79,9 @@ $(function () {
 				// 	}
 				// }
 
-				$(window).on('load',function () {
-					menuContext();
-				});
+				// $(window).on('load',function () {
+				// 	menuContext();
+				// });
 
 			
 				// $(window).scroll($.throttle(250, function () {
@@ -114,20 +115,40 @@ $(function () {
 			});
 		},
 
-		_initClickCarousel: function () {
-			// Project on click
-			$('.project').on('click', function(){
-				// Identify next project
-				var ele = $(this).next('.project');
-				// Animate scroll to next project
+		_initClickCarousel2: function () {
 
-				$('html, body').animate({
-					scrollTop: $(ele).offset().top
-				}, 300);
-				return false;
-				
+
+			// Project on Click
+
+			$('.project-content img').on('click', function () {
+				//Identify next project
+				var thisProject = $(this);
+				var nextProject = thisProject.closest('.project-content').next().find('img');
+				var nextProjectSrc = nextProject.attr('src');
+				var prevProject = $(this).prev('img');
+				var prevProjectSrc = prevProject.attr('src');
+				// Identify prev project
+				$('#galleryimg').attr('src',thisProject.attr('src'));
+				console.log (nextProject);
+
 			});
+
 		},
+
+		// _initClickCarousel: function () {
+		// 	// Project on click
+		// 	$('.project').on('click', function(){
+		// 		// Identify next project
+		// 		var ele = $(this).next('.project');
+		// 		// Animate scroll to next project
+
+		// 		$('html, body').animate({
+		// 			scrollTop: $(ele).offset().top
+		// 		}, 300);
+		// 		return false;
+				
+		// 	});
+		// },
 
 		_initTop: function () {
 			$('.top-of-page').click(function(){
@@ -141,6 +162,7 @@ $(function () {
 				$('#back-link').attr('href','/#'+localStorage.getItem('position'));
 			}
 		}
+
 	};
 
 	app.init();

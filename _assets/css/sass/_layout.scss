@@ -1,14 +1,24 @@
 
 header {
-    font-size: $large-font-size;
-    letter-spacing: -2px;
+    font-size: $base-font-size;
     margin: 0 auto;
+    text-align: left;
 
     @include mobile {
         font-size: $base-font-size * 1.5;
         letter-spacing: -0.1px;
 
     }
+
+}
+
+.gallery {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 10%;
 
 }
 .site-title {
@@ -33,13 +43,22 @@ header {
 }
 
 .site-navigation {
-    padding-top: $spacing-unit / 3;
+    padding: $spacing-unit/2 0 0 $spacing-unit*2;
+    text-align: left;
+    font-size: $base-font-size *.8;
+    text-transform: uppercase;
+
+
+    @include mobile {
+    width: 100%;
+    text-align: center;
+    } 
 }
 .page-link {
     display: inline-block;
     font-family: $secondary-font-family;
     margin-left: $spacing-unit;
-    margin-right: $spacing-unit;
+    // margin-right: $spacing-unit;
     // text-transform: uppercase;
     
     a {
@@ -74,13 +93,14 @@ header {
 .caption {
     // @extend .stat-title;
     clear: both;
-    line-height: 22px;
-    text-align: center;
+    line-height: calc(22px * .7);
+    font-size: $base-font-size * .8;
+    text-align: left;
     font-family:$secondary-font-family;
-    margin: 0 auto $spacing-unit * 3 auto;
+    margin: $spacing-unit auto;
     max-width: 800px;
     text-transform: none;
-    width: 50%;
+    // width: 50%;
 
     @include mobile {
         width: 100% - ($spacing-unit * 2 );
@@ -96,20 +116,57 @@ header {
     margin-top: $spacing-unit;
 }
 
-.project {
-    clear: both;
-    cursor: s-resize;
+.container {
+margin-top: $spacing-unit;
+/*display: grid;
+grid-gap: $spacing-unit/3;
+grid-row-gap: $spacing-unit/3;
+grid-template-columns: repeat(4, minmax(20%,1fr));
+@include mobile {
+    grid-template-columns: none;
+    grid-row-gap: 0;
+}*/
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: space-around;
+}
+.container:after {
+/*  display: block;
+  content: " invisible node ";
+  flex: 999 999 auto;*/
+}
+
+@mixin project($size) {
+    width: $size;
+    padding: $spacing-unit/6;
+    box-sizing: border-box;
 
     @include mobile {
-        margin-bottom: $spacing-unit * 10;    
+        width: 100%;
     }
-
     img {
-        margin-top: $spacing-unit ;
-        margin-bottom: $spacing-unit;
+        margin-bottom: $spacing-unit / 3;
     }
+}
+
+.project {
+    @include project(25%);
 
 }
+
+.project-2 {
+    @include project(50%);
+}
+
+.project-full {
+    @include project(80%);
+    clear:both;
+}
+
 
 
 .full-size {
@@ -131,12 +188,12 @@ header {
 }
 
 .half-size img {
-    max-width: $half-size-width;
-    float: left;
+    // max-width: $half-size-width;
+  //  float: left;
     box-sizing: border-box;
 
     &:first-of-type {
-    margin-right: $spacing-unit*0.5;
+    margin-right: $spacing-unit / 6;
     @include mobile {
         margin-right: 0;
     }
@@ -144,7 +201,7 @@ header {
     }
 
     &:last-of-type {
-        margin-left: $spacing-unit*0.5;
+       margin-left: $spacing-unit / 6;
         @include mobile {
             margin-left: 0;
         }
@@ -164,7 +221,7 @@ header {
 .portrait {
     img {
         max-height: $portrait-height;
-        max-width: 50%;
+       // max-width: 50%;
         @extend .img-center;
         @include mobile {
         max-width: $mobile-img-width;

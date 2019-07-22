@@ -4,13 +4,13 @@
 
 // Our variables
 $spacing-unit:           2.25%;
-$base-font-family:       'Unica','Helvetica Neue', Helvetica, Arial, sans-serif;
-$secondary-font-family:  'Unica', 'Times New Roman', Times, SimSun, '华文黑体', STXihei, '华文细黑', serif;
-$base-font-size:         18px;
+$base-font-family:       'Helvetica','Helvetica Neue', Helvetica, Arial, sans-serif;
+$secondary-font-family:  'Bradford', 'Times New Roman', Times, SimSun, '华文黑体', STXihei, '华文细黑', serif;
+$base-font-size:         16px;
 $large-font-size:        36px;
 $base-font-weight:       400;
 $small-font-size:        $base-font-size;
-$base-line-height:       1;
+$base-line-height:       1.2;
 $portrait-height:        98vh;
 $three4-width:           75%;
 $mobile-img-width:       100% - ($spacing-unit * 2);
