@@ -121,15 +121,48 @@ $(function () {
 			// Project on Click
 
 			$('.project-content img').on('click', function () {
-				//Identify next project
+
+				$('.gallery').addClass('seen');
+				// Identify Current Project
 				var thisProject = $(this);
-				var nextProject = thisProject.closest('.project-content').next().find('img');
-				var nextProjectSrc = nextProject.attr('src');
-				var prevProject = $(this).prev('img');
-				var prevProjectSrc = prevProject.attr('src');
-				// Identify prev project
+				
+				//Identify next project
+				var nextProject = thisProject.closest('.project-content').parent().next().find('img');
+				
+				// Identify previous project
+				var prevProject = thisProject.closest('.project-content').parent().prev().find('img');
+				
+				// Display Image into Gallery
 				$('#galleryimg').attr('src',thisProject.attr('src'));
-				console.log (nextProject);
+
+				// Next Button
+				$('.gallery-next').on('click', function (){
+					nextProject.trigger('click');
+
+				});
+
+				// Prev Button
+				$('.gallery-prev').on('click', function (){
+					prevProject.trigger('click');
+				});
+
+				$('.gallery-hide').on('click', function (){
+					$('.gallery').removeClass('seen');
+				});
+
+				// Key Presses
+				$("body").keydown(function(e){
+				    // left arrow
+				    if ((e.keyCode || e.which) == 37)
+				    {   
+				        prevProject.trigger('click');
+				    }
+				    // right arrow
+				    if ((e.keyCode || e.which) == 39)
+				    {
+				        nextProject.trigger('click');
+				    }
+				});
 
 			});
 

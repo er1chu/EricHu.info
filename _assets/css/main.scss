@@ -4,21 +4,21 @@
 
 // Our variables
 $spacing-unit:           2.25%;
-$base-font-family:       'Helvetica','Helvetica Neue', Helvetica, Arial, sans-serif;
-$secondary-font-family:  'Bradford', 'Times New Roman', Times, SimSun, '华文黑体', STXihei, '华文细黑', serif;
-$base-font-size:         16px;
+$base-font-family:       'Univers','Helvetica Neue', Helvetica, Arial, sans-serif;
+$secondary-font-family:  'Bradford','Times New Roman', Times, SimSun, '华文黑体', STXihei, '华文细黑', serif;
+$base-font-size:         13px;
 $large-font-size:        36px;
 $base-font-weight:       400;
 $small-font-size:        $base-font-size;
-$base-line-height:       1.2;
+$base-line-height:       16px;
 $portrait-height:        98vh;
 $three4-width:           75%;
 $mobile-img-width:       100% - ($spacing-unit * 2);
 
 $half-size-width:        50% - ($spacing-unit * 0.5);
 
-$text-color:             #000;
-$background-color:       #fff;
+$text-color:             #ccc;
+$background-color:       #000;
 $brand-color:            $text-color;
 
 $grey-color:             #828282;
